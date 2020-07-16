@@ -1,0 +1,149 @@
+@import "varibles";
+@import "mixin";
+#home{
+    #qf{
+        display:flex;
+        padding: 140px 0;
+        .item{
+            .title{
+                font-weight: bold;
+                color: $black-light;
+                font-size:24px;
+            }
+            .content{
+                margin: 50px 0px 60px 0;
+                color: #5f727f;
+            }
+            .button{
+                button{
+                    @include custom-button(30px, 145px, $blue-light, 5px);
+                }
+                button:hover{
+                    background-color: $blue-dark;
+                }
+            }
+        }
+        .icon{
+            padding: 0 50px;
+        }
+    }
+    #counters{
+        background-color: $background-counters;
+        padding: 130px 0;
+        .content-counters{
+            padding: 0 45px;
+            display:flex;
+            justify-content:space-between;
+            .item{
+                text-align:center;
+                .number{
+                    color: $green-light;
+                    font-size: 50px;
+                    font-weight: initial;
+                }
+                .desc{
+                    font-size: 24px;
+                    color: white;
+                    margin-top: 35px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    #why-choosing-us{
+        background-color: #f0f3f2;
+        padding: 125px 0;
+        .content-wcu{
+            h1{
+                text-align: center;
+                margin:0px;
+                font-size: 50px;
+                text-transform: uppercase;
+                color: $black-light;
+                margin-bottom: 40px;
+                span{
+                    font-weight: 100;
+                }
+            }
+            .box-article{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                article{
+                    width: 360px;
+                    padding: 60px 0;
+                    border-top: 1px solid #5f727f;
+                    display: flex;
+                    .icon{
+                        width: 50px;
+                        height: 50px;
+                        background-color: $black-light;
+                        border-radius: 50%;
+                    }
+                    .content{
+                        width: 310px;
+                        padding-left: 15px;
+                        .title{
+                            font-size: 19px;
+                            text-transform: uppercase;
+                        }
+                        .desc{
+                            margin-top: 35px;
+                            color: #5f727f;
+                        }
+                    }
+                }
+                .none-border{
+                    border: none;
+                }
+            }
+
+        }
+    }
+    #three-col{
+        display: flex;
+        .item{
+            flex-grow: 1;
+            padding: 70px 0;
+            padding-left: 65px;
+            h1{
+                color: white;
+                font-size: 80px;
+                margin: 0;
+            }
+            h2{
+                margin: 80px 0 45px 0;
+                color: white;
+                font-size: 36px;
+                font-weight: 100;
+                text-transform: uppercase;
+                span{
+                    color: #e7ff89;
+                    font-weight: bold;
+                }
+            }
+            div{
+                width: 350px;
+            }
+            
+        }
+        .item:nth-child(1){
+            background-color:  $green-light;
+            div{
+                color: #3c3950;
+            }
+        }
+        .item:nth-child(2){
+            background-color:  $blue-light;
+            div{
+                color: #3c3950;
+            }
+        }
+        .item:nth-child(3){
+            background-color:  $black-light;
+            div{
+                color:white;
+            }
+        }
+    }
+}

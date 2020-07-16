@@ -1,0 +1,9 @@
+@mixin custom-button($height, $width, $bg-color, $px-radius){
+    height: $height;
+    width: $width;
+    border: none;
+    border-radius: $px-radius;
+    color:white;
+    transition: ease .5s;
+    background-color: $bg-color;
+}
