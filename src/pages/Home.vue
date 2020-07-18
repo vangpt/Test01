@@ -352,6 +352,130 @@
                 </div>
             </div>
         </section>
+        <section id="ad">
+            <div class="container ad">
+                <div class="logo">the <img src="../assets/imgs/logo2.jpg" alt="" width="70px;"> gem</div>
+                <div class="desc">Lorem ipsum dolor sit ametcon, consectetur adipisicing elit</div>
+                <button>great, i want to buy now</button>
+            </div>
+        </section>
+        <section id="open-vacanies">
+            <div class="container open-vacanies">
+                    <div class="teams">
+                        <div class="title">out teams</div>
+                        <div class="item">
+                            <div class="avatar">
+                                <img src="../assets/imgs/counters-icon.png" alt="" height="80px">
+                            </div>
+                            <div class="info">
+                                <div>Emerson Anderson</div>
+                                <div>Senior Sales Manager</div>
+                                <div>+1 (987) 1625346</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="avatar">
+                                <img src="../assets/imgs/counters-icon.png" alt="" height="80px">
+                            </div>
+                            <div class="info">
+                                <div>Emerson Anderson</div>
+                                <div>Senior Sales Manager</div>
+                                <div>+1 (987) 1625346</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="avatar">
+                                <img src="../assets/imgs/counters-icon.png" alt="" height="80px">
+                            </div>
+                            <div class="info">
+                                <div>Emerson Anderson</div>
+                                <div>Senior Sales Manager</div>
+                                <div>+1 (987) 1625346</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vacanies">
+                        <div class="title">open vacanies</div>
+                        <div class="position">
+                            <ul>
+                                <li><button>web designer</button></li>
+                                <li><button>manager</button></li>
+                                <li><button>programer</button></li>
+                                <li><button>support staff</button></li>
+                            </ul>
+                        </div>
+                        <div class="desc">
+                            <div class="detail">
+                                <img src="../assets/imgs/back-ground-gray.jpg" width="350px" alt="">
+                                <div class="more-detail">
+                                    <div class="more-detail-title">
+                                        web designer
+                                    </div>
+                                    <div class="more-detail-desc">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-item">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur </li>
+                                    <li>Adipisicing elit, sed do eiusmod tempor </li>
+                                    <li>Incididunt ut labore et dolore magna aliqua</li>
+                                    <li>Enim ad minim veniam, quis nostrud </li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur </li>
+                                    <li>Adipisicing elit, sed do eiusmod tempor </li>
+                                    <li>Incididunt ut labore et dolore magna aliqua</li>
+                                    <li>Enim ad minim veniam, quis nostrud </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="contact-us">
+            <div class="container contact-us">
+                <div class="item">
+                    <img src="../assets/imgs/contact-icon.jpg" alt="">
+                    <div class="title">contact us</div>
+                    <div class="list">
+                        info@domain.ltd <br>
+                        thegem@domain.ltd <br>
+                        www.codex-themes.com
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../assets/imgs/contact-icon.jpg" alt="">
+                    <div class="title">contact us</div>
+                    <div class="list">
+                        info@domain.ltd <br>
+                        thegem@domain.ltd <br>
+                        www.codex-themes.com
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../assets/imgs/contact-icon.jpg" alt="">
+                    <div class="title">contact us</div>
+                    <div class="list">
+                        info@domain.ltd <br>
+                        thegem@domain.ltd <br>
+                        www.codex-themes.com
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../assets/imgs/contact-icon.jpg" alt="">
+                    <div class="title">contact us</div>
+                    <div class="list">
+                        info@domain.ltd <br>
+                        thegem@domain.ltd <br>
+                        www.codex-themes.com
+                    </div>
+                </div>
+            </div>
+            <div class="bg-head">
+                    <div class="box-left"></div>
+                    <div class="box-right"></div>
+            </div>
+        </section>
     </div>
    
 </template>
