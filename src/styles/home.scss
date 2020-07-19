@@ -340,6 +340,9 @@
                 display: flex;
                 flex-wrap: wrap;
                 // align-items: baseline;
+                .item:first-child{
+                    border-left: 1px solid $gray-mid;
+                }
                 .item {
                     flex: 25%;
                     background-color: $background-slider;
@@ -347,7 +350,9 @@
                     text-align: center;
                     padding-bottom: 40px;
                     position: relative;
-                    border: 1px solid $gray-mid;
+                    border-right: 1px solid $gray-mid;
+                    border-top: 1px solid $gray-mid;
+                    border-bottom: 1px solid $gray-mid;
                     .new {
                         width: 50px;
                         height: 50px;
@@ -513,7 +518,7 @@
                     justify-content: center;
                     padding: 50px 0;
                     height: 170px;
-                    margin-bottom: 30px;
+                    margin-bottom: 28px;
                     .info {
                         padding-left: 10px;
                         div:nth-child(1) {
@@ -590,7 +595,7 @@
                             flex-wrap: wrap;
                             height: 120px;
                             list-style-type: square;
-                            margin-top: 55px;
+                            margin-top: 60px;
                             margin-left: 20px;
                             li {
                                 margin-bottom: 10px;
