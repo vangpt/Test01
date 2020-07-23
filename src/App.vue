@@ -2,6 +2,7 @@
     <div id="app">
         <top-area></top-area>
         <menu-comp></menu-comp>
+        <!-- <menu-res/> -->
         <slider/>
         <home/>
         <footer-comp/>
@@ -13,6 +14,7 @@ import TopArea from "./components/TopArea";
 import MenuComp from "./components/MenuComp";
 import Slider from "./components/Slider";
 import FooterComp from "./components/FooterComp";
+import MenuRes from "./components/MenuRes";
 import Home from "./pages/home";
 export default {
     name: "app",
@@ -21,6 +23,7 @@ export default {
         MenuComp,
         Slider,
         Home,
+        MenuRes,
         FooterComp
     },
     data() {

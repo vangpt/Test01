@@ -3,7 +3,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: auto;
     font-family: tahoma;
     font-size: 16px;
@@ -11,9 +11,7 @@ body{
     padding: 0px;
 }
 
-#app {
-    
-}
+#app {}
 
 ul {
     list-style-type: none;
@@ -30,7 +28,11 @@ a {
     text-decoration: none;
     color: black;
 }
-.container{
-    width: $container;
-    margin:auto;
+
+.container {
+    max-width: $container;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 }
