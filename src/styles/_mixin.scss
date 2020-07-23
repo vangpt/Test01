@@ -1,0 +1,52 @@
+@mixin custom-button($height, $width, $bg-color, $px-radius) {
+    height: $height;
+    width: $width;
+    border: none;
+    border-radius: $px-radius;
+    color: white;
+    transition: ease .5s;
+    background-color: $bg-color;
+    cursor: pointer;
+}
+
+@mixin custom-title-section {
+    text-align: center;
+    margin: 0px;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: $black-light;
+    span {
+        font-weight: 100;
+    }
+}
+
+@mixin custom-title-section1 {
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $black-light;
+    span {
+        font-weight: 100;
+    }
+}
+
+@mixin custom-desc-section($color) {
+    color: $color;
+    text-align: center;
+    padding: 10px;
+    margin: 80px 0 110px 0;
+}
+
+@mixin custom-title-footer {
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+    i {
+        color: red;
+        transform: rotate(45deg);
+        vertical-align: bottom;
+    }
+}
