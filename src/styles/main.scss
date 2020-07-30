@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth; 
+}
+
 body {
     margin: auto;
     font-family: tahoma;
@@ -11,7 +15,21 @@ body {
     padding: 0px;
 }
 
-#app {}
+.font-sourcesan-pro {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-bold {
+    font-weight: 700;
+}
 
 ul {
     list-style-type: none;
@@ -33,6 +51,38 @@ a {
     max-width: $container;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-3 {
+    flex: 0 0 25%;
+}
+
+.flex-4 {
+    flex: 0 0 33.333333%;
+}
+
+.flex-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.flex-8 {
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+}
+
+.flex-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.justify-content-between {
+    justify-content: space-between;
 }

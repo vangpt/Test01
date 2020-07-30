@@ -1,14 +1,17 @@
 <template>
     <div id="slider">
-        <div class="array">
-                <a href="#"><i class="fa fa-arrow-left"></i></a>
-                <a href="#"><i class="fa fa-arrow-right"></i></a>
+        <img class="img-slide" src="../assets/imgs/background-slide.jpg" alt="" height="630">
+        <div class="array-left">
+                <a href="#"><img src="../assets/imgs/array-left.png" alt=""></a>
+        </div>
+        <div class="array-right">
+            <a href="#"><img src="../assets/imgs/array-right.png" alt=""></a>
         </div>
         <div class="box">
-            <img class="img-slide" src="../assets/imgs/background-slide.jpg" alt="" height="630">
+            
             <div class="slider-content">
-                <h1><span>the</span> gem.</h1>
-                <h1><span>the</span> opportunity.</h1>
+                <h1><span class="font-light">the</span><span class="font-weight"> gem.</span></h1>
+                <h1><span class="font-light">the</span><span class="font-weight"> opportunity.</span></h1>
                 <div class="desc">Step Forward, Lead The Innovation</div>
                 <div class="button">
                     <button><i class="fa fa-diamond"></i> our services</button>
@@ -28,53 +31,56 @@ export default {
 @import "../styles/varibles";
 @import "../styles/mixin";
 #slider{
-    background-color: $background-slider;
     border-top: 1px solid #ced3d6;
     position: relative;
-    .array{
-        display:flex;
-        justify-content: space-between;
-        width: 100%;
-        position:absolute;
+    font-family: 'Montserrat', sans-serif;
+    .array-right,
+    .array-left {
+        position: absolute;
         top: 50%;
         z-index: 2;
         transform: translateY(-50%);
-        a{
-            i{
-                font-size: 30px;
+        a {
+            img {
+                width: 30px;
             }
         }
     }
+    .array-right {
+        right: 20px;
+    }
+    .array-left {
+        left: 20px;
+    }
+
     .img-slide{
         width: 100%;
         height: auto;
     }
-    .slider-content{
-        max-width: 100%;
-        width: 1250px;
-        padding-left: 30px;
-        padding-right: 30px;
+    .box{
+        max-width: 1170px;
+        width: 100%;
+        margin:auto;
         text-transform: uppercase;
         position: absolute;
         top: 50%;
         left: 50%;
         z-index: 1;
         transform: translate(-50%, -50%);
-        
+    }
+    .slider-content{
         h1{
-            color: $black-light;
+            color: #3c3950;
             font-size: 4vw;
             padding:0;
             margin: 0;
-            span{
-                font-weight: 1;
-            }
         }
         .desc{
             font-size: 1.5vw;
             margin-top: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 65px;
             color: #3c3950;
+            font-weight: 200;
         }
         .button{
             button{
@@ -91,9 +97,11 @@ export default {
     }
     
 }
-@media (max-width: 768px){
+
+@media (max-width: 1200px){
     .box{
         .slider-content{
+            margin-left: 30px;
             h1{
                 font-size: 40px !important;
             }
@@ -113,21 +121,37 @@ export default {
     }
 }
 
+@media (max-width: 768px){
+    .box{
+        .slider-content{
+            h1{
+                font-size: 30px !important;
+            }
+            .desc{
+                
+                margin-top: 15px !important;
+                margin-bottom: 15px !important;
+            }
+        }
+    }
+}
+
 @media (max-width: 576px){
-    .array{
+    .array-left, .array-right{
         a{
-            i{
-                font-size: 15px !important;
+            img{
+                width: 20px !important;
             }
         }
     }
     .box{
         .slider-content{
+            margin-left: 10px !important;
             h1{
-                font-size: 18px !important;
+                font-size: 16px !important;
             }
             .desc{
-                font-size: 13px !important;
+                font-size: 12px !important;
                 margin-top: 5px !important;
                 margin-bottom: 5px !important;
             }

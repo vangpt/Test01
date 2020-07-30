@@ -14,10 +14,13 @@
                 <a href="#"><img src="../assets/imgs/uk.png" alt="" height="13px"></a>
                 <a href="#"><i class="fa fa-search"></i></a>
                 <a href="#"><i class="fa fa-cart-arrow-down"></i></a>
-                <a href="#"><i class="fa fa-tag" style="color: #315bd6"></i></a>
+                <div class="icon-tag">
+                    <div class="triangle-left"></div>
+                    <div class="rectangle">2</div>
+                </div>
             </div>
             <div class="logo">
-                <a href="#"><img src="../assets/imgs/logo.png" width="41"> <span>the <b>gem</b></span></a>
+                <a href="#"><img src="../assets/imgs/logo1.png" width="41"> <span class="font-light">the</span><span class="font-bold">gem</span></a>
             </div>
         </div>
         <menu-res 
@@ -82,11 +85,13 @@ export default {
 @import "../styles/varibles";
 #menu{
     background-color: white;
+    
     .content{
         display: flex;
         justify-content: space-between;
         align-items:center;
         padding: 30px 0;
+        font-family: 'Montserrat', sans-serif;
         .icon-menu {
             display: none;
             i {
@@ -94,11 +99,11 @@ export default {
             }
         }
         ul{
-            margin-left:-15px;
             li{
                 display:inline-block;
-                padding:0 15px;
+                margin-right: 50px;
                 a{
+                    font-size: 14px;
                     font-weight:bold;
                     text-transform: uppercase;
                     color: $black-light;
@@ -108,14 +113,15 @@ export default {
                     color: $blue-light;
                 }
             }
+            li:last-child{
+                margin-right: 0;
+            }
         }
         .logo{
             a{
                 font-size:27px;
-                text-transform: uppercase;  
-                span{
                 color: $black-light;
-                }
+                text-transform: uppercase;  
                 img{
                     vertical-align: middle;
                 }
@@ -123,20 +129,52 @@ export default {
         }
         
         .icon{
-            a{
-                padding: 0 10px;
-                margin-right: -10px;
+            display: flex;
+            align-items: center;
+            margin-left: -20px;
+            a:first-child{
+                img{
+                    margin-right: 20px;
+                }
+            }
+            a:nth-child(2){
                 i{
-                    font-size: 20px;
+                    font-size: 22px;
+                    margin-right: 20px
+                }
+            }
+            a:nth-child(3){
+                i{
+                    font-size: 22px;
+                    margin-right: 5px
+                }
+            }
+            .icon-tag{
+                display: flex;
+                .triangle-left{
+                    width: 0;
+                    height: 0;
+                    border-top: 10px solid transparent;
+                    border-right: 10px solid $blue-light;
+                    border-bottom: 10px solid transparent;
+                }
+                .rectangle{
+                    color:white;
+                    font-size: 14px;
+                    text-align: center;
+                    line-height: 20px;
+                    width: 30px;
+                    height: 20x;
+                    background-color: $blue-light;
                 }
             }
         }
     }
 }
 
-@media (max-width: 768px) {
-    
+@media (max-width: 1200px) {
     #menu{
+        box-shadow: 0 4px 2px -2px gray;
         position: sticky;
         top: 0;
         z-index: 10;

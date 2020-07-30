@@ -8,11 +8,11 @@
                             <div class="title">{{item.title}}</div>
                             <div class="content">{{item.content}}</div>
                             <div class="button">
-                                <a :href="item.linkn"><button>Button</button></a>
+                                <button></button>
                             </div>
                         </div>
                         <div class="icon">
-                            <img :src="'../assets/imgs/' + item.image" alt="icon QF" />
+                            <img :src="require(`../assets/imgs/qf/${item.image}`)" alt="icon QF" />
                         </div>
                     </div>
                 </div>
@@ -21,10 +21,41 @@
         <section id="counters">
             <div class="container">
                 <div class="content-counters">
-                    <div class="item" v-for="(element, index) in counters" :key="index">
-                        <img src="../assets/imgs/counters-icon.png" />
-                        <div class="number">{{element.number}}</div>
-                        <div class="desc">{{element.desc}}</div>
+                    <div class="item">
+                        <div class="box">
+                            <div class="box-child">
+                                <img src="../assets/imgs/counters/compa.png" alt="">
+                            </div>
+                        </div>
+                        <div class="number">2189</div>
+                        <div class="desc">Support Posts</div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <div class="box-child">
+                                <img src="../assets/imgs/counters/man.png" alt="">
+                            </div>
+                        </div>
+                        <div class="number">125</div>
+                        <div class="desc">Customers</div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <div class="box-child">
+                                <img src="../assets/imgs/counters/hv.png" alt="">
+                            </div>
+                        </div>
+                        <div class="number">4789</div>
+                        <div class="desc">Lorem Ipsum Dolor</div>
+                    </div>
+                    <div class="item">
+                        <div class="box">
+                            <div class="box-child">
+                                <img src="../assets/imgs/counters/kimtiem.png" alt="">
+                            </div>
+                        </div>
+                        <div class="number">502</div>
+                        <div class="desc">Lorem Ipsum Dolor</div>
                     </div>
                 </div>
             </div>
@@ -38,7 +69,7 @@
                             v-for="(item, index) in wcu" :key="index"
                             :class="item.isBorder"
                         >
-                            <img src="../assets/imgs/counters-icon.png" alt="" width="50px" height="50">
+                            <div class="icon"></div>
                             <div class="content">
                                 <div class="title">
                                     {{item.title}}
@@ -56,23 +87,23 @@
         <section id="three-col">
             <div class="item">
                 <div class="text">
-                    <h1>01.</h1>
-                    <h2>lorem <span>ipsun</span></h2>
-                    <div>Duis sed odio sit amet nibh vulputate <br>cursus a sit amet mauris. Morbi </div>
+                    <h2>01.</h2>
+                    <div class="title"><span>lorem</span> ipsun</div>
+                    <div class="desc">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi </div>
                 </div>
             </div>
             <div class="item">
                 <div class="text">
-                    <h1>02.</h1>
-                    <h2>lorem <span>ipsun</span></h2>
-                    <div>Duis sed odio sit amet nibh vulputate <br>cursus a sit amet mauris. Morbi </div>
+                    <h2>02.</h2>
+                    <div class="title"><span>left side</span> aligning</div>
+                    <div class="desc">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi </div>
                 </div>
             </div>
             <div class="item">
                 <div class="text">
-                    <h1>03.</h1>
-                    <h2>lorem <span>ipsun</span></h2>
-                    <div>Duis sed odio sit amet nibh vulputate <br>cursus a sit amet mauris. Morbi </div>
+                    <h2>03.</h2>
+                    <div class="title"><span>Cursus</span> mauris</div>
+                    <div class="desc">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi </div>
                 </div>
             </div>
             
@@ -89,10 +120,12 @@
                         <li 
                             v-for="(item, index) in optionOurCaseStudies" :key="index"
                             @click="setActiveOption(index)"
+                            :class="{active: activeOption == index}"
                         >
                             {{item.text}}
                         </li>
                     </ul>
+                    <!-- <img src="../assets/imgs/squares.jpg" alt=""> -->
                     <div class="square" v-if="activeOption == 0">
                         <div class="row-1">
                             <div class="square-4"></div>
@@ -162,7 +195,7 @@
                         <div class="row">
                         </div>
                         <div class="button">
-                            <button>more work</button>
+                            <button>more works</button>
                         </div>
                         <div class="row">
                         </div>
@@ -188,7 +221,7 @@
                         <div class="container items">
                             <div class="item">
 
-                                <img src="../assets/imgs/core-icon.png" alt="" height="125px">
+                                <img src="../assets/imgs/core/bongden.png" alt="" height="125px">
                                 <h2>consulting</h2>
                                 <div class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
@@ -198,8 +231,8 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="../assets/imgs/core-icon.png" alt="" height="125px">
-                                <h2>consulting</h2>
+                                <img src="../assets/imgs/core/HCN.png" alt="" height="125px">
+                                <h2>programming</h2>
                                 <div class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                 </div>
@@ -208,8 +241,8 @@
                                 </div>
                             </div>
                             <div class="item ">
-                                <img src="../assets/imgs/core-icon.png" alt="" height="125px">
-                                <h2>consulting</h2>
+                                <img src="../assets/imgs/core/phone.png" alt="" height="125px">
+                                <h2>development</h2>
                                 <div class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                 </div>
@@ -218,8 +251,8 @@
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="../assets/imgs/core-icon.png" alt="" height="125px">
-                                <h2>consulting</h2>
+                                <img src="../assets/imgs/core/cups.png" alt="" height="125px">
+                                <h2>marketing</h2>
                                 <div class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                                 </div>
@@ -234,17 +267,25 @@
 
         </section>
         <section id="testtimonials">
-            <div class="container content-test">
+            <div class="array-left">
+                    <a href="#"><img src="../assets/imgs/array-left.png" alt=""></a>
+                </div>
+                <div class="array-right">
+                    <a href="#"><img src="../assets/imgs/array-right.png" alt=""></a>
+                </div>
+            <div class="box">
+                <img class="img-slide" src="../assets/imgs/background-slide.jpg" alt="" height="630">
                 <div class="content-test">
-                    <img src="../assets/imgs/counters-icon.png" alt="">
+                    <img src="../assets/imgs/img-testtimonials.png" alt="">
                     <div class="name">Jeniffer Burns</div>
                     <div class="short-desc">Creative Heads Inc.</div>
                     <div class="long-desc">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcp 
                     </div>
-                    <div class="icon">"</div>
+                    <img class="icon" src="../assets/imgs/icon-testtimonials.png" alt="">
                 </div>
-            </div>
+            </div> 
+                
         </section>
         <section id="pricing">
             <div class="container">
@@ -262,14 +303,14 @@
                             <div class="box">
                                 <div class="new" v-if="element.isNew">new</div>
                                 <div class="item-title">
-                                    <div>
+                                    <div class="title-table">
                                         {{element.title}}  
                                     </div>
-                                    <p v-show="element.desc">{{element.desc}}</p>
+                                    <div class="short-desc" v-show="element.desc">{{element.desc}}</div>
                                 </div>
                                 <div class="item-price">
                                     <div class="price">{{element.price}}</div>
-                                    <div>{{element.per}}</div>
+                                    <div class="per">{{element.per}}</div>
                                 </div>
                                 <ul>
                                     <li 
@@ -279,7 +320,7 @@
                                         {{list.content}}
                                     </li>
                                 </ul>
-                                <button>order</button>
+                                <button><i class="fa fa-caret-right"></i> order</button>
                             </div>
                         </div>
                     </div>
@@ -292,8 +333,7 @@
                     <div class="logo">the <img src="../assets/imgs/logo2.jpg" alt="" width="70px;"> gem</div>
                     <div class="desc">Lorem ipsum dolor sit ametcon, consectetur adipisicing elit</div>
                     <div class="btn">
-                        <button>great, i want to buy now</button>
-
+                        <button>great, i want to buy now !</button>
                     </div>
                 </div>
             </div>
@@ -308,7 +348,7 @@
                                 v-for="(element, index) in teams" :key="index"
                             >
                                 <div class="avatar">
-                                    <img src="../assets/imgs/counters-icon.png" alt="" height="80px">
+                                    <img src="../assets/imgs/img-testtimonials.png" alt="" height="80px">
                                 </div>
                                 <div class="info">
                                     <div>{{element.name}}</div>
@@ -331,28 +371,27 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="desc"  
-                                v-for="(element, index) in descPosition"
-                                :key="index"
-                                v-if="activePosition === index">
-                                <div class="detail">
-                                    <img src="../assets/imgs/background-gray.jpg" alt="" width="350" height="230">
-                                    <div class="more-detail">
-                                        <div class="more-detail-title">
-                                            {{element.title}}
-                                        </div>
-                                        <div class="more-detail-desc">
-                                            {{element.description}}
+                            <template v-for="(element, index) in descPosition">
+                                <div v-if="activePosition == index" class="desc"  :key="index" >
+                                    <div class="detail">
+                                        <img src="../assets/imgs/background-gray.jpg" alt="" width="350" height="230">
+                                        <div class="more-detail">
+                                            <div class="more-detail-title">
+                                                {{element.title}}
+                                            </div>
+                                            <div class="more-detail-desc">
+                                                {{element.description}}
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="list-item">
+                                            <ul>
+                                                <li v-for="(item, index) in element.lists" :key="index"><i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;{{item.text}}</li>
+                                                
+                                            </ul>
+                                    </div>
                                 </div>
-                                <div class="list-item">
-                                        <ul>
-                                            <li v-for="(item, index) in element.lists" :key="index"><i class="fa fa-square"></i> {{item.text}}</li>
-                                            
-                                        </ul>
-                                </div>
-                            </div>
+                            </template>
                         </div>
                     </div>
                 </div>
@@ -362,8 +401,26 @@
             <div class="container">
                 <div class="contact-us">
                     <div class="item">
-                        <img src="../assets/imgs/contact-icon.jpg" alt="">
-                        <div class="title">contact us</div>
+                        <img src="../assets/imgs/contact/address.png" alt="">
+                        <div class="title">address</div>
+                        <div class="list">
+                            908 New Hampshire Avenue <br>
+                            Northwest #100, Washington, DC<br>
+                            20037, United States
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/imgs/contact/iphones.png" alt="">
+                        <div class="title">phone</div>
+                        <div class="list">
+                            Phone:  +1 916-875-2235<br>
+                            Mobile: +1 916-875-2235<br>
+                            Fax: +1 916-875-2235
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../assets/imgs/contact/contact.png" alt="">
+                        <div class="title">contacts</div>
                         <div class="list">
                             info@domain.ltd <br>
                             thegem@domain.ltd <br>
@@ -371,30 +428,12 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../assets/imgs/contact-icon.jpg" alt="">
-                        <div class="title">contact us</div>
+                        <img src="../assets/imgs/contact/clocks.png" alt="">
+                        <div class="title">working hours</div>
                         <div class="list">
-                            info@domain.ltd <br>
-                            thegem@domain.ltd <br>
-                            www.codex-themes.com
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="../assets/imgs/contact-icon.jpg" alt="">
-                        <div class="title">contact us</div>
-                        <div class="list">
-                            info@domain.ltd <br>
-                            thegem@domain.ltd <br>
-                            www.codex-themes.com
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="../assets/imgs/contact-icon.jpg" alt="">
-                        <div class="title">contact us</div>
-                        <div class="list">
-                            info@domain.ltd <br>
-                            thegem@domain.ltd <br>
-                            www.codex-themes.com
+                            Monday - Friday: 9.00 - 18.00 <br>
+                            Saturday: 11:00 - 17.00 <br>
+                            Sunday: Closed
                         </div>
                     </div>
                 </div>
@@ -415,22 +454,22 @@ export default {
         return{
             qf:[
                 {
-                    title: "Lorem input dolor sit",
+                    title: "Lorem ipsum dolor sit",
                     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                     link: "#",
-                    image: "qf-icon.png"
+                    image: "icons.png",
                 },
                 {
-                    title: "Lorem input dolor sit",
+                    title: "Lorem ipsum dolor sit",
                     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                     link: "#",
-                    image: "qf-icon.png"
+                    image: "bags.png"
                 },
                 {
-                    title: "Lorem input dolor sit",
+                    title: "Lorem ipsum dolor sit",
                     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                     link: "#",
-                    image: "qf-icon.png"
+                    image: "tivi.png"
                 }
             ],
             counters:[
@@ -482,8 +521,8 @@ export default {
             ],
             pricing:[
                 {
-                    title: "master1",
-                    price: "100$",
+                    title: "beginner",
+                    price: "$10",
                     per: "per month",
                     desc: "",
                     isNew: false,
@@ -491,120 +530,131 @@ export default {
                     lists: [
                         {
                             content: "Photo sharing school",
+                            
+                        },
+                        {
+                            content: "Drop out ramen hustle",
+                            
+                        },
+                        {
+                            content: "Coworking viral landing",
+                            
+                        },
+                        {
+                            content: "Crush revenue traction",
                             isLineThrough: 'line-through'
                         },
                         {
-                            content: "Photo sharing school",
+                            content: "User base minimum viable",
                             isLineThrough: 'line-through'
                         },
                         {
-                            content: "Photo sharing school",
+                            content: "Lorem ipsum dolor",
                             isLineThrough: 'line-through'
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
                         },
                     ]
                     
                 },
                 {
-                    title: "master1",
-                    price: "100$",
+                    title: "advanced",
+                    price: "$45",
                     per: "per month",
-                    desc: "The best price/quantity plan",
-                    isNew: true,
+                    isNew: false,
                     color: "item-background-green",
                     lists: [
                         {
                             content: "Photo sharing school",
+                            
+                        },
+                        {
+                            content: "Drop out ramen hustle",
+                            
+                        },
+                        {
+                            content: "Coworking viral landing",
+                            
+                        },
+                        {
+                            content: "Crush revenue traction",
                             isLineThrough: 'line-through'
                         },
                         {
-                            content: "Photo sharing school",
+                            content: "User base minimum viable",
                             isLineThrough: 'line-through'
                         },
                         {
-                            content: "Photo sharing school",
+                            content: "Lorem ipsum dolor",
                             isLineThrough: 'line-through'
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
                         },
                     ]
                     
                 },
                 {
-                    title: "master1",
-                    price: "100$",
-                    per: "per month",
-                    desc: "",
-                    isNew: false,
-                    color: "item-background-blue-dark",
-                    lists: [
-                        {
-                            content: "Photo sharing school",
-                            isLineThrough: 'line-through'
-                        },
-                        {
-                            content: "Photo sharing school",
-                            isLineThrough: 'line-through'
-                        },
-                        {
-                            content: "Photo sharing school",
-                            isLineThrough: 'line-through'
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                    ]
-                    
-                },
-                {
-                    title: "master1",
+                    title: "master",
                     price: "100$",
                     per: "per month",
                     desc: "The best price/quantity plan",
                     isNew: true,
+                    color: "item-background-blue-dark",
+                    lists: [
+                        {
+                            content: "Photo sharing school",
+                            
+                        },
+                        {
+                            content: "Drop out ramen hustle",
+                            
+                        },
+                        {
+                            content: "Coworking viral landing",
+                            
+                        },
+                        {
+                            content: "Crush revenue traction",
+                            isLineThrough: 'line-through'
+                        },
+                        {
+                            content: "User base minimum viable",
+                            isLineThrough: 'line-through'
+                        },
+                        {
+                            content: "Lorem ipsum dolor",
+                            isLineThrough: 'line-through'
+                        },
+                    ]
+                    
+                },
+                {
+                    title: "insane",
+                    price: "$1399",
+                    per: "per month",
+                    desc: "",
+                    isNew: false,
                     color: "item-background-purple",
                     lists: [
                         {
                             content: "Photo sharing school",
+                            
+                        },
+                        {
+                            content: "Drop out ramen hustle",
+                            
+                        },
+                        {
+                            content: "Coworking viral landing",
+                            
+                        },
+                        {
+                            content: "Crush revenue traction",
                             isLineThrough: 'line-through'
                         },
                         {
-                            content: "Photo sharing school",
+                            content: "User base minimum viable",
                             isLineThrough: 'line-through'
                         },
                         {
-                            content: "Photo sharing school",
+                            content: "Lorem ipsum dolor",
                             isLineThrough: 'line-through'
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
-                        },
-                        {
-                            content: "Photo sharing school",
                         },
                     ]
                     
@@ -612,7 +662,7 @@ export default {
             ],
             teams:[
                 {
-                    name: "DD Tung",
+                    name: "Emerson Anderson",
                     desc: "Senior Sales Manager",
                     phone: "+1 (987) 1625346"
                 },
@@ -691,8 +741,8 @@ export default {
             ],
             optionOurCaseStudies:[
                 {text: "all"},
-                {text: "active but"},
                 {text: "hover but"},
+                {text: "active but"},
                 {text: "caregory 3"}
             ],
             activeOption: 0

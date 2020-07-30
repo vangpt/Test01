@@ -2,7 +2,6 @@
     <div id="app">
         <top-area></top-area>
         <menu-comp></menu-comp>
-        <!-- <menu-res/> -->
         <slider/>
         <home/>
         <footer-comp/>
