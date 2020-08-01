@@ -1,66 +1,58 @@
 <template>
     <div id="slider">
-        <img class="img-slide" src="../assets/imgs/background-slide.jpg" alt="" height="630">
-        <div class="array-left">
-                <a href="#"><img src="../assets/imgs/array-left.png" alt=""></a>
+        <img
+            class="img-slide"
+            src="../assets/imgs/background-slide.jpg"
+            alt=""
+            height="630"
+        />
+        <div class="arrow-left">
+            <a href="#"><img src="../assets/imgs/arrow-left.png" alt=""/></a>
         </div>
-        <div class="array-right">
-            <a href="#"><img src="../assets/imgs/array-right.png" alt=""></a>
+        <div class="arrow-right">
+            <a href="#"><img src="../assets/imgs/arrow-right.png" alt=""/></a>
         </div>
         <div class="box">
-            
             <div class="slider-content">
-                <h1><span class="font-light">the</span><span class="font-weight"> gem.</span></h1>
-                <h1><span class="font-light">the</span><span class="font-weight"> opportunity.</span></h1>
+                <h1>
+                    <span class="font-light">the</span
+                    ><span class="font-weight"> gem.</span>
+                </h1>
+                <h1>
+                    <span class="font-light">the</span
+                    ><span class="font-weight"> opportunity.</span>
+                </h1>
                 <div class="desc">Step Forward, Lead The Innovation</div>
                 <div class="button">
                     <button><i class="fa fa-diamond"></i> our services</button>
                 </div>
             </div>
-        </div>  
+        </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: "slider",
+    name: "slider"
 };
 </script>
 
 <style lang="scss">
 @import "../styles/varibles";
 @import "../styles/mixin";
-#slider{
+#slider {
     border-top: 1px solid #ced3d6;
-    position: relative;
-    font-family: 'Montserrat', sans-serif;
-    .array-right,
-    .array-left {
-        position: absolute;
-        top: 50%;
-        z-index: 2;
-        transform: translateY(-50%);
-        a {
-            img {
-                width: 30px;
-            }
-        }
-    }
-    .array-right {
-        right: 20px;
-    }
-    .array-left {
-        left: 20px;
-    }
+    font-family: "Montserrat", sans-serif;
+    @include custom-slide;
 
-    .img-slide{
+    .img-slide {
         width: 100%;
         height: auto;
     }
-    .box{
+    .box {
         max-width: 1170px;
         width: 100%;
-        margin:auto;
+        margin: auto;
         text-transform: uppercase;
         position: absolute;
         top: 50%;
@@ -68,50 +60,48 @@ export default {
         z-index: 1;
         transform: translate(-50%, -50%);
     }
-    .slider-content{
-        h1{
+    .slider-content {
+        h1 {
             color: #3c3950;
             font-size: 4vw;
-            padding:0;
+            padding: 0;
             margin: 0;
         }
-        .desc{
+        .desc {
             font-size: 1.5vw;
             margin-top: 50px;
             margin-bottom: 65px;
             color: #3c3950;
             font-weight: 200;
         }
-        .button{
-            button{
+        .button {
+            button {
                 @include custom-button(50px, 250px, $blue-light, 10px);
                 text-transform: uppercase;
-                font-weight:bold;
+                font-weight: bold;
                 font-size: 19px;
             }
-            button:hover{
+            button:hover {
                 background-color: $blue-dark;
             }
         }
-        
     }
-    
 }
 
-@media (max-width: 1200px){
-    .box{
-        .slider-content{
+@media (max-width: 1200px) {
+    .box {
+        .slider-content {
             margin-left: 30px;
-            h1{
+            h1 {
                 font-size: 40px !important;
             }
-            .desc{
+            .desc {
                 font-size: 16px !important;
                 margin-top: 25px !important;
                 margin-bottom: 25px !important;
             }
-            .button{
-                button{
+            .button {
+                button {
                     width: 180px !important;
                     height: 30px !important;
                     font-size: 14px !important;
@@ -121,14 +111,13 @@ export default {
     }
 }
 
-@media (max-width: 768px){
-    .box{
-        .slider-content{
-            h1{
+@media (max-width: 768px) {
+    .box {
+        .slider-content {
+            h1 {
                 font-size: 30px !important;
             }
-            .desc{
-                
+            .desc {
                 margin-top: 15px !important;
                 margin-bottom: 15px !important;
             }
@@ -136,27 +125,28 @@ export default {
     }
 }
 
-@media (max-width: 576px){
-    .array-left, .array-right{
-        a{
-            img{
+@media (max-width: 576px) {
+    .arrow-left,
+    .arrow-right {
+        a {
+            img {
                 width: 20px !important;
             }
         }
     }
-    .box{
-        .slider-content{
+    .box {
+        .slider-content {
             margin-left: 10px !important;
-            h1{
+            h1 {
                 font-size: 16px !important;
             }
-            .desc{
+            .desc {
                 font-size: 12px !important;
                 margin-top: 5px !important;
                 margin-bottom: 5px !important;
             }
-            .button{
-                button{
+            .button {
+                button {
                     width: 150px !important;
                     height: 20px !important;
                     font-size: 12px !important;
