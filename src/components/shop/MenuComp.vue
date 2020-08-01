@@ -1,46 +1,52 @@
 <template>
-<div id="menu">
-    <div class="container">
-        <div class="content">
-            <div class="icon-menu" >
-                <i class="fa fa-bars" @click="toggleMenu"></i>
-            </div>
-            <ul>
-                <li v-for="(item, index) in menu" :key="index">
-                    <a :href="item.link">{{item.name}}</a>
-                </li>
-            </ul> 
-            <div class="icon">
-                <a href="#"><img src="../assets/imgs/uk.png" alt="" height="13px"></a>
-                <a href="#"><i class="fa fa-search"></i></a>
-                <a href="#"><i class="fa fa-cart-arrow-down"></i></a>
-                <div class="icon-tag">
-                    <div class="triangle-left"></div>
-                    <div class="rectangle">2</div>
+    <div id="menu">
+        <div class="container">
+            <div class="content">
+                <div class="icon-menu">
+                    <i class="fa fa-bars" @click="toggleMenu"></i>
+                </div>
+                <div class="logo">
+                    <a href="#"
+                        ><img src="../../assets/imgs/logo1.png" width="41" />
+                        <span class="font-light">the</span
+                        ><span class="font-bold">gem</span></a
+                    >
+                </div>
+                <ul>
+                    <li v-for="(item, index) in menu" :key="index">
+                        <a :href="item.link">{{ item.name }}</a>
+                    </li>
+                </ul>
+                <div class="icon">
+                    <a href="#"
+                        ><img
+                            src="../../assets/imgs/uk.png"
+                            alt=""
+                            height="13px"
+                    /></a>
+                    <a href="#"><i class="fa fa-search"></i></a>
+                    <a href="#"><i class="fa fa-cart-arrow-down"></i></a>
+                    <div class="icon-tag">
+                        <div class="triangle-left"></div>
+                        <div class="rectangle">2</div>
+                    </div>
                 </div>
             </div>
-            <div class="logo">
-                <a href="#"><img src="../assets/imgs/logo1.png" width="41"> <span class="font-light">the</span><span class="font-bold">gem</span></a>
-            </div>
+            <menu-res v-if="isShowMenu" v-on:toggleMenu="toggleMenu" />
         </div>
-        <menu-res 
-            v-if="isShowMenu"
-			v-on:toggleMenu="toggleMenu"
-        />
     </div>
-</div>
 </template>
 
 <script>
-import MenuRes from "./MenuRes";
+import MenuRes from "../MenuRes";
 export default {
     name: "menu-comp",
-    components:{
+    components: {
         MenuRes
     },
     data() {
         return {
-            menu:[
+            menu: [
                 {
                     name: "home",
                     link: "#"
@@ -70,11 +76,11 @@ export default {
                     link: "#"
                 }
             ],
-            isShowMenu: false,
-        }
+            isShowMenu: false
+        };
     },
-    methods:{
-        toggleMenu(){
+    methods: {
+        toggleMenu() {
             this.isShowMenu = !this.isShowMenu;
         }
     }
@@ -82,84 +88,84 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/varibles";
-#menu{
+@import "../../styles/varibles";
+#menu {
     background-color: white;
-    
-    .content{
+
+    .content {
         display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
         padding: 30px 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: "Montserrat", sans-serif;
         .icon-menu {
             display: none;
             i {
                 font-size: 30px;
             }
         }
-        ul{
-            li{
-                display:inline-block;
+        ul {
+            margin-left: 50px;
+            li {
+                display: inline-block;
                 margin-right: 50px;
-                a{
+                a {
                     font-size: 14px;
-                    font-weight:bold;
+                    font-weight: bold;
                     text-transform: uppercase;
                     color: $black-light;
-                    transition: ease .5s;
+                    transition: ease 0.5s;
                 }
-                a:hover{
+                a:hover {
                     color: $blue-light;
                 }
             }
-            li:last-child{
+            li:last-child {
                 margin-right: 0;
             }
         }
-        .logo{
-            a{
-                font-size:27px;
+        .logo {
+            a {
+                font-size: 27px;
                 color: $black-light;
-                text-transform: uppercase;  
-                img{
+                text-transform: uppercase;
+                img {
                     vertical-align: middle;
                 }
             }
         }
-        
-        .icon{
+
+        .icon {
             display: flex;
             align-items: center;
-            margin-left: -20px;
-            a:first-child{
-                img{
+            a:first-child {
+                img {
                     margin-right: 20px;
                 }
             }
-            a:nth-child(2){
-                i{
+            a:nth-child(2) {
+                i {
                     font-size: 22px;
-                    margin-right: 20px
+                    margin-right: 20px;
                 }
             }
-            a:nth-child(3){
-                i{
+            a:nth-child(3) {
+                i {
                     font-size: 22px;
-                    margin-right: 5px
+                    margin-right: 5px;
                 }
             }
-            .icon-tag{
+            .icon-tag {
                 display: flex;
-                .triangle-left{
+                .triangle-left {
                     width: 0;
                     height: 0;
                     border-top: 10px solid transparent;
                     border-right: 10px solid $blue-light;
                     border-bottom: 10px solid transparent;
                 }
-                .rectangle{
-                    color:white;
+                .rectangle {
+                    color: white;
                     font-size: 14px;
                     text-align: center;
                     line-height: 20px;
@@ -173,20 +179,21 @@ export default {
 }
 
 @media (max-width: 1200px) {
-    #menu{
+    #menu {
         box-shadow: 0 4px 2px -2px gray;
         position: sticky;
         top: 0;
         z-index: 10;
-    .content{
+        .content {
             position: sticky;
             top: 0;
             padding-top: 15px !important;
             padding-bottom: 15px !important;
-            .icon-menu{
+            .icon-menu {
                 display: block;
             }
-            ul, .icon{
+            ul,
+            .icon {
                 display: none;
             }
         }

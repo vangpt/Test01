@@ -1,0 +1,350 @@
+@media (max-width: 1200px) {
+    #home {
+        #ad {
+            .ad {
+                flex-direction: column;
+                .desc {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        #open-vacanies {
+            .open-vacanies {
+                .teams {
+                    flex: 0 0 100% !important;
+                }
+                .vacanies {
+                    margin-top: 50px;
+                    flex: 0 0 100% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    #home {
+        #counters {
+            .content-counters {
+                .item {
+                    flex: 0 0 50% !important;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    #home {
+        #open-vacanies {
+            .open-vacanies {
+                .vacanies {
+                    .position {
+                        ul {
+                            // justify-content: center;
+                        }
+                    }
+                    .desc {
+                        .detail {
+                            img {
+                                flex: 0 0 100% !important;
+                            }
+                            .more-detail {
+                                margin-top: 40px;
+                                flex: 0 0 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #home {
+        #qf {
+            .qf {
+                .element {
+                    flex: 0 0 100% !important;
+                }
+            }
+        }
+        #why-choosing-us {
+            .box-article {
+                article {
+                    flex: 0 0 45% !important;
+                    border-top: 1px solid #5f727f !important;
+                }
+                article:nth-child(1) {
+                    border: none !important;
+                }
+                article:nth-child(2) {
+                    border: none !important;
+                }
+            }
+        }
+        #three-col {
+            .item {
+                flex: 0 0 100% !important;
+            }
+        }
+        #our-case-studies {
+            .options {
+                li {
+                    width: 35%;
+                    min-width: 140px;
+                    margin-bottom: 20px !important;
+                    padding-top: 10px !important;
+                    padding-bottom: 10px !important  ;
+                }
+            }
+        }
+        #core-competence {
+            .core-content {
+                .bg-items {
+                    .items {
+                        .item {
+                            flex: 0 0 100% !important;
+                            border-bottom: 1px dashed $blue-light;
+                        }
+                        .item:last-child {
+                            border: none;
+                        }
+                        .item:nth-child(1)::before,
+                        .item:nth-child(1)::after,
+                        .item:nth-child(2)::after,
+                        .item:nth-child(3)::after {
+                            display: none !important;
+                        }
+                    }
+                }
+            }
+        }
+        #testtimonials {
+            .content-test {
+                width: 100% !important;
+                .name {
+                    margin-top: 20px !important;
+                }
+                .long-desc {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+        #pricing {
+            .content-pri {
+                .items {
+                    justify-content: space-between;
+                    .item {
+                        flex: 0 0 48% !important;
+                    }
+                }
+            }
+        }
+        #ad {
+            .ad {
+                flex-direction: column;
+                .logo {
+                    font-size: 65px;
+                    img {
+                        width: 80px;
+                        vertical-align: bottom !important;
+                        padding-bottom: 5px;
+                    }
+                }
+                .desc {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+                .btn {
+                    button {
+                        width: 350px;
+                    }
+                }
+            }
+        }
+        #open-vacanies {
+            .open-vacanies {
+                .teams {
+                    flex: 0 0 100% !important;
+                }
+                .vacanies {
+                    margin-top: 50px;
+                    flex: 0 0 100% !important;
+                    .position {
+                        ul {
+                            li {
+                                button {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #contact-us {
+            .contact-us {
+                .item {
+                    flex: 0 0 50% !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #home {
+        #counters {
+            .content-counters {
+                .item {
+                    flex: 0 0 100% !important;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        #why-choosing-us {
+            h1 {
+                font-size: $size-title-res !important;
+            }
+            .box-article {
+                article {
+                    flex: 0 0 100% !important;
+                    border-top: 1px solid #5f727f !important;
+                }
+                article:nth-child(2) {
+                    border-top: 1px solid #5f727f !important;
+                }
+            }
+        }
+        #our-case-studies {
+            h1 {
+                font-size: $size-title-res !important;
+            }
+            .options {
+                li {
+                    font-size: 12px;
+                }
+            }
+            .square {
+                .row-1 {
+                    .square-4,
+                    .group-4-squares {
+                        flex: 0 0 100% !important
+                    }
+                }
+                .row-2 {
+                    .square-1 {
+                        flex: 0 0 50% !important;
+                    }
+                    .square-2 {
+                        flex: 0 0 100% !important;
+                    }
+                }
+            }
+            .more-work {
+                justify-content: center !important;
+                .row {
+                    display: none;
+                }
+            }
+        }
+        #core-competence {
+            .core-head {
+                h1 {
+                    font-size: $size-title-res !important;
+                }
+                .desc {
+                    font-size: 14px;
+                }
+            }
+        }
+        #pricing {
+            .content-pri {
+                .title {
+                    font-size: $size-title-res !important;
+                }
+                .items {
+                    .item {
+                        flex: 0 0 100% !important;
+                    }
+                }
+            }
+        }
+        #ad {
+            .ad {
+                flex-direction: column;
+                .logo {
+                    font-size: 40px !important;
+                    img {
+                        width: 40px !important;
+                        vertical-align: top !important;
+                        padding-bottom: 5px;
+                    }
+                }
+                .desc {
+                    font-size: 16px !important;
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                }
+                .btn {
+                    button {
+                        font-size: 12px !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+        #open-vacanies {
+            .open-vacanies {
+                .teams {
+                    .item {
+                        .info {
+                            div:nth-child(1) {
+                                font-size: 20px !important;
+                            }
+                            div:nth-child(2) {
+                                font-size: 14px !important;
+                            }
+                            div:nth-child(3) {
+                                font-size: 12px !important;
+                            }
+                        }
+                    }
+                }
+                .vacanies {
+                    .position {
+                        ul {
+                            justify-content: center;
+                            li {
+                                flex: 0 0 40% !important;   
+                                button {
+                                    width: 100% !important;
+                                    font-size: 10px;
+                                }
+                            }
+                        }
+                    }
+                    .list-item {
+                        ul {
+                            li {
+                                flex: 0 0 100% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #contact-us {
+            .contact-us {
+                .item {
+                    flex: 0 0 100% !important;
+                }
+            }
+        }
+    }
+}

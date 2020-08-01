@@ -1,11 +1,12 @@
 <template>
     <div id="app">
-        <top-area></top-area>
+        <!-- <top-area></top-area>
         <menu-comp></menu-comp>
-        <!-- <menu-res/> -->
-        <slider/>
-        <home/>
-        <footer-comp/>
+        <slider />
+        <home /> -->
+        <!-- <footer-comp /> -->
+        <shop />
+        <footer-bottom />
     </div>
 </template>
 
@@ -14,8 +15,9 @@ import TopArea from "./components/TopArea";
 import MenuComp from "./components/MenuComp";
 import Slider from "./components/Slider";
 import FooterComp from "./components/FooterComp";
-import MenuRes from "./components/MenuRes";
+import FooterBottom from "./components/FooterBottom";
 import Home from "./pages/home";
+import Shop from "./pages/shop";
 export default {
     name: "app",
     components: {
@@ -23,8 +25,9 @@ export default {
         MenuComp,
         Slider,
         Home,
-        MenuRes,
-        FooterComp
+        Shop,
+        FooterComp,
+        FooterBottom
     },
     data() {
         return {

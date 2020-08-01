@@ -2,11 +2,9 @@
     <div id="top-area">
         <div class="container">
             <div class="top-area">
-                <div class="address">
-                    <i class="fa fa-map-marker"></i>&nbsp; 19th Ave New York, NY
-                    95822, USA
+                <div class="phone">
+                    <i class="fa fa-headphones"></i>&nbsp; +1 916-85-2235
                 </div>
-                <div class="phone"><i class="fa fa-headphones"></i>&nbsp; +1 916-85-2235</div>
 
                 <div class="icon">
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -28,24 +26,52 @@
                     <ul>
                         <li>
                             <a href="#">
-                                > Contact Us
+                                <i
+                                    class="fa fa-angle-right"
+                                    aria-hidden="true"
+                                ></i>
+                                My Accout
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                > Sign In
+                                <i
+                                    class="fa fa-angle-right"
+                                    aria-hidden="true"
+                                ></i>
+                                FAQ
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                > More Menu
+                                <i
+                                    class="fa fa-angle-right"
+                                    aria-hidden="true"
+                                ></i>
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i
+                                    class="fa fa-angle-right"
+                                    aria-hidden="true"
+                                ></i>
+                                Newsletter Signup
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i
+                                    class="fa fa-angle-right"
+                                    aria-hidden="true"
+                                ></i>
+                                Shipping Terms
                             </a>
                         </li>
                     </ul>
                 </div>
-                <div class="button">
-                    <button><a href="#">Join Now</a></button>
-                </div>
+                <button>Join Now</button>
             </div>
         </div>
     </div>
@@ -58,8 +84,8 @@ export default {
 </script>
 
 <style lang="scss">
-@import "../styles/mixin";
-@import "../styles/varibles";
+@import "../../styles/mixin";
+@import "../../styles/varibles";
 #top-area {
     border-top: 3px solid $blue-light;
     border-bottom: 1px solid #ced3d6;
@@ -73,6 +99,12 @@ export default {
         font-size: 14px;
         color: #5f727f;
         height: 50px;
+        .phone {
+            width: 110px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
         .icon {
             padding-left: 45px;
             padding-right: 45px;
@@ -104,41 +136,42 @@ export default {
                 }
             }
         }
-        .button {
-            button {
-                @include custom-button(32px, 88px, $black-light, 5px);
-                a {
-                    color: white;
-                    font-family: 'Source Sans Pro', sans-serif;
-                    font-size: 14px;
-                }
-            }
-            button:hover {
-                background-color: #1c1e2b;
-            }
+
+        button {
+            @include custom-button(32px, 88px, $black-light, 5px);
+            color: white;
+            font-family: "Source Sans Pro", sans-serif;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #1c1e2b;
         }
     }
 }
 
 @media (max-width: 1200px) {
     #top-area {
-        .top-area{
-            .address, .phone, .icon{
+        .top-area {
+            .address,
+            .phone,
+            .icon {
                 display: none;
             }
         }
     }
 }
 
-@media (max-width: 576px) {
-    .top-area {
-        display: none !important;
-        // justify-content: center;
-        flex-direction: column;
-        .menu, .button{
-            // padding-top: 10px;
-            // padding-bottom: 10px;
+@media (max-width: 768px) {
+    #top-area {
+        .top-area {
+            display: none !important;
         }
     }
 }
+
+// @media (max-width: 576px) {
+//     .top-area {
+//         display: none !important;
+//     }
+// }
 </style>

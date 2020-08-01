@@ -20,13 +20,10 @@
                 ></a>
             </li>
             <li>
-                <a href="#"
-                    ><i
-                        class="fa fa-tag"
-                       
-                        style="color: #315bd6"
-                    ></i
-                ></a>
+                <div class="icon-tag">
+                    <div class="triangle-left"></div>
+                    <div class="rectangle">2</div>
+                </div>
             </li>
         </ul>
         <ul class="menu">
@@ -132,6 +129,25 @@ export default {
                 font-size: 18px;
                 text-transform: uppercase;
             }
+        }
+    }
+    .icon-tag{
+        display: flex;
+        .triangle-left{
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 10px solid $black-light;
+            border-bottom: 10px solid transparent;
+        }
+        .rectangle{
+            color:white;
+            font-size: 14px;
+            text-align: center;
+            line-height: 20px;
+            width: 30px;
+            height: 20x;
+            background-color: $black-light;
         }
     }
     
