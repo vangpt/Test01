@@ -43,7 +43,8 @@
                                 </li> -->
                                 <li>
                                     <div class="grand-title">
-                                        <a href="#">version</a><i class="fa fa-angle-right"></i>
+                                        <a href="#">version</a
+                                        ><i class="fa fa-angle-right"></i>
                                     </div>
                                 </li>
                                 <li>
@@ -53,69 +54,117 @@
                                 </li>
                                 <li>
                                     <div class="grand-title">
-                                    <a href="#">proin</a><i class="fa fa-angle-right"></i>
+                                        <a href="#">proin</a
+                                        ><i class="fa fa-angle-right"></i>
                                     </div>
                                     <ul class="parents-categories">
                                         <li>
                                             <div class="categroy-title">
                                                 <a href="#" class="text">
-                                                    <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;July 2015
+                                                    <i class="fa fa-square"></i
+                                                    >&nbsp;&nbsp;&nbsp;July 2015
                                                 </a>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="categroy-title">
                                                 <a href="#" class="text">
-                                                    <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;January 2013
+                                                    <i class="fa fa-square"></i
+                                                    >&nbsp;&nbsp;&nbsp;January
+                                                    2013
                                                 </a>
-                                                <i class="fa fa-angle-right"></i>
+                                                <i
+                                                    class="fa fa-angle-right"
+                                                ></i>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="categroy-title">
                                                 <a href="#" class="text">
-                                                    <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;March 2012
+                                                    <i class="fa fa-square"></i
+                                                    >&nbsp;&nbsp;&nbsp;March
+                                                    2012
                                                 </a>
-                                                <i class="fa fa-angle-right"></i>
+                                                <i
+                                                    class="fa fa-angle-right"
+                                                ></i>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="categroy-title">
                                                 <a href="#" class="text">
-                                                    <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;January 2012
+                                                    <i class="fa fa-square"></i
+                                                    >&nbsp;&nbsp;&nbsp;January
+                                                    2012
                                                 </a>
-                                                <i class="fa fa-angle-right"></i>
+                                                <i
+                                                    class="fa fa-angle-right"
+                                                ></i>
                                             </div>
                                             <ul class="child-categories">
                                                 <li>
                                                     <div class="child-title">
-                                                        <a href="#" class="text">
-                                                            <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;July 2015
+                                                        <a
+                                                            href="#"
+                                                            class="text"
+                                                        >
+                                                            <i
+                                                                class="fa fa-square"
+                                                            ></i
+                                                            >&nbsp;&nbsp;&nbsp;July
+                                                            2015
                                                         </a>
-                                                        <i class="fa fa-angle-right"></i>
+                                                        <i
+                                                            class="fa fa-angle-right"
+                                                        ></i>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="child-title">
-                                                        <a href="#" class="text">
-                                                            <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;January 2013
+                                                        <a
+                                                            href="#"
+                                                            class="text"
+                                                        >
+                                                            <i
+                                                                class="fa fa-square"
+                                                            ></i
+                                                            >&nbsp;&nbsp;&nbsp;January
+                                                            2013
                                                         </a>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="child-title">
-                                                        <a href="#" class="text">
-                                                            <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;March 2012
+                                                        <a
+                                                            href="#"
+                                                            class="text"
+                                                        >
+                                                            <i
+                                                                class="fa fa-square"
+                                                            ></i
+                                                            >&nbsp;&nbsp;&nbsp;March
+                                                            2012
                                                         </a>
-                                                        <i class="fa fa-angle-right"></i>
+                                                        <i
+                                                            class="fa fa-angle-right"
+                                                        ></i>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="child-title">
-                                                        <a href="#" class="text">
-                                                            <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;January 2012
+                                                        <a
+                                                            href="#"
+                                                            class="text"
+                                                        >
+                                                            <i
+                                                                class="fa fa-square"
+                                                            ></i
+                                                            >&nbsp;&nbsp;&nbsp;January
+                                                            2012
                                                         </a>
-                                                        <i class="fa fa-angle-right"></i>
+                                                        <i
+                                                            class="fa fa-angle-right"
+                                                        ></i>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -124,12 +173,14 @@
                                 </li>
                                 <li>
                                     <div class="grand-title">
-                                        <a href="#">gravida</a><i class="fa fa-angle-right"></i>
+                                        <a href="#">gravida</a
+                                        ><i class="fa fa-angle-right"></i>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="grand-title">
-                                        <a href="#">nibh vel velit</a><i class="fa fa-angle-right"></i>
+                                        <a href="#">nibh vel velit</a
+                                        ><i class="fa fa-angle-right"></i>
                                     </div>
                                 </li>
                                 <li>
@@ -139,7 +190,8 @@
                                 </li>
                                 <li>
                                     <div class="grand-title">
-                                        <a href="#">aliquet</a><i class="fa fa-angle-right"></i>
+                                        <a href="#">aliquet</a
+                                        ><i class="fa fa-angle-right"></i>
                                     </div>
                                 </li>
                                 <li>
@@ -150,7 +202,10 @@
                             </ul>
                         </div>
                         <div class="search d-flex">
-                            <input type="text" placeholder="Search for product...">
+                            <input
+                                type="text"
+                                placeholder="Search for product..."
+                            />
                             <button><i class="fa fa-search"></i></button>
                         </div>
                         <div class="filter-price">
@@ -209,7 +264,9 @@
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="info__star">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
@@ -230,13 +287,18 @@
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="info__star">
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
                                             <i class="fa fa-star"></i>
-                                            <i class="fa fa-star" style="color: #b6c6c9"></i>
+                                            <i
+                                                class="fa fa-star"
+                                                style="color: #b6c6c9"
+                                            ></i>
                                         </div>
                                         <div class="price">$35.00</div>
                                     </div>
@@ -250,7 +312,9 @@
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="price">$35.00</div>
                                     </div>
                                 </div>
@@ -262,7 +326,12 @@
                                 <i class="fa fa-caret-down"></i>
                             </div>
                             <div class="list-tags">
-                                <a v-for="(item, index) in tags" :key="index" :href="item.link">{{item.text}}</a>
+                                <a
+                                    v-for="(item, index) in tags"
+                                    :key="index"
+                                    :href="item.link"
+                                    >{{ item.text }}</a
+                                >
                             </div>
                         </div>
                         <div class="featured">
@@ -276,11 +345,12 @@
                                         <img
                                             src="../assets/imgs/shop/featured-product/product1.png"
                                             alt=""
-                                           
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="info__price">$35.00</div>
                                     </div>
                                 </div>
@@ -294,7 +364,9 @@
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="info__price">$35.00</div>
                                     </div>
                                 </div>
@@ -308,7 +380,9 @@
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="info__price">$35.00</div>
                                     </div>
                                 </div>
@@ -318,14 +392,19 @@
                             <div class="alert">
                                 <div class="alert__price">$5</div>
                                 <div class="alert__title">
-                                    coupon<br>
+                                    coupon<br />
                                     <span>for free</span>
                                 </div>
                                 <div class="alert__desc">
-                                    Just Signup For Our Newsletter And Get $5 To Your Account
+                                    Just Signup For Our Newsletter And Get $5 To
+                                    Your Account
                                 </div>
                                 <div class="alert__input">
-                                    <input type="text" placeholder="Enter Your Email..." value="">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Your Email..."
+                                        value=""
+                                    />
                                     <button>sign up me!</button>
                                 </div>
                             </div>
@@ -341,11 +420,12 @@
                                         <img
                                             src="../assets/imgs/shop/featured-product/product1.png"
                                             alt=""
-                                           
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="info__price">$35.00</div>
                                     </div>
                                 </div>
@@ -359,7 +439,9 @@
                                         />
                                     </div>
                                     <div class="info">
-                                        <div class="info__name"><a href="#">product title here</a></div>
+                                        <div class="info__name">
+                                            <a href="#">product title here</a>
+                                        </div>
                                         <div class="info__price">$35.00</div>
                                     </div>
                                 </div>
@@ -380,7 +462,10 @@
                         <article>
                             <div class="list-products">
                                 <div class="item">
-                                    <img src="../assets/imgs/shop/list-product/gray-mid.png" alt="">
+                                    <img
+                                        src="../assets/imgs/shop/list-product/gray-mid.png"
+                                        alt=""
+                                    />
                                     <div class="box">
                                         <div class="desc">
                                             <div class="name">
@@ -392,7 +477,10 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="../assets/imgs/shop/list-product/gray-mid.png" alt="">
+                                    <img
+                                        src="../assets/imgs/shop/list-product/gray-mid.png"
+                                        alt=""
+                                    />
                                     <div class="box">
                                         <div class="desc">
                                             <div class="name">
@@ -404,7 +492,10 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="../assets/imgs/shop/list-product/gray-mid.png" alt="">
+                                    <img
+                                        src="../assets/imgs/shop/list-product/gray-mid.png"
+                                        alt=""
+                                    />
                                     <div class="box">
                                         <div class="desc">
                                             <div class="name">
@@ -416,7 +507,10 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="../assets/imgs/shop/list-product/gray-mid.png" alt="">
+                                    <img
+                                        src="../assets/imgs/shop/list-product/gray-mid.png"
+                                        alt=""
+                                    />
                                     <div class="box">
                                         <div class="desc">
                                             <div class="name">
@@ -428,7 +522,10 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="../assets/imgs/shop/list-product/gray-mid.png" alt="">
+                                    <img
+                                        src="../assets/imgs/shop/list-product/gray-mid.png"
+                                        alt=""
+                                    />
                                     <div class="box">
                                         <div class="desc">
                                             <div class="name">
@@ -440,7 +537,10 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <img src="../assets/imgs/shop/list-product/gray-mid.png" alt="">
+                                    <img
+                                        src="../assets/imgs/shop/list-product/gray-mid.png"
+                                        alt=""
+                                    />
                                     <div class="box">
                                         <div class="desc">
                                             <div class="name">
@@ -453,8 +553,12 @@
                                 </div>
                             </div>
                             <div class="arrow">
-                                <div class="d-flex-center"><i class="fa fa-angle-left"></i></div>
-                                <div class="d-flex-center"><i class="fa fa-angle-right"></i></div>
+                                <div class="d-flex-center">
+                                    <i class="fa fa-angle-left"></i>
+                                </div>
+                                <div class="d-flex-center">
+                                    <i class="fa fa-angle-right"></i>
+                                </div>
                             </div>
                         </article>
                         <article>
@@ -462,13 +566,21 @@
                                 <div class="sort-left d-flex-align">
                                     <div class="box-select">
                                         <select>
-                                            <option value="">Defult sorting</option>
-                                            <option value="">Defult sorting 1</option>
+                                            <option value=""
+                                                >Defult sorting</option
+                                            >
+                                            <option value=""
+                                                >Defult sorting 1</option
+                                            >
                                         </select>
                                     </div>
                                     <span>DESC&nbsp;&nbsp;&nbsp;</span>
-                                    <div class="btn-switch d-flex-align" :class="{'sort-desc': isSortDesc}">
-                                        <i class="fa fa-circle"
+                                    <div
+                                        class="btn-switch d-flex-align"
+                                        :class="{ 'sort-desc': isSortDesc }"
+                                    >
+                                        <i
+                                            class="fa fa-circle"
                                             @click="setDesc"
                                         ></i>
                                     </div>
@@ -480,7 +592,9 @@
                                     </div>
                                     <div class="box-select">
                                         <select>
-                                            <option value="">Show 12 on page</option>
+                                            <option value=""
+                                                >Show 12 on page</option
+                                            >
                                         </select>
                                     </div>
                                 </div>
@@ -488,33 +602,101 @@
                         </article>
                         <article class="list-product-2">
                             <div class="items">
-                                <div class="box"  v-for="(element, index) in listProduct2" :key="index">
+                                <div
+                                    class="box"
+                                    v-for="(element, index) in listProduct2"
+                                    :key="index"
+                                >
                                     <div class="item">
                                         <div class="item__image">
-                                            <img :src="require(`../assets/imgs/shop/list-product/${element.image}`)" alt="">
+                                            <img
+                                                :src="
+                                                    require(`../assets/imgs/shop/list-product/${element.image}`)
+                                                "
+                                                alt=""
+                                            />
                                             <div class="background-blue"></div>
-                                            <div v-if="element.isSale" class="sale-abso d-flex-center">sale!</div>
-                                            <div v-if="element.isNew" class="new-abso d-flex-center" :class="{'new-sale-abso' : element.isSale && element.isNew}">new</div>
+                                            <div
+                                                v-if="element.isSale"
+                                                class="sale-abso d-flex-center"
+                                            >
+                                                sale!
+                                            </div>
+                                            <div
+                                                v-if="element.isNew"
+                                                class="new-abso d-flex-center"
+                                                :class="{
+                                                    'new-sale-abso':
+                                                        element.isSale &&
+                                                        element.isNew
+                                                }"
+                                            >
+                                                new
+                                            </div>
                                         </div>
                                         <a :href="element.link">
                                             <div class="info">
-                                                <div v-if="element.isStar" class="info__star">
+                                                <div
+                                                    v-if="element.isStar"
+                                                    class="info__star"
+                                                >
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                     <i class="fa fa-star"></i>
                                                 </div>
-                                                <div v-if="element.isBorder" class="info__border">
+                                                <div
+                                                    v-if="element.isBorder"
+                                                    class="info__border"
+                                                ></div>
+                                                <div class="info__name">
+                                                    {{ element.nameProduct }}
                                                 </div>
-                                                <div class="info__name">{{element.nameProduct}}</div>
-                                                <div class="info__price">{{element.priceProduct}}</div>
-                                                <div  v-if="element.isViewCart" class="info__view"><i class="fa fa-list-ul"></i>&nbsp;<a href="#">View Cart</a></div>
-                                                <div v-if="element.isViewWishList" class="info__view"><i class="fa fa-star-o"></i>&nbsp;<a href="#">View Wishlist</a></div>
-                                                <div v-if="element.isIcon" class="info__icon">
-                                                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                                                    <a href="#"><i class="fa fa-list-alt"></i></a>
-                                                    <i class="fa fa-heart-o" :class="{'heart-red' : isHeart}" @click="setHeart"></i>
+                                                <div class="info__price">
+                                                    {{ element.priceProduct }}
+                                                </div>
+                                                <div
+                                                    v-if="element.isViewCart"
+                                                    class="info__view"
+                                                >
+                                                    <i class="fa fa-list-ul"></i
+                                                    >&nbsp;<a href="#"
+                                                        >View Cart</a
+                                                    >
+                                                </div>
+                                                <div
+                                                    v-if="
+                                                        element.isViewWishList
+                                                    "
+                                                    class="info__view"
+                                                >
+                                                    <i class="fa fa-star-o"></i
+                                                    >&nbsp;<a href="#"
+                                                        >View Wishlist</a
+                                                    >
+                                                </div>
+                                                <div
+                                                    v-if="element.isIcon"
+                                                    class="info__icon"
+                                                >
+                                                    <a href="#"
+                                                        ><i
+                                                            class="fa fa-shopping-cart"
+                                                        ></i
+                                                    ></a>
+                                                    <a href="#"
+                                                        ><i
+                                                            class="fa fa-list-alt"
+                                                        ></i
+                                                    ></a>
+                                                    <i
+                                                        class="fa fa-heart-o"
+                                                        :class="{
+                                                            'heart-red': isHeart
+                                                        }"
+                                                        @click="setHeart"
+                                                    ></i>
                                                 </div>
                                             </div>
                                         </a>
@@ -522,13 +704,23 @@
                                 </div>
                             </div>
                             <div class="pagination">
-                                <div class="d-flex-center"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+                                <div class="d-flex-center">
+                                    <i
+                                        class="fa fa-angle-left"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
                                 <div class="d-flex-center pagi-active">1</div>
                                 <div class="d-flex-center">2</div>
                                 <div class="d-flex-center">3</div>
                                 <div class="d-flex-center">4</div>
                                 <div class="d-flex-center">5</div>
-                                <div class="d-flex-center"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                                <div class="d-flex-center">
+                                    <i
+                                        class="fa fa-angle-right"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
                             </div>
                         </article>
                     </section>
@@ -541,37 +733,55 @@
                         <div class="slider-imges">
                             <div class="item">
                                 <a href="#">
-                                    <img src="../assets/imgs/img-testtimonials.png" alt="">
+                                    <img
+                                        src="../assets/imgs/img-testtimonials.png"
+                                        alt=""
+                                    />
                                     <div class="background-black"></div>
                                 </a>
                             </div>
                             <div class="item">
                                 <a href="#">
-                                    <img src="../assets/imgs/img-testtimonials.png" alt="">
+                                    <img
+                                        src="../assets/imgs/img-testtimonials.png"
+                                        alt=""
+                                    />
                                     <div class="background-black"></div>
                                 </a>
                             </div>
                             <div class="item">
                                 <a href="#">
-                                    <img src="../assets/imgs/img-testtimonials.png" alt="">
+                                    <img
+                                        src="../assets/imgs/img-testtimonials.png"
+                                        alt=""
+                                    />
                                     <div class="background-black"></div>
                                 </a>
                             </div>
                             <div class="item">
                                 <a href="#">
-                                    <img src="../assets/imgs/img-testtimonials.png" alt="">
+                                    <img
+                                        src="../assets/imgs/img-testtimonials.png"
+                                        alt=""
+                                    />
                                     <div class="background-black"></div>
                                 </a>
                             </div>
                             <div class="item">
                                 <a href="#">
-                                    <img src="../assets/imgs/img-testtimonials.png" alt="">
+                                    <img
+                                        src="../assets/imgs/img-testtimonials.png"
+                                        alt=""
+                                    />
                                     <div class="background-black"></div>
                                 </a>
                             </div>
                             <div class="item">
                                 <a href="#">
-                                    <img src="../assets/imgs/img-testtimonials.png" alt="">
+                                    <img
+                                        src="../assets/imgs/img-testtimonials.png"
+                                        alt=""
+                                    />
                                     <div class="background-black"></div>
                                 </a>
                             </div>
@@ -589,27 +799,157 @@
                 <div class="container">
                     <div class="latest__title">latest news</div>
                     <div class="latest__products">
-                        <div class="box">
-                            <div class="item"></div>
-                        </div>
-                        <div class="box">
-                            <div class="item"></div>
-                        </div>
-                        <div class="box">
-                            <div class="item"></div>
-                        </div>
-                        <div class="box">
-                            <div class="item"></div>
+                        <div
+                            class="box"
+                            v-for="(item, index) in listLatest"
+                            :key="index"
+                        >
+                            <div class="item">
+                                <div class="item-image">
+                                    <img
+                                        :src="
+                                            require(`../assets/imgs/${item.image}`)
+                                        "
+                                        alt=""
+                                        width="262"
+                                        height="190"
+                                    />
+                                </div>
+                                <div class="item-content">
+                                    <div class="item-content__head">
+                                        <div>
+                                            By: <span>{{ item.by }}</span>
+                                        </div>
+                                        <div>
+                                            <i
+                                                class="fa fa-comment"
+                                                aria-hidden="true"
+                                                >&nbsp;&nbsp;&nbsp;{{
+                                                    item.countComments
+                                                }}</i
+                                            >
+                                            <i
+                                                class="fa fa-heart"
+                                                aria-hidden="true"
+                                                @click="setHeartLatest(index)"
+                                                :class="{
+                                                    'fa-heart-red':
+                                                        item.countHeart != 0
+                                                }"
+                                                >&nbsp;&nbsp;&nbsp;{{
+                                                    item.countHeart
+                                                }}</i
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="item-content__title"
+                                        v-html="item.title"
+                                    ></div>
+                                    <div
+                                        class="item-content__desc"
+                                        v-html="item.desc"
+                                    ></div>
+                                    <div class="item-content__button">
+                                        <i
+                                            class="fa fa-share-alt-square"
+                                            aria-hidden="true"
+                                        ></i>
+                                        <a :href="item.link">read more</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="latest__border">
-                    </div>
+                    <div class="latest__border"></div>
                     <div class="latest__info">
                         <div class="box">
-                            <div class="item"></div>
+                            <div class="info-item">
+                                <div class="info-item__title">
+                                    <div>
+                                        we accept
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="../assets/imgs/we-accept.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <div class="info-item__desc">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et
+                                </div>
+                                <div class="info-item__rectangle">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="item"></div>
+                            <div class="info-item">
+                                <div class="info-item__title">
+                                    <div>
+                                        shipping methods
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="../assets/imgs/method-ship.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <ul class="info-item__list">
+                                    <li>
+                                        <i
+                                            class="fa fa-check-square-o"
+                                            aria-hidden="true"
+                                        ></i
+                                        >&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
+                                        amet, consectetur
+                                    </li>
+                                    <li>
+                                        <i
+                                            class="fa fa-check-square-o"
+                                            aria-hidden="true"
+                                        ></i
+                                        >&nbsp;&nbsp;&nbsp;Adipisicing elit, sed
+                                        do eiusmod tempor
+                                    </li>
+                                    <li>
+                                        <i
+                                            class="fa fa-check-square-o"
+                                            aria-hidden="true"
+                                        ></i
+                                        >&nbsp;&nbsp;&nbsp;Incididunt ut labore
+                                        et dolore magna aliqua
+                                    </li>
+                                    <li>
+                                        <i
+                                            class="fa fa-check-square-o"
+                                            aria-hidden="true"
+                                        ></i
+                                        >&nbsp;&nbsp;&nbsp;Enim ad minim veniam,
+                                        quis nostrud exercitation
+                                    </li>
+                                    <li>
+                                        <i
+                                            class="fa fa-check-square-o"
+                                            aria-hidden="true"
+                                        ></i
+                                        >&nbsp;&nbsp;&nbsp;ullamco laboris nisi
+                                        ut aliquip ex ea commodo
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -618,17 +958,20 @@
                 <div class="container">
                     <div class="box-more-product">
                         <div class="element">
-                            <div class="element__title">new Products <i class="fa fa-caret-down"></i></div>
+                            <div class="element__title">
+                                new Products <i class="fa fa-caret-down"></i>
+                            </div>
                             <div class="element__item">
                                 <div class="avatar">
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                         <div class="info__star">
@@ -647,11 +990,12 @@
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                         <div class="info__star">
@@ -669,11 +1013,12 @@
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                     </div>
@@ -681,17 +1026,21 @@
                             </div>
                         </div>
                         <div class="element">
-                            <div class="element__title">top rated Products <i class="fa fa-caret-down"></i></div>
+                            <div class="element__title">
+                                top rated Products
+                                <i class="fa fa-caret-down"></i>
+                            </div>
                             <div class="element__item">
                                 <div class="avatar">
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                         <div class="info__star">
@@ -710,11 +1059,12 @@
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                         <div class="info__star">
@@ -732,11 +1082,12 @@
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                     </div>
@@ -744,17 +1095,20 @@
                             </div>
                         </div>
                         <div class="element">
-                            <div class="element__title">on sale <i class="fa fa-caret-down"></i></div>
+                            <div class="element__title">
+                                on sale <i class="fa fa-caret-down"></i>
+                            </div>
                             <div class="element__item">
                                 <div class="avatar">
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                         <div class="info__star">
@@ -773,11 +1127,12 @@
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                         <div class="info__star">
@@ -795,11 +1150,12 @@
                                     <img
                                         src="../assets/imgs/shop/featured-product/product1.png"
                                         alt=""
-                                        
                                     />
                                 </div>
                                 <div class="info">
-                                    <div class="info__name"><a href="#">product title here</a></div>
+                                    <div class="info__name">
+                                        <a href="#">product title here</a>
+                                    </div>
                                     <div class="info__price">
                                         <span>$35.00</span>
                                     </div>
@@ -814,7 +1170,10 @@
                     <div class="box-advertise">
                         <div class="advertise-left">
                             <div class="advertise-left__image">
-                                <img src="../assets/imgs/icon-diamond.png" alt=""> 
+                                <img
+                                    src="../assets/imgs/icon-diamond.png"
+                                    alt=""
+                                />
                             </div>
                             <div class="advertise-left__text">
                                 sell more <span>with the gem shop!</span>
@@ -822,7 +1181,6 @@
                         </div>
                         <button>purchase now !</button>
                     </div>
-
                 </div>
             </section>
         </main>
@@ -846,28 +1204,28 @@ export default {
     },
     data() {
         return {
-            listCategories:[
+            listCategories: [
                 {
                     text: "version",
                     link: "#",
-                    categroyies1:[]
+                    categroyies1: []
                 },
                 {
                     text: "lorem ipsum",
                     link: "#",
-                    categroyies1:[]
+                    categroyies1: []
                 },
                 {
                     text: "proin",
                     link: "#",
-                    categroyies1:[
+                    categroyies1: [
                         {
                             text: "proin",
                             link: "#",
-                            categroyies2:[
+                            categroyies2: [
                                 {
                                     text: "proin",
-                                    link: "#",
+                                    link: "#"
                                 }
                             ]
                         }
@@ -876,115 +1234,114 @@ export default {
                 {
                     text: "gravida",
                     link: "#",
-                    categroyies1:[]
+                    categroyies1: []
                 },
                 {
                     text: "nibh vel velit",
                     link: "#",
-                    categroyies1:[]
+                    categroyies1: []
                 },
                 {
                     text: "auctor",
                     link: "#",
-                    categroyies1:[]
+                    categroyies1: []
                 },
                 {
                     text: "aliquet",
                     link: "#",
-                    categroyies1:[]
+                    categroyies1: []
                 },
                 {
                     text: "Aenean",
                     link: "#",
-                    categroyies1:[]
-                },
+                    categroyies1: []
+                }
             ],
-            tags:[
+            tags: [
                 {
-                    link:"#",
+                    link: "#",
                     text: "morbi"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "accumsan "
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "ipsum"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "velit"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "nam"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "tellus"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "aodio"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "tincidunt"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "auctor"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "aornare odi"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "morbi"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "accumsan "
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "ipsum"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "velit"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "nam"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "tellus"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "aodio"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "tincidunt"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "auctor"
                 },
                 {
-                    link:"#",
+                    link: "#",
                     text: "aornare odi"
-                },
-                
+                }
             ],
             isSortDesc: false,
             isHeart: false,
-            listProduct2:[
+            listProduct2: [
                 {
                     image: "product2.png",
                     isSale: true,
@@ -1179,16 +1536,62 @@ export default {
                     isViewCart: false,
                     isViewWishList: false,
                     isIcon: true
+                }
+            ],
+            listLatest: [
+                {
+                    image: "background-gray.jpg",
+                    by: "Admin",
+                    countComments: 0,
+                    countHeart: 0,
+                    title: "<b>5 way:</b> simple blog post",
+                    desc:
+                        "Lorem Ipsum. Proin <br /> gravida nibh vel velit auctor<br />aliquet. Aenean sollicitudin, lorem",
+                    link: "#"
                 },
+                {
+                    image: "background-gray.jpg",
+                    by: "Admin",
+                    countComments: 0,
+                    countHeart: 0,
+                    title: "<b>5 way:</b> simple blog post",
+                    desc:
+                        "Lorem Ipsum. Proin <br /> gravida nibh vel velit auctor<br />aliquet. Aenean sollicitudin, lorem",
+                    link: "#"
+                },
+                {
+                    image: "background-gray.jpg",
+                    by: "Admin",
+                    countComments: 0,
+                    countHeart: 0,
+                    title: "<b>5 way:</b> simple blog post",
+                    desc:
+                        "Lorem Ipsum. Proin <br /> gravida nibh vel velit auctor<br />aliquet. Aenean sollicitudin, lorem",
+                    link: "#"
+                },
+                {
+                    image: "background-gray.jpg",
+                    by: "Admin",
+                    countComments: 0,
+                    countHeart: 0,
+                    title: "<b>5 way:</b> simple blog post",
+                    desc:
+                        "Lorem Ipsum. Proin <br /> gravida nibh vel velit auctor<br />aliquet. Aenean sollicitudin, lorem",
+                    link: "#"
+                }
             ]
-        }
+        };
     },
-    methods:{
-        setDesc(){
+    methods: {
+        setDesc() {
             this.isSortDesc = !this.isSortDesc;
         },
-        setHeart(){
+        setHeart() {
             this.isHeart = !this.isHeart;
+        },
+        setHeartLatest(index) {
+            this.listLatest[index].countHeart =
+                this.listLatest[index].countHeart == 0 ? 1 : 0;
         }
     }
 };
