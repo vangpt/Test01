@@ -96,7 +96,7 @@ export default {
         position: absolute;
         bottom: 0;
         left: 50%;
-        z-index: 100;
+        z-index: 1;
         transform: translateX(-50%);
         max-width: 1210px;
         padding-left: 20px;

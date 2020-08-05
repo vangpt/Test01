@@ -461,93 +461,18 @@
                     <section>
                         <article>
                             <div class="list-products">
-                                <div class="item">
+                                <div class="item" v-for="(item,index) in listProduct" :key="index">
                                     <img
-                                        src="../assets/imgs/shop/list-product/gray-mid.png"
+                                        :src="require(`../assets/imgs/shop/list-product/${item.image}`)"
                                         alt=""
                                     />
                                     <div class="box">
                                         <div class="desc">
                                             <div class="name">
-                                                <a href="#">salddsdes</a>
+                                                <a href="#">{{item.name}}</a>
                                                 <div class="name__border"></div>
                                             </div>
-                                            <div class="number">19 items</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img
-                                        src="../assets/imgs/shop/list-product/gray-mid.png"
-                                        alt=""
-                                    />
-                                    <div class="box">
-                                        <div class="desc">
-                                            <div class="name">
-                                                <a href="#">salddsdes</a>
-                                                <div class="name__border"></div>
-                                            </div>
-                                            <div class="number">19 items</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img
-                                        src="../assets/imgs/shop/list-product/gray-mid.png"
-                                        alt=""
-                                    />
-                                    <div class="box">
-                                        <div class="desc">
-                                            <div class="name">
-                                                <a href="#">salddsdes</a>
-                                                <div class="name__border"></div>
-                                            </div>
-                                            <div class="number">19 items</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img
-                                        src="../assets/imgs/shop/list-product/gray-mid.png"
-                                        alt=""
-                                    />
-                                    <div class="box">
-                                        <div class="desc">
-                                            <div class="name">
-                                                <a href="#">salddsdes</a>
-                                                <div class="name__border"></div>
-                                            </div>
-                                            <div class="number">19 items</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img
-                                        src="../assets/imgs/shop/list-product/gray-mid.png"
-                                        alt=""
-                                    />
-                                    <div class="box">
-                                        <div class="desc">
-                                            <div class="name">
-                                                <a href="#">salddsdes</a>
-                                                <div class="name__border"></div>
-                                            </div>
-                                            <div class="number">19 items</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <img
-                                        src="../assets/imgs/shop/list-product/gray-mid.png"
-                                        alt=""
-                                    />
-                                    <div class="box">
-                                        <div class="desc">
-                                            <div class="name">
-                                                <a href="#">salddsdes</a>
-                                                <div class="name__border"></div>
-                                            </div>
-                                            <div class="number">19 items</div>
+                                            <div class="number">{{item.item}} items</div>
                                         </div>
                                     </div>
                                 </div>
@@ -634,72 +559,72 @@
                                                 new
                                             </div>
                                         </div>
-                                        <a :href="element.link">
-                                            <div class="info">
-                                                <div
-                                                    v-if="element.isStar"
-                                                    class="info__star"
-                                                >
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                    <i class="fa fa-star"></i>
-                                                </div>
-                                                <div
-                                                    v-if="element.isBorder"
-                                                    class="info__border"
-                                                ></div>
-                                                <div class="info__name">
-                                                    {{ element.nameProduct }}
-                                                </div>
-                                                <div class="info__price">
-                                                    {{ element.priceProduct }}
-                                                </div>
-                                                <div
-                                                    v-if="element.isViewCart"
-                                                    class="info__view"
-                                                >
-                                                    <i class="fa fa-list-ul"></i
-                                                    >&nbsp;<a href="#"
-                                                        >View Cart</a
-                                                    >
-                                                </div>
-                                                <div
-                                                    v-if="
-                                                        element.isViewWishList
-                                                    "
-                                                    class="info__view"
-                                                >
-                                                    <i class="fa fa-star-o"></i
-                                                    >&nbsp;<a href="#"
-                                                        >View Wishlist</a
-                                                    >
-                                                </div>
-                                                <div
-                                                    v-if="element.isIcon"
-                                                    class="info__icon"
-                                                >
-                                                    <a href="#"
-                                                        ><i
-                                                            class="fa fa-shopping-cart"
-                                                        ></i
-                                                    ></a>
-                                                    <a href="#"
-                                                        ><i
-                                                            class="fa fa-list-alt"
-                                                        ></i
-                                                    ></a>
-                                                    <i
-                                                        class="fa fa-heart-o"
-                                                        :class="{
-                                                            'heart-red': isHeart
-                                                        }"
-                                                        @click="setHeart"
-                                                    ></i>
-                                                </div>
+                                        <div class="info">
+                                            <div
+                                                v-if="element.isStar"
+                                                class="info__star"
+                                            >
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
-                                        </a>
+                                            <div
+                                                v-if="element.isBorder"
+                                                class="info__border"
+                                            ></div>
+                                            <a :href="element.link">
+                                            <div class="info__name">
+                                                {{ element.nameProduct }}
+                                            </div>
+                                            <div class="info__price">
+                                                {{ element.priceProduct }}
+                                            </div>
+                                            </a>
+                                            <div
+                                                v-if="element.isViewCart"
+                                                class="info__view"
+                                            >
+                                                <i class="fa fa-list-ul"></i
+                                                >&nbsp;<a href="#"
+                                                    >View Cart</a
+                                                >
+                                            </div>
+                                            <div
+                                                v-if="
+                                                    element.isViewWishList
+                                                "
+                                                class="info__view"
+                                            >
+                                                <i class="fa fa-star-o"></i
+                                                >&nbsp;<a href="#"
+                                                    >View Wishlist</a
+                                                >
+                                            </div>
+                                            <div
+                                                v-if="element.isIcon"
+                                                class="info__icon"
+                                            >
+                                                <a href="#"
+                                                    ><i
+                                                        class="fa fa-shopping-cart"
+                                                    ></i
+                                                ></a>
+                                                <a href="#"
+                                                    ><i
+                                                        class="fa fa-list-alt"
+                                                    ></i
+                                                ></a>
+                                                <i
+                                                    class="fa fa-heart-o"
+                                                    :class="{
+                                                        'heart-red': element.isHeart
+                                                    }"
+                                                    @click="setHeart(index)"
+                                                ></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -732,58 +657,70 @@
                         <div class="slider-title">our brands</div>
                         <div class="slider-imges">
                             <div class="item">
-                                <a href="#">
-                                    <img
-                                        src="../assets/imgs/img-testtimonials.png"
-                                        alt=""
-                                    />
-                                    <div class="background-black"></div>
-                                </a>
+                                <div class="content-item">
+                                    <a href="#">
+                                        <img
+                                            src="../assets/imgs/img-testtimonials.png"
+                                            alt=""
+                                        />
+                                        <div class="background-black"></div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <a href="#">
-                                    <img
-                                        src="../assets/imgs/img-testtimonials.png"
-                                        alt=""
-                                    />
-                                    <div class="background-black"></div>
-                                </a>
+                                <div class="content-item">
+                                    <a href="#">
+                                        <img
+                                            src="../assets/imgs/img-testtimonials.png"
+                                            alt=""
+                                        />
+                                        <div class="background-black"></div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <a href="#">
-                                    <img
-                                        src="../assets/imgs/img-testtimonials.png"
-                                        alt=""
-                                    />
-                                    <div class="background-black"></div>
-                                </a>
+                                <div class="content-item">
+                                    <a href="#">
+                                        <img
+                                            src="../assets/imgs/img-testtimonials.png"
+                                            alt=""
+                                        />
+                                        <div class="background-black"></div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <a href="#">
-                                    <img
-                                        src="../assets/imgs/img-testtimonials.png"
-                                        alt=""
-                                    />
-                                    <div class="background-black"></div>
-                                </a>
+                                <div class="content-item">
+                                    <a href="#">
+                                        <img
+                                            src="../assets/imgs/img-testtimonials.png"
+                                            alt=""
+                                        />
+                                        <div class="background-black"></div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <a href="#">
-                                    <img
-                                        src="../assets/imgs/img-testtimonials.png"
-                                        alt=""
-                                    />
-                                    <div class="background-black"></div>
-                                </a>
+                                <div class="content-item">
+                                    <a href="#">
+                                        <img
+                                            src="../assets/imgs/img-testtimonials.png"
+                                            alt=""
+                                        />
+                                        <div class="background-black"></div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="item">
-                                <a href="#">
-                                    <img
-                                        src="../assets/imgs/img-testtimonials.png"
-                                        alt=""
-                                    />
-                                    <div class="background-black"></div>
-                                </a>
+                                <div class="content-item">
+                                    <a href="#">
+                                        <img
+                                            src="../assets/imgs/img-testtimonials.png"
+                                            alt=""
+                                        />
+                                        <div class="background-black"></div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="slider-pagi">
@@ -1341,6 +1278,38 @@ export default {
             ],
             isSortDesc: false,
             isHeart: false,
+            listProduct:[
+                {
+                    image:"gray-mid.png",
+                    name: "sales",
+                    item: 9
+                },
+                {
+                    image:"gray-light.png",
+                    name: "dresses",
+                    item: 19
+                },
+                {
+                    image:"gray-light.png",
+                    name: "lingerie",
+                    item: 5
+                },
+                {
+                    image:"gray-light.png",
+                    name: "shirts",
+                    item: 9
+                },
+                {
+                    image:"gray-mid.png",
+                    name: "accessories",
+                    item: 19
+                },
+                {
+                    image:"gray-light.png",
+                    name: "bags",
+                    item: 5
+                },
+            ],
             listProduct2: [
                 {
                     image: "product2.png",
@@ -1353,7 +1322,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: true,
                     isViewWishList: false,
-                    isIcon: false
+                    isIcon: false,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1366,7 +1336,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: true,
-                    isIcon: false
+                    isIcon: false,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1379,7 +1350,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1392,7 +1364,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1405,7 +1378,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1418,7 +1392,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1431,7 +1406,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1444,7 +1420,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1457,7 +1434,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1470,7 +1448,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1483,7 +1462,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1496,7 +1476,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1509,7 +1490,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1522,7 +1504,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 },
                 {
                     image: "product2.png",
@@ -1535,7 +1518,8 @@ export default {
                     priceProduct: "$35.00–$89.99",
                     isViewCart: false,
                     isViewWishList: false,
-                    isIcon: true
+                    isIcon: true,
+                    isHeart: false
                 }
             ],
             listLatest: [
@@ -1586,8 +1570,8 @@ export default {
         setDesc() {
             this.isSortDesc = !this.isSortDesc;
         },
-        setHeart() {
-            this.isHeart = !this.isHeart;
+        setHeart(index) {
+            this.listProduct2[index].isHeart = !this.listProduct2[index].isHeart;
         },
         setHeartLatest(index) {
             this.listLatest[index].countHeart =
@@ -1599,4 +1583,5 @@ export default {
 
 <style lang="scss">
 @import "../styles/shop.scss";
+@import "../styles/responsive-shop.scss";
 </style>

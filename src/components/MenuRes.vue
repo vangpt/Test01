@@ -85,7 +85,7 @@ export default {
     position: fixed ;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 4;
     width: 40%;
     height: 100%;
     background-color: $blue-light;
