@@ -29,7 +29,7 @@
         <div class="box-bread-crumb">
             <ul class="bread-crumb">
                 <li><a href="#">Home</a></li>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                <i class="fa fa-long-arrow-right"></i>
                 <li><a href="#">shop</a></li>
             </ul>
         </div>

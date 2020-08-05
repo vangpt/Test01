@@ -198,17 +198,7 @@ export default {
             }
         }
         .title {
-            color: white;
-            font-size: 19px;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-family: "Montserrat", sans-serif;
-            margin-bottom: 50px;
-            i {
-                color: red;
-                transform: rotate(45deg);
-                vertical-align: bottom;
-            }
+            @include title-caret(white, 45px);
         }
         .news {
             .input {

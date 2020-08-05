@@ -39,9 +39,17 @@ a {
     padding-right: 20px;
 }
 
+.d-flex{
+    display: flex;
+}
 .d-flex-wrap {
     display: flex;
     flex-wrap: wrap;
+}
+
+.d-flex-align{
+    display: flex;
+    align-items: center;
 }
 
 .flex-3 {

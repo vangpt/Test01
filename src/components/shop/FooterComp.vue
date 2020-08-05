@@ -104,7 +104,7 @@
                                 <div class="icon d-flex-center">
                                     <i
                                         class="fa fa-user"
-                                        aria-hidden="true"
+                                       
                                     ></i>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                 <div class="icon d-flex-center">
                                     <i
                                         class="fa fa-envelope"
-                                        aria-hidden="true"
+                                       
                                     ></i>
                                 </div>
                             </div>
@@ -204,14 +204,14 @@
                         <i class="fa fa-headphones"></i>&nbsp;&nbsp; Phone: +1
                         916-85-2235
                         <br />
-                        <i class="fa fa-fax" aria-hidden="true"></i>&nbsp;&nbsp;
+                        <i class="fa fa-fax"></i>&nbsp;&nbsp;
                         Fax: +1 916-85-2235
                         <br />
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i
+                        <i class="fa fa-envelope-o"></i
                         >&nbsp;&nbsp; Email:
                         <span>info@domain.ltd</span>
                         <br />
-                        <i class="fa fa-globe" aria-hidden="true"></i
+                        <i class="fa fa-globe"></i
                         >&nbsp;&nbsp; Website:
                         <span>www.codex-themes.com</span>
                     </div>
@@ -371,18 +371,7 @@ export default {
             }
         }
         .title {
-            color: white;
-            font-size: 19px;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-family: "Montserrat", sans-serif;
-            margin-bottom: 50px;
-            i {
-                color: red;
-                transform: rotate(45deg);
-                vertical-align: bottom;
-                margin-bottom: -3px;
-            }
+            @include title-caret(white, 45px);
         }
         .useful {
             ul {

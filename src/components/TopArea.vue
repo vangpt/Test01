@@ -14,7 +14,7 @@
                         <i class="fa fa-facebook-official"></i>
                     </a>
                     <a href="#"
-                        ><i class="fa fa-info-circle" aria-hidden="true"></i
+                        ><i class="fa fa-info-circle"></i
                     ></a>
                     <a href="#"><i class="fa fa-google-plus-square"></i></a>
                     <a href="#"><i class="fa fa-instagram"></i></a>

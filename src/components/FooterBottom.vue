@@ -24,7 +24,7 @@
                     <a href="#"
                         ><i
                             class="fa fa-info-circle"
-                            aria-hidden="true"
+                           
                             style="color: #16a7b9"
                         ></i
                     ></a>
