@@ -459,20 +459,34 @@
                         </div>
                     </aside>
                     <section>
-                        <article>
+                        <article class="list-product-1">
                             <div class="list-products">
-                                <div class="item" v-for="(item,index) in listProduct" :key="index">
-                                    <img
-                                        :src="require(`../assets/imgs/shop/list-product/${item.image}`)"
-                                        alt=""
-                                    />
-                                    <div class="box">
-                                        <div class="desc">
-                                            <div class="name">
-                                                <a href="#">{{item.name}}</a>
-                                                <div class="name__border"></div>
+                                <div
+                                    class="box-item"
+                                    v-for="(item, index) in listProduct"
+                                    :key="index"
+                                >
+                                    <div class="item">
+                                        <img
+                                            :src="
+                                                require(`../assets/imgs/shop/list-product/${item.image}`)
+                                            "
+                                            alt=""
+                                        />
+                                        <div class="box">
+                                            <div class="desc">
+                                                <div class="name">
+                                                    <a href="#">{{
+                                                        item.name
+                                                    }}</a>
+                                                    <div
+                                                        class="name__border"
+                                                    ></div>
+                                                </div>
+                                                <div class="number">
+                                                    {{ item.item }} items
+                                                </div>
                                             </div>
-                                            <div class="number">{{item.item}} items</div>
                                         </div>
                                     </div>
                                 </div>
@@ -499,7 +513,7 @@
                                             >
                                         </select>
                                     </div>
-                                    <span>DESC&nbsp;&nbsp;&nbsp;</span>
+                                    <span>DESC&nbsp;&nbsp;</span>
                                     <div
                                         class="btn-switch d-flex-align"
                                         :class="{ 'sort-desc': isSortDesc }"
@@ -509,7 +523,7 @@
                                             @click="setDesc"
                                         ></i>
                                     </div>
-                                    <span>&nbsp;&nbsp;&nbsp;ASC</span>
+                                    <span>&nbsp;&nbsp;ASC</span>
                                 </div>
                                 <div class="sort-right d-flex-align">
                                     <div class="text">
@@ -575,26 +589,22 @@
                                                 class="info__border"
                                             ></div>
                                             <a :href="element.link">
-                                            <div class="info__name">
-                                                {{ element.nameProduct }}
-                                            </div>
-                                            <div class="info__price">
-                                                {{ element.priceProduct }}
-                                            </div>
+                                                <div class="info__name">
+                                                    {{ element.nameProduct }}
+                                                </div>
+                                                <div class="info__price">
+                                                    {{ element.priceProduct }}
+                                                </div>
                                             </a>
                                             <div
                                                 v-if="element.isViewCart"
                                                 class="info__view"
                                             >
                                                 <i class="fa fa-list-ul"></i
-                                                >&nbsp;<a href="#"
-                                                    >View Cart</a
-                                                >
+                                                >&nbsp;<a href="#">View Cart</a>
                                             </div>
                                             <div
-                                                v-if="
-                                                    element.isViewWishList
-                                                "
+                                                v-if="element.isViewWishList"
                                                 class="info__view"
                                             >
                                                 <i class="fa fa-star-o"></i
@@ -619,7 +629,8 @@
                                                 <i
                                                     class="fa fa-heart-o"
                                                     :class="{
-                                                        'heart-red': element.isHeart
+                                                        'heart-red':
+                                                            element.isHeart
                                                     }"
                                                     @click="setHeart(index)"
                                                 ></i>
@@ -850,40 +861,38 @@
                                             class="fa fa-check-square-o"
                                             aria-hidden="true"
                                         ></i
-                                        >&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit
-                                        amet, consectetur
+                                        >Lorem ipsum dolor sit amet, consectetur
                                     </li>
                                     <li>
                                         <i
                                             class="fa fa-check-square-o"
                                             aria-hidden="true"
                                         ></i
-                                        >&nbsp;&nbsp;&nbsp;Adipisicing elit, sed
-                                        do eiusmod tempor
+                                        >Adipisicing elit, sed do eiusmod tempor
                                     </li>
                                     <li>
                                         <i
                                             class="fa fa-check-square-o"
                                             aria-hidden="true"
                                         ></i
-                                        >&nbsp;&nbsp;&nbsp;Incididunt ut labore
-                                        et dolore magna aliqua
+                                        >Incididunt ut labore et dolore magna
+                                        aliqua
                                     </li>
                                     <li>
                                         <i
                                             class="fa fa-check-square-o"
                                             aria-hidden="true"
                                         ></i
-                                        >&nbsp;&nbsp;&nbsp;Enim ad minim veniam,
-                                        quis nostrud exercitation
+                                        >Enim ad minim veniam, quis nostrud
+                                        exercitation
                                     </li>
                                     <li>
                                         <i
                                             class="fa fa-check-square-o"
                                             aria-hidden="true"
                                         ></i
-                                        >&nbsp;&nbsp;&nbsp;ullamco laboris nisi
-                                        ut aliquip ex ea commodo
+                                        >ullamco laboris nisi ut aliquip ex ea
+                                        commodo
                                     </li>
                                 </ul>
                             </div>
@@ -1278,37 +1287,37 @@ export default {
             ],
             isSortDesc: false,
             isHeart: false,
-            listProduct:[
+            listProduct: [
                 {
-                    image:"gray-mid.png",
+                    image: "gray-mid.png",
                     name: "sales",
                     item: 9
                 },
                 {
-                    image:"gray-light.png",
+                    image: "gray-light.png",
                     name: "dresses",
                     item: 19
                 },
                 {
-                    image:"gray-light.png",
+                    image: "gray-light.png",
                     name: "lingerie",
                     item: 5
                 },
                 {
-                    image:"gray-light.png",
+                    image: "gray-light.png",
                     name: "shirts",
                     item: 9
                 },
                 {
-                    image:"gray-mid.png",
+                    image: "gray-mid.png",
                     name: "accessories",
                     item: 19
                 },
                 {
-                    image:"gray-light.png",
+                    image: "gray-light.png",
                     name: "bags",
                     item: 5
-                },
+                }
             ],
             listProduct2: [
                 {
@@ -1571,7 +1580,8 @@ export default {
             this.isSortDesc = !this.isSortDesc;
         },
         setHeart(index) {
-            this.listProduct2[index].isHeart = !this.listProduct2[index].isHeart;
+            this.listProduct2[index].isHeart = !this.listProduct2[index]
+                .isHeart;
         },
         setHeartLatest(index) {
             this.listLatest[index].countHeart =

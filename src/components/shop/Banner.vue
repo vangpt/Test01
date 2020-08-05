@@ -6,14 +6,10 @@
             alt=""
         />
         <div class="arrow-left d-flex-center">
-            <a href="#"
-                ><img src="../../assets/imgs/arrow-white-left.png" alt=""
-            /></a>
+            <img src="../../assets/imgs/arrow-white-left.png" alt="" />
         </div>
         <div class="arrow-right d-flex-center">
-            <a href="#"
-                ><img src="../../assets/imgs/arrow-white-right.png" alt=""
-            /></a>
+            <img src="../../assets/imgs/arrow-white-right.png" alt="" />
         </div>
         <div class="box">
             <div class="content">
@@ -49,17 +45,23 @@ export default {
 .banner {
     @include custom-slide;
     max-height: fit-content;
-    // background-color: yellow;
-    // border: 2px solid red;
     img {
         width: 100%;
         height: auto;
+        display: block;
     }
     .arrow-left,
     .arrow-right {
-        height: 80px;
-        width: 80px;
+        height: 4vw;
+        width: 4vw;
         background-color: $black-light;
+        img {
+            max-width: 30px;
+            min-width: 10px;
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
     }
     .arrow-left:hover,
     .arrow-right:hover {
@@ -107,7 +109,7 @@ export default {
             font-family: "Source Sans Pro", sans-serif;
             text-transform: capitalize;
             li {
-                padding-bottom: 10px;
+                padding-bottom: 5px;
                 display: inline-block;
                 a {
                     color: $blue-light;
@@ -123,6 +125,55 @@ export default {
                 padding-left: 10px;
                 padding-right: 10px;
             }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .arrow-left,
+    .arrow-right {
+        padding: 5px;
+    }
+    .arrow-left {
+        left: 10px !important;
+    }
+    .arrow-right {
+        right: 10px !important;
+    }
+    .box {
+        .content {
+            h2 {
+                font-size: 5vw !important;
+                margin-bottom: 5px !important;
+                padding-right: 20px;
+            }
+            .desc {
+                font-size: 2.5vw !important;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .box {
+        .content {
+            h2 {
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+    .bread-crumb {
+        li {
+            padding-bottom: 2px !important;
+            font-size: 12px;
+        }
+        i {
+            font-size: 10px;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+        }
+        li:last-child {
+            border-bottom: 2px solid red !important;
         }
     }
 }
