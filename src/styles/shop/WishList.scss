@@ -1,0 +1,366 @@
+@import "../varibles";
+@import "../mixin";
+
+main{
+    .list-product {
+        margin-top: 85px;
+        &__title {
+            font-family: $font2;
+            font-size: 24px;
+            font-weight: 300;
+            span {
+                color: $blue-light;
+            }
+        }
+        &__social {
+            margin-top: 50px;
+            font-family: $font2;
+            font-size: 24px;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            .icon{
+                display: flex;
+                a{
+                    width: 23px;
+                    height: 23px;
+                    border-radius: 50%;
+                    background-color: red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 25px;
+                    i{
+                        font-size: 14px;
+                        color: white;
+                    }
+                }
+            }
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            border: 1px solid $border-gray;
+            tr:first-child {
+                background-color: #b6c6c9 !important;
+                border-left: 1px solid #b6c6c9;
+                border-right: 1px solid #b6c6c9;
+                th {
+                    color: white;
+                    font-family: $font1;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                }
+            }
+            tr:nth-child(odd) {
+                background-color: #f0f3f2;
+            }
+
+            td,
+            th {
+                margin: 0;
+                padding: 0;
+                text-align: left;
+                padding: 15px 5px;
+            }
+            .table-close {
+                vertical-align: middle;
+                i {
+                    color: red;
+                    font-size: 20px;
+                }
+            }
+            .table-product {
+                .box {
+                    display: flex;
+                    align-items: center;
+                }
+
+                img {
+                    display: block;
+                }
+                .text {
+                    margin-left: 15px;
+                    color: $blue-light;
+                    font-family: $font2;
+                    span {
+                        color: #99a9b5;
+                        font-family: $font2;
+                        font-size: 14px;
+                        margin-left: 10px;
+                        margin-top: 1px;
+                    }
+                }
+            }
+            .table-price {
+                font-family: $font2;
+                font-size: 24px;
+                font-weight: 300;
+            }
+            .table-stock {
+                font-family: $font2;
+                font-size: 16px;
+                color: $gray-mid;
+            }
+            .table-button {
+                text-align: center;
+                button{
+                    @include text-uppercase($font1, 14px);
+                    @include custom-button(40px, 160px, #b6c6c9, 5px);
+                    cursor: pointer;
+                    &:hover{
+                        background-color:  $blue-light;
+                    }
+                    i{
+                        font-size: 20px;
+                        color: white;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .related-product{
+        margin-top: 144px;
+        margin-bottom: 144px;
+        .text{
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+            .title{
+                @include text-uppercase($font1, 36px);
+                font-weight: 300;
+                margin-right: 20px;
+            }
+            .border{
+                border-top: 1px solid $border-gray;
+                border-bottom: 1px solid $border-gray;
+                height: 4px;
+                flex-grow: 1;
+            }
+        }
+        .box-related {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -20px;
+            margin-right: -20px;
+            .box {
+                padding-left: 20px;
+                padding-right: 20px;
+                flex: 0 0 16.66%;
+                margin-top: 40px;
+            }
+            .item {
+                &__image {
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        display: block;
+                    }
+                    .background-blue {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(52, 152, 219, 0.5);
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: ease 0.5s;
+                        z-index: 1;
+                    }
+                    .sale-abso {
+                        width: 60px;
+                        height: 60px;
+                        background-color: $blue-light;
+                        border-radius: 50%;
+                        color: white;
+                        font-family: $font1;
+                        font-weight: bold;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        position: absolute;
+                        z-index: 3;
+                        right: -20px;
+                        top: 20px;
+                    }
+                    .new-abso {
+                        width: 50px;
+                        height: 50px;
+                        background-color: $black-light;
+                        border-radius: 50%;
+                        color: white;
+                        font-family: $font1;
+                        font-weight: bold;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        position: absolute;
+                        z-index: 2;
+                        right: -15px;
+                        top: 25px;
+                    }
+                    .new-sale-abso {
+                        top: 65px !important;
+                    }
+                }
+                &:hover {
+                    .background-blue {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                    .info {
+                        background-color: #f0f3f2;
+                        &__border {
+                            width: 80px;
+                        }
+                    }
+                }
+                .info {
+                    border-bottom: 1px solid $border-gray;
+                    border-left: 1px solid $border-gray;
+                    border-right: 1px solid $border-gray;
+                    text-align: center;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    transition: ease 0.5s;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    &__name {
+                        font-family: $font2;
+                        color: $black-light;
+                        text-transform: capitalize;
+                        margin-bottom: 8px;
+                    }
+                    &__price {
+                        color: $blue-light;
+                        font-family: $font2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+    td.table-product{
+        span{
+            margin-left: 0px !important;
+        }
+    }
+    .box-related {
+        .box {
+            flex: 0 0 33.33% !important;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .list-product {
+        .list-product__social{
+            flex-direction: column;
+            .icon{
+                a{
+                    margin-top: 20px;
+                    margin-left: 10px !important;
+                    &:first-child{
+                        margin-left: 0 !important;
+                    }
+                }
+            }
+        }
+        table{
+            tr{
+                td.table-product{
+                    .box{
+                        flex-direction:  column !important;
+                        align-items: flex-start !important;
+                        .text{
+                            margin-top: 5px;
+                            margin-left: 0 !important;
+                            
+                        }
+                    }
+                }
+                td.table-price{
+                    font-size: 18px !important;
+                }
+                td.table-button{
+                    button{
+                        width: 130px !important;
+                        font-size: 12px !important;
+                        i{
+                            padding-right: 5px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .box-related {
+        .box {
+            flex: 0 0 50% !important;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .list-product{
+        .list-product__title{
+            font-size: 20px !important;
+        }
+        .list-product__social{
+            font-size: 20px !important;
+        }
+        table{
+            tr{
+                th {
+                    font-size: 10px !important;
+                }
+                td.table-product{
+                    .box{
+                        img{
+                            width: 50px !important;
+                            height: 50px !important;
+                        }
+                        .text{
+                            font-size: 12px !important;
+                            span{
+                                font-size: 11px !important;
+                                margin-left: 0px !important;
+                            }
+                        }
+                    }
+                }
+                td.table-close{
+                    i{
+                        font-size: 15px !important;
+                    }
+                }
+                td.table-price{
+                    font-size: 13px !important;
+                }
+                td.table-stock  {
+                    font-size: 14px !important;
+                }
+                td.table-button{
+                    button{
+                        width: 70px !important;
+                        font-size: 10px !important;
+                        i{
+                            font-size: 15px !important;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+    .title{
+        font-size: 20px !important;
+    }
+}
