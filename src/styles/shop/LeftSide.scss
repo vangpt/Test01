@@ -1,0 +1,11 @@
+@import "../varibles";
+@import "../mixin";
+
+main{
+    color: red;
+}
+.box-bread-crumb {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}

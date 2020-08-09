@@ -411,16 +411,25 @@ main {
                             font-size: 14px;
                             font-weight: bold;
                             text-transform: uppercase;
+                            transition: ease .5s;
                         }
                         a:first-child {
                             background-color: $blue-light;
                             border: 2px solid $blue-light;
                             color: white;
+                            &:hover{
+                                background-color: white;
+                                color: $blue-light;
+                            }
                         }
                         a:last-child {
                             background-color: none;
                             border: 2px solid black;
                             color: black;
+                            &:hover{
+                                background-color: $black-light;
+                                color: white;
+                            }
                         }
                     }
                 }

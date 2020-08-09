@@ -71,7 +71,7 @@
                         </li>
                     </ul>
                 </div>
-                <button>Join Now</button>
+                <button>My Wishlist</button>
             </div>
         </div>
     </div>

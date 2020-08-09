@@ -5,7 +5,13 @@
         <slider />
         <home /> -->
         <!-- <footer-comp /> -->
-        <shop />
+        <!-- <shop /> -->
+        <!-- <shop-cart /> -->
+        <!-- <menu-widget/> -->
+        <!-- <checkout-confirm/> -->
+        <!-- <checkout-error/> -->
+        <!-- <wish-list /> -->
+        <left-side/>
         <footer-bottom />
     </div>
 </template>
@@ -18,6 +24,12 @@ import FooterComp from "./components/FooterComp";
 import FooterBottom from "./components/FooterBottom";
 import Home from "./pages/home";
 import Shop from "./pages/shop";
+import ShopCart from "./components/shop/ShopCart";
+import MenuWidget from "./components/shop/MenuWidget"
+import CheckoutConfirm from "./components/shop/CheckoutConfirm"
+import CheckoutError from "./components/shop/CheckoutError"
+import WishList from "./components/shop/WishList"
+import LeftSide from "./components/shop/LeftSide"
 export default {
     name: "app",
     components: {
@@ -27,7 +39,13 @@ export default {
         Home,
         Shop,
         FooterComp,
-        FooterBottom
+        FooterBottom,
+        ShopCart,
+        MenuWidget,
+        CheckoutConfirm,
+        CheckoutError,
+        WishList,
+        LeftSide,
     },
     data() {
         return {

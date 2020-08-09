@@ -91,6 +91,8 @@ export default {
 @import "../../styles/varibles";
 #menu {
     background-color: white;
+    border-bottom: 1px solid $border-gray;
+    box-shadow: 0px 2px 8px gray;
 
     .content {
         display: flex;
@@ -108,7 +110,8 @@ export default {
             margin-left: 50px;
             li {
                 display: inline-block;
-                margin-right: 50px;
+                padding: 5px 18px;
+                margin-right: 14px;
                 a {
                     font-size: 14px;
                     font-weight: bold;
@@ -119,9 +122,13 @@ export default {
                 a:hover {
                     color: $blue-light;
                 }
+                &:nth-child(5){
+                    border: 2px solid $black-light;
+                }
             }
             li:last-child {
                 margin-right: 0;
+                padding-right: 0;
             }
         }
         .logo {

@@ -1,0 +1,250 @@
+@import "../varibles";
+@import "../mixin";
+
+main{
+    .box-full{
+        margin-top: 85px;
+        background-color: $green-dark;
+        border-radius: 5px;
+        padding: 25px 20px 25px 25px;
+        .content-box-full{
+            display: flex;
+            align-items: center;
+            position: relative;
+            .tick{
+                width: 53px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: $green-light;
+                margin-right: 20px;
+            }
+            .text{
+                font-family: $font2;
+                font-size: 24px;
+                font-weight: 300;
+                color: #3c3950;
+            }
+            .close{
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+            }
+        }
+    }
+    .order-data{
+        margin-top: 45px;
+        ul{
+            li{
+                color: $gray-mid;
+                font-family: $font2;
+                margin-bottom: 15px;
+                i{
+                    color: $green-dark;
+                    padding-right: 5px;
+                }
+                span{
+                    font-weight: 700;
+                }
+                &:last-child{
+                    margin-top:30px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    .title-article{
+        font-family: $font1;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    .order-detail{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        article{
+            margin-top: 85px;
+            flex: 0 0 50%;
+            padding-left: 20px;
+            padding-right: 20px;
+            .title-order{
+                font-size: 36px;
+                margin-bottom: 55px;
+            }
+        }
+        .details-table{
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border-bottom: 1px solid $border-gray;
+                border-left: 1px solid $border-gray;
+                border-right: 1px solid $border-gray;
+                tr:first-child {
+                    background-color: #b6c6c9 !important;
+                    border-left: 1px solid #b6c6c9;
+                    border-right: 1px solid #b6c6c9;
+                    th {
+                        color: white;
+                        font-family: $font1;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                    }
+                }
+                tr:nth-child(odd) {
+                    background-color: #f0f3f2;
+                }
+                td,
+                th {
+                    text-align: left;
+                    padding: 20px;
+                }
+                .table-product {
+                    .box {
+                        display: flex;
+                        align-items: center;
+                    }
+    
+                    img {
+                        display: block;
+                    }
+                    .text {
+                        margin-left: 15px;
+                        color: $blue-light;
+                        font-family: $font2;
+                    }
+                }
+                .table-quantity {
+                    div{
+                        text-align: center;
+                        color: $gray-mid;
+                    }
+                }
+                .table-total {
+                    font-family: $font2;
+                    font-size: 24px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .detail-cart{
+            table {
+                border: 1px solid $border-gray;
+                border-collapse: collapse;
+                width: 100%;
+                tr {
+                    td{
+                        padding:14px 20px;
+                    }
+                    td:first-child {
+                        background-color: #f0f3f2;
+                        font-family: $font2;
+                        color: $gray-mid;
+                    }
+                    td:last-child {
+                        font-family: $font2;
+                    }
+                    .td-sub-total {
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                    .td-total {
+                        font-size: 24px;
+                        font-weight: 300;
+                    }
+                    .td-ship {
+                        color: $gray-mid;
+                    }
+                }
+            }
+        }
+    }
+    .order-customer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 140px;
+        article{
+            margin-top: 85px;
+            flex: 0 0 33.33%;
+            padding-left: 20px;
+            padding-right: 20px;
+            .title-order{
+                font-size: 29px;
+                margin-bottom: 50px;
+            }
+            .content-customer{
+                font-family: $font2;
+                color: $gray-mid;
+                div{
+                    margin-bottom: 20px;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1024px){
+    .order-detail{
+        article{
+            flex: 0 0 100% !important;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .order-customer{
+        article{
+            flex: 0 0 100% !important;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .box-full{
+        padding: 10px !important;
+        .tick{
+            width: 35px !important;
+            height: 35px !important;
+            margin-right: 10px !important
+        }
+       .text{
+           font-size: 16px !important;
+           padding-right: 20px;
+       } 
+    }
+    .details-table{
+        table{
+            tr{
+                th {
+                    font-size: 10px !important;
+                }
+                td,th{
+                    padding: 10px !important;
+                }
+                td.table-product{
+                    .box{
+                        img{
+                            width: 50px !important;
+                            height: 50px !important;
+                        }
+                        .text{
+                            font-size: 12px !important;
+                        }
+                    }
+                }
+                td.table-total{
+                    font-size: 15px !important;
+                }
+                
+            }
+        } 
+    }
+}

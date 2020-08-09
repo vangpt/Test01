@@ -118,6 +118,7 @@
                 position: absolute;
                 top: 15px;
                 right: -8px;
+                z-index: 10;
             }
         }
         .info{
@@ -147,4 +148,11 @@
     &:last-child{
         margin: 0;
     }
+}
+
+@mixin text-uppercase($font, $size){
+    font-family: $font;
+    font-size: $size;
+    font-weight: bold;
+    text-transform: uppercase;
 }
