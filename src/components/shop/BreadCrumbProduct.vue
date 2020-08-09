@@ -3,7 +3,9 @@
         <ul class="bread-crumb">
             <template v-for="(item, index) in breadCrumb">
                 <i :key="index" class="fa fa-long-arrow-right"></i>
-                <li :key="index+100"><a :href="item.link">{{item.text}}</a></li>
+                <li :key="index + 100">
+                    <a :href="item.link">{{ item.text }}</a>
+                </li>
             </template>
         </ul>
     </div>
@@ -12,31 +14,30 @@
 <script>
 export default {
     name: "bread-crum-product",
-    props:{
-        breadCrumb:{type: Array, defaultStatus: null},
+    props: {
+        breadCrumb: { type: Array, defaultStatus: null }
     },
-    data(){
-        return{
-        }
+    data() {
+        return {};
     }
-}
+};
 </script>
 
 <style lang="scss">
 @import "../../styles/varibles";
 .box-bread-crumb {
-    margin:auto;
-    width: fit-content;
     // position: absolute;
     // bottom: 0;
-    // left: 0;
+    // left: 50%;
     // z-index: 1;
     // transform: translateX(-50%);
     // max-width: 1210px;
     // padding-left: 20px;
     // padding-right: 20px;
-    // width: 100%;
+    width: 100%;
     .bread-crumb {
+        margin: auto;
+        width: fit-content;
         color: white;
         font-family: "Source Sans Pro", sans-serif;
         text-transform: capitalize;
@@ -57,7 +58,7 @@ export default {
             padding-left: 15px;
             padding-right: 15px;
             color: #ffe033;
-            &:first-child{
+            &:first-child {
                 display: none;
             }
         }
@@ -80,7 +81,7 @@ export default {
         }
     }
 }
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .bread-crumb {
         li {
             padding-bottom: 0px !important;
