@@ -155,3 +155,13 @@
     font-weight: bold;
     text-transform: uppercase;
 }
+
+@mixin hover-button($bg,$color){
+    background-color: $bg;
+    color: $color;
+    transition: ease .5s;
+    &:hover{
+        background-color: $color;
+        color: $bg;
+    }
+}
