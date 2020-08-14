@@ -3,19 +3,26 @@
         <div class="container">
             <div class="box">
                 <div class="box-content">
-                    <div class="image-banner" :style="{'background-color': contentBanner.bgImage}">
-                        <img :src="require(`../../assets/imgs/${contentBanner.image}`)" alt="">
+                    <div
+                        class="image-banner"
+                        :style="{ 'background-color': contentBanner.bgImage }"
+                    >
+                        <img
+                            :src="
+                                require(`../../assets/imgs/${contentBanner.image}`)
+                            "
+                            alt=""
+                        />
                     </div>
-                    <div class="title-banner" v-html="contentBanner.title">
-                    </div>
+                    <div
+                        class="title-banner"
+                        v-html="contentBanner.title"
+                    ></div>
                     <div class="desc-banner">
-                       {{contentBanner.desc}}
+                        {{ contentBanner.desc }}
                     </div>
                 </div>
-                <slot>
-
-                </slot>
-                
+                <slot> </slot>
             </div>
         </div>
     </section>
@@ -25,33 +32,14 @@
 import BreadCrumb from "./BreadCrumb";
 export default {
     name: "banner-comp",
-    components:{
+    components: {
         BreadCrumb
     },
-    props:{
-        contentBanner: {type: Object, defult: null}
+    props: {
+        contentBanner: { type: Object, defult: null }
     },
-    data(){
-        return{
-            listBreadCrumb: [
-                {
-                    link: "#",
-                    text: "Home"
-                },
-                {
-                    link: "#",
-                    text: "Breadcrumbs Example"
-                },
-                {
-                    link: "#",
-                    text: "Second Level"
-                },
-                {
-                    link: "#",
-                    text: "Third Level"
-                },
-            ],
-        }
+    data() {
+        return {};
     }
 };
 </script>
@@ -59,54 +47,52 @@ export default {
 <style lang="scss">
 @import "../../styles/mixin";
 @import "../../styles/varibles";
-.banner-product{
-    background : #6a6f7d;
-    .box{
+.banner-product {
+    background: #6a6f7d;
+    .box {
         padding-top: 40px;
-        padding-bottom: 40px;
+        // padding-bottom: 40px;
         position: relative;
     }
-    .box-content{
+    .box-content {
         text-align: center;
         color: white;
-        // display: flex;
-        // justify-content: space-between;
-        .title-banner{
+        .title-banner {
             font-family: $font1;
             font-size: 50px;
             font-weight: 300;
             text-transform: uppercase;
         }
-        .image-banner{
-            margin-left: auto;
-            margin-right: auto;
+        .image-banner {
+            margin: 30px auto;
             width: 80px;
             height: 80px;
             border-radius: 50%;
             padding: 20px;
-            img{
+            img {
                 width: 100%;
                 height: auto;
             }
         }
-        .desc-banner{
+        .desc-banner {
             font-family: $font2;
             font-size: 24px;
             font-weight: 300;
+            margin-top: 50px;
+            margin-bottom: 70px;
         }
     }
 }
-.box-bread-crumb{
+.box-bread-crumb {
     color: white !important;
 }
 
 @media (max-width: 576px) {
-    .title-banner{
+    .title-banner {
         font-size: 30px !important;
     }
-    .image{
+    .image {
         width: 20%;
     }
 }
-
 </style>
