@@ -11,7 +11,9 @@
         <!-- <checkout-confirm/> -->
         <!-- <checkout-error/> -->
         <!-- <wish-list /> -->
-        <left-side/>
+        <!-- <left-side/> -->
+        <!-- <full-width-2/> -->
+        <full-width/>
         <footer-bottom />
     </div>
 </template>
@@ -30,6 +32,8 @@ import CheckoutConfirm from "./components/shop/CheckoutConfirm"
 import CheckoutError from "./components/shop/CheckoutError"
 import WishList from "./components/shop/WishList"
 import LeftSide from "./components/shop/LeftSide"
+import FullWidth2 from "./components/shop/FullWidth2"
+import FullWidth from "./components/shop/FullWidth"
 export default {
     name: "app",
     components: {
@@ -46,6 +50,8 @@ export default {
         CheckoutError,
         WishList,
         LeftSide,
+        FullWidth2,
+        FullWidth,
     },
     data() {
         return {
