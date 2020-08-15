@@ -77,14 +77,11 @@ export default {
         .desc-banner {
             font-family: $font2;
             font-size: 24px;
-            font-weight: 300;
+            font-weight: 200;
             margin-top: 50px;
             margin-bottom: 70px;
         }
     }
-}
-.box-bread-crumb {
-    color: white !important;
 }
 
 @media (max-width: 576px) {

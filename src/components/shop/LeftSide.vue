@@ -3,7 +3,7 @@
         <top-area />
         <menu-comp />
         <banner-product v-bind:contentBanner="banner">
-            <bread-crumb-product v-bind:breadCrumb="listBreadCrumb" />
+            <bread-crumb v-bind:breadCrumb="listBreadCrumb" />
         </banner-product>
         <main>
             <div class="container">
@@ -747,10 +747,28 @@
                                 </div>
                                 <div v-if="isShowQuality" class="wrapp-content">
                                     <div class="image">
-                                        <img src="../../assets/imgs/accordion1.png" alt="">
+                                        <img
+                                            src="../../assets/imgs/accordion1.png"
+                                            alt=""
+                                        />
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam
+                                        rem aperiam, eaque ipsa quae ab illo
+                                        inventore.
                                     </div>
                                 </div>
                             </div>
@@ -772,10 +790,28 @@
                                 </div>
                                 <div v-if="isShowBrand" class="wrapp-content">
                                     <div class="image">
-                                        <img src="../../assets/imgs/accordion1.png" alt="">
+                                        <img
+                                            src="../../assets/imgs/accordion1.png"
+                                            alt=""
+                                        />
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam
+                                        rem aperiam, eaque ipsa quae ab illo
+                                        inventore.
                                     </div>
                                 </div>
                             </div>
@@ -795,12 +831,33 @@
                                     ></i>
                                     Guarantee
                                 </div>
-                                <div v-if="isShowGuarantee" class="wrapp-content">
+                                <div
+                                    v-if="isShowGuarantee"
+                                    class="wrapp-content"
+                                >
                                     <div class="image">
-                                        <img src="../../assets/imgs/accordion1.png" alt="">
+                                        <img
+                                            src="../../assets/imgs/accordion1.png"
+                                            alt=""
+                                        />
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam
+                                        rem aperiam, eaque ipsa quae ab illo
+                                        inventore.
                                     </div>
                                 </div>
                             </div>
@@ -822,10 +879,28 @@
                                 </div>
                                 <div v-if="isShowStyle" class="wrapp-content">
                                     <div class="image">
-                                        <img src="../../assets/imgs/accordion1.png" alt="">
+                                        <img
+                                            src="../../assets/imgs/accordion1.png"
+                                            alt=""
+                                        />
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam
+                                        rem aperiam, eaque ipsa quae ab illo
+                                        inventore.
                                     </div>
                                 </div>
                             </div>
@@ -834,17 +909,157 @@
                 </section>
             </div>
             <article class="blocks">
+                <div class="block"></div>
                 <div class="block">
-
+                    <div class="box-content">
+                        <div class="title">
+                            lorem ipsum dolor sit!
+                        </div>
+                        <div class="long-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        </div>
+                    </div>
                 </div>
                 <div class="block">
+                    <div class="box-content">
+                        <div class="title">
+                            lorem ipsum dolor sit!
+                        </div>
+                        <div class="short-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i>Lorem ipsum dolor sit amet, consectetur dipisicing elit sed do eiusmod </li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i>Dolore magna aliqua enim ad minim veniam, quis nostrud</li>
+                            <li><i class="fa fa-cog" aria-hidden="true"></i>Ex ea commodo consequat lorem ipsum dolor sit amet enim </li>
 
+                        </ul>
+                    </div>
                 </div>
-                <div class="block">
-
-                </div>
-                <div class="block">
-
+                <div class="block"></div>
+            </article>
+            <article class="wrap-best-highlight">
+                <div class="container">
+                    <div class="box-best-highlight">
+                        <aside class="aside-bottom">
+                            <div class="news">
+                                <div class="title">
+                                    Newsletter
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                                <div class="box-content">
+                                    <div class="desc">
+                                        Subscribe to our MailChimp newsletter and stay up to
+                                        date with all events coming straight in your mailbox:
+                                    </div>
+                                    <div class="input">
+                                        <form action="">
+                                            <input
+                                                type="text"
+                                                name=""
+                                                id=""
+                                                placeholder="Your mail..."
+                                            />
+                                            <button><i class="fa fa-envelope" aria-hidden="true"></i>subcribe</button>
+                                        </form>
+                                    </div>
+                                    <div class="note">
+                                        <sup>*</sup>Personal data will be encrypted
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="title">
+                                    Contact
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                                <div class="address">
+                                    <i class="fa fa-map-marker"></i>&nbsp;&nbsp;
+                                    Address:
+                                    <br />
+                                    908 New Hampshire Avenue Northwest #100, Washington,
+                                    DC 20037, United States
+                                </div>
+                                <div class="list-contact">
+                                    <i class="fa fa-headphones"></i>&nbsp;&nbsp; Phone:
+                                    +1 916-85-2235
+                                    <br />
+                                    <i class="fa fa-fax"></i>&nbsp;&nbsp; Fax: +1
+                                    916-85-2235
+                                    <br />
+                                    <i class="fa fa-envelope-o"></i>&nbsp;&nbsp; Email:
+                                    <span>info@domain.ltd</span>
+                                    <br />
+                                    <i class="fa fa-globe"></i>&nbsp;&nbsp; Website:
+                                    <span>www.codex-themes.com</span>
+                                </div>
+                            </div>
+                            <div class="social-icon">
+                                <div class="title">
+                                    social icon
+                                    <i class="fa fa-caret-down"></i>
+                                </div>
+                                <div class="icon">
+                                    <a href="#" style="background: #22c5da"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" style="background: #5275db">
+                                        <i class="fa fa-facebook-official"></i>
+                                    </a>
+                                    <a href="#" style="background: #2498d7"
+                                        ><i class="fa fa-info-circle"></i
+                                    ></a>
+                                    <a href="#" style="background: #9a8f62"><i class="fa fa-google-plus-square"></i></a>
+                                    <a href="#" style="background: #ae0e0e"
+                                        ><i class="fa fa-youtube-play"></i
+                                    ></a>
+                                    <a href="#" style="background: #f44336"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" style="background: #ff5757"><i class="fa fa-pinterest-p"></i></a>
+                                </div>
+                            </div>
+                        </aside>
+                        <section class="best-highlight">
+                            <div class="hightlight">
+                                <div class="hightlight__title">
+                                    BEST HIGHLIGHTS FROM PARIS FASHION WEEK
+                                </div>
+                                <div class="hightlight__content">
+                                    <div class="text">
+                                        <div class="video">
+                                            <div class="icon-video d-flex-center">
+                                                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi beatae Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider-person">
+                                <div class="arrow-left d-flex-center">
+                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                </div>
+                                <div class="arrow-right d-flex-center">
+                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </div>
+                                <div class="box">
+                                    <img  class="avatar" src="../../assets/imgs/img-testtimonials.png" alt="" />
+                                    <div class="content-test">
+                                        
+                                        <div class="name">Jeniffer Burns</div>
+                                        <div class="short-desc">Creative Heads Inc.</div>
+                                        <div class="long-desc">
+                                            The blinding splendor of the diamond, the mighty power of the rocket!
+                                        </div>
+                                        <div class="icon">
+                                            <img
+                                                
+                                                src="../../assets/imgs/icon-testtimonials2.png"
+                                                alt=""
+                                            />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </article>
         </main>
@@ -857,7 +1072,7 @@ import TopArea from "./TopArea";
 import MenuComp from "./MenuComp";
 import FooterComp from "./FooterComp";
 import BannerProduct from "./BannerProduct";
-import BreadCrumbProduct from "./BreadCrumbProduct";
+import BreadCrumb from "./BreadCrumb";
 export default {
     name: "left-side",
     components: {
@@ -865,7 +1080,7 @@ export default {
         MenuComp,
         FooterComp,
         BannerProduct,
-        BreadCrumbProduct
+        BreadCrumb
     },
     data() {
         return {
@@ -972,25 +1187,25 @@ export default {
             isShowQuality: false,
             isShowBrand: true,
             isShowGuarantee: false,
-            isShowStyle: false,
+            isShowStyle: false
         };
     },
     methods: {
         chooseTabDesc(number) {
             this.tabDesc = number;
         },
-        setShowBrand(bool){
+        setShowBrand(bool) {
             this.isShowBrand = bool;
         },
-        setShowGuarantee(bool){
+        setShowGuarantee(bool) {
             this.isShowGuarantee = bool;
         },
-        setShowStyle(bool){
+        setShowStyle(bool) {
             this.isShowStyle = bool;
         },
-        setShowQuality(bool){
+        setShowQuality(bool) {
             this.isShowQuality = bool;
-        },
+        }
     }
 };
 </script>
