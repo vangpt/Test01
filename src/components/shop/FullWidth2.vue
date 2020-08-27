@@ -13,16 +13,10 @@
                             <div class="image-product">
                                 <div class="wrap-image">
                                     <div class="arrow-left d-flex-center">
-                                        <i
-                                            class="fa fa-angle-left"
-                                        
-                                        ></i>
+                                        <i class="fa fa-angle-left"></i>
                                     </div>
                                     <div class="arrow-right d-flex-center">
-                                        <i
-                                            class="fa fa-angle-right"
-                                        
-                                        ></i>
+                                        <i class="fa fa-angle-right"></i>
                                     </div>
                                     <img
                                         src="../../assets/imgs/product-detail.png"
@@ -128,10 +122,7 @@
                                 <div class="name-product">
                                     <div>Exclusive shoes</div>
                                     <button>
-                                        <i
-                                            class="fa fa-angle-left"
-                                           
-                                        ></i>
+                                        <i class="fa fa-angle-left"></i>
                                     </button>
                                 </div>
                                 <div class="review-product">
@@ -179,12 +170,36 @@
                                     voluptas sit aspernatur aut odit aut
                                 </div>
                                 <ul class="list-info-product">
-                                    <li><i class="fa fa-angle-right"></i>Lorem ipsum dolor sit amet, consectetur dipisicing elit</li>
-                                    <li><i class="fa fa-angle-right"></i>Sed do eiusmod tempor incididunt ut labore et dolore magna</li>
-                                    <li><i class="fa fa-angle-right"></i>Aliqua enim ad minim veniam, quis nostrud exercitation ullamco</li>
-                                    <li><i class="fa fa-angle-right"></i>Laboris nisi ut aliquip ex ea commodo consequat lorem ipsum </li>
-                                    <li><i class="fa fa-angle-right"></i>dolor sit amet, consectetur adipisicing elit, sed do eiusmod </li>
-                                    <li><i class="fa fa-angle-right"></i>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>Lorem
+                                        ipsum dolor sit amet, consectetur
+                                        dipisicing elit
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>Sed do
+                                        eiusmod tempor incididunt ut labore et
+                                        dolore magna
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>Aliqua
+                                        enim ad minim veniam, quis nostrud
+                                        exercitation ullamco
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>Laboris
+                                        nisi ut aliquip ex ea commodo consequat
+                                        lorem ipsum
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>dolor
+                                        sit amet, consectetur adipisicing elit,
+                                        sed do eiusmod
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-angle-right"></i>tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad
+                                    </li>
                                 </ul>
                                 <div class="select-product">
                                     <table>
@@ -229,27 +244,18 @@
                                 <div class="buttons-option">
                                     <div>10</div>
                                     <a class="link-cart" href="#"
-                                        ><i
-                                            class="fa fa-shopping-cart"
-                                           
-                                        ></i>
-                                        add to cart</a
+                                        ><i class="fa fa-shopping-cart"></i> add
+                                        to cart</a
                                     >
                                     <a class="link-wishlist" href="#"
-                                        ><i
-                                            class="fa fa-heart-o"
-                                           
-                                        ></i>
-                                        to wishlist</a
+                                        ><i class="fa fa-heart-o"></i> to
+                                        wishlist</a
                                     >
                                 </div>
                                 <div class="size-guide">
-                                    <i
-                                        class="fa fa-sliders"
-                                       
-                                    ></i>
+                                    <i class="fa fa-sliders"></i>
                                     <a href="#">
-                                    Size guide
+                                        Size guide
                                     </a>
                                 </div>
                             </div>
@@ -287,20 +293,57 @@
                                         />
                                     </div>
                                     <div class="text">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.  veritatis et quasi architecto beatae vitae dicta sunt 
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna
+                                        aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris
+                                        nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit
+                                        in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint
+                                        occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim
+                                        id est laborum. Sed ut perspiciatis unde
+                                        omnis iste natus error sit voluptatem
+                                        accusantium doloremque laudantium, totam
+                                        rem aperiam, eaque ipsa quae ab illo
+                                        inventore. veritatis et quasi architecto
+                                        beatae vitae dicta sunt
                                     </div>
                                     <div class="number">
                                         <div class="item">
-                                            <div class="item__number d-flex-center">1</div>
-                                            <div class="item__text">Lorem ipsum dolor sit amet, consectetur</div>
+                                            <div
+                                                class="item__number d-flex-center"
+                                            >
+                                                1
+                                            </div>
+                                            <div class="item__text">
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur
+                                            </div>
                                         </div>
                                         <div class="item">
-                                            <div class="item__number d-flex-center">2</div>
-                                            <div class="item__text">Consectetur adipisicing elit, sed do eiusmod </div>
+                                            <div
+                                                class="item__number d-flex-center"
+                                            >
+                                                2
+                                            </div>
+                                            <div class="item__text">
+                                                Consectetur adipisicing elit,
+                                                sed do eiusmod
+                                            </div>
                                         </div>
                                         <div class="item">
-                                            <div class="item__number d-flex-center">3</div>
-                                            <div class="item__text">Adipisicing elit, sed do eiusmod tempor</div>
+                                            <div
+                                                class="item__number d-flex-center"
+                                            >
+                                                3
+                                            </div>
+                                            <div class="item__text">
+                                                Adipisicing elit, sed do eiusmod
+                                                tempor
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -319,16 +362,12 @@
                             </div>
                             <div class="description-product__button">
                                 <button>
-                                    <i
-                                        class="fa fa-angle-left"
-                                       
-                                    ></i
+                                    <i class="fa fa-angle-left"></i
                                     >&nbsp;&nbsp;&nbsp;prev
                                 </button>
                                 <button>
                                     next&nbsp;&nbsp;&nbsp;<i
                                         class="fa fa-angle-right"
-                                       
                                     ></i>
                                 </button>
                             </div>
@@ -344,43 +383,70 @@
                                 lorem ipsum <b>dolor sit amet</b>
                             </div>
                             <div class="title-desc">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et 
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et
                             </div>
                         </div>
                         <div class="product-highlight__main">
                             <div class="main-left">
                                 <div class="image">
-                                    <img src="../../assets/imgs/shoe-gray.png" alt="">
+                                    <img
+                                        src="../../assets/imgs/shoe-gray.png"
+                                        alt=""
+                                    />
                                 </div>
                                 <div class="icons">
                                     <div class="icon d-flex-center">
-                                        <img src="../../assets/imgs/icon-yellow/colors.png" alt="">
+                                        <img
+                                            src="../../assets/imgs/icon-yellow/colors.png"
+                                            alt=""
+                                        />
+                                    </div>
+
+                                    <div class="icon d-flex-center">
+                                        <img
+                                            src="../../assets/imgs/icon-yellow/crown-yellow.png"
+                                            alt=""
+                                        />
                                     </div>
                                     <div class="icon d-flex-center">
-                                        <img src="../../assets/imgs/icon-yellow/crown-yellow.png" alt="">
-                                    </div>
-                                    <div class="icon d-flex-center">
-                                        <img src="../../assets/imgs/icon-yellow/leaf.png" alt="">
+                                        <img
+                                            src="../../assets/imgs/icon-yellow/leaf.png"
+                                            alt=""
+                                        />
                                     </div>
                                 </div>
                             </div>
                             <div class="main-right">
                                 <div class="item">
-                                    <div class="item__title"><b>unique</b> color</div>
+                                    <div class="item__title">
+                                        <b>unique</b> color
+                                    </div>
                                     <div class="item__desc">
-                                        Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adi pisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna.
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="item__title"><b>Exclusive </b> design</div>
+                                    <div class="item__title">
+                                        <b>Exclusive </b> design
+                                    </div>
                                     <div class="item__desc">
-                                        Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adi pisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna.
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="item__title"><b>natural </b> materials</div>
+                                    <div class="item__title">
+                                        <b>natural </b> materials
+                                    </div>
                                     <div class="item__desc">
-                                        Lorem ipsum dolor sit amet, consectetur adi pisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adi pisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna.
                                     </div>
                                 </div>
                             </div>
@@ -392,9 +458,25 @@
                 <div class="container">
                     <div class="size-product">
                         <div class="size-detail">
-                            <div class="size-detail__title">lorem ipsum dolor sit!</div>
+                            <div class="size-detail__title">
+                                lorem ipsum dolor sit!
+                            </div>
                             <div class="size-detail__desc">
-                                <div class="icon d-flex-center"><i class="fa fa-arrows-alt"></i></div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. Duis lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                                <div class="icon d-flex-center">
+                                    <i class="fa fa-arrows-alt"></i>
+                                </div>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea consequat. Duis
+                                lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                            </div>
                             <table class="size-detail__size">
                                 <tr>
                                     <th>SHOES</th>
@@ -415,7 +497,10 @@
                             </table>
                         </div>
                         <div class="image">
-                            <img src="../../assets/imgs/shoe-border.png" alt="">
+                            <img
+                                src="../../assets/imgs/shoe-border.png"
+                                alt=""
+                            />
                         </div>
                     </div>
                 </div>
@@ -452,24 +537,77 @@
                     BROWSE <b>OUR CATALOGUES</b>
                 </div>
                 <div class="catalogues__desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
                 </div>
             </article>
             <article class="wrap-newspaper">
                 <div class="container">
                     <div class="newspaper">
                         <div class="newspaper-left">
-                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </div>
+                            <div>
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla
+                            </div>
                             <div class="newspaper-left__highlight">
-                                ...Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod exercitation tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam, nostrud
-                                <img src="../../assets/imgs/quotes/quotes-black.png" alt="">
+                                ...Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod exercitation
+                                tempor incididunt ut labore et dolore magna
+                                aliqua enim ad minim veniam, nostrud
+                                <img
+                                    src="../../assets/imgs/quotes/quotes-black.png"
+                                    alt=""
+                                />
                             </div>
                             <div>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
                             </div>
                         </div>
                         <div class="newspaper-right">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque 
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum. Sed ut
+                            perspiciatis unde omnis iste natus error sit
+                            voluptatem accusantium doloremque laudantium, totam
+                            rem aperiam, eaque ipsa quae ab illo inventore
+                            veritatis et quasi architecto beatae vitae dicta
+                            sunt explicabo. Nemo enim ipsam voluptatem quia
+                            voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est,
+                            qui dolorem ipsum quia dolor sit amet, consectetur,
+                            adipisci velit, sed quia non numquam eius modi
+                            tempora incidunt ut labore et dolore magnam aliquam
+                            quaerat voluptatem.Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt
+                            in culpa qui officia deserunt mollit anim id est
+                            laborum. Sed ut perspiciatis unde omnis iste natus
+                            error sit voluptatem accusantium doloremque
                         </div>
                     </div>
                 </div>
@@ -487,7 +625,8 @@
                     </div>
                 </div>
             </article>
-
+            <related-product />
+            <more-product />
         </main>
         <footer-comp />
     </div>
@@ -495,18 +634,22 @@
 
 <script>
 import TopArea from "./TopArea";
-import MenuComp from "./MenuComp";
+import MenuComp from "../MenuComp";
 import FooterComp from "./FooterComp";
 import BannerProduct from "./BannerProduct";
 import BreadCrumb from "./BreadCrumb";
+import RelatedProduct from "./RelatedProduct";
+import MoreProduct from "./MoreProduct";
 export default {
-    name: "left-side",
+    name: "full-width-2",
     components: {
         TopArea,
         MenuComp,
         FooterComp,
         BannerProduct,
-        BreadCrumb
+        BreadCrumb,
+        RelatedProduct,
+        MoreProduct
     },
     data() {
         return {
@@ -551,24 +694,25 @@ export default {
                     image: "shield.png"
                 },
                 {
-                    title: "free support hotline <b>0800 123 45 67</b>",
+                    title: "free support hotline <br><b>0800 123 45 67</br>",
                     content:
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
                     link: "#",
                     image: "headphone.png"
                 }
             ],
-            tabDesc: 1,
+            tabDesc: 1
         };
     },
     methods: {
         chooseTabDesc(number) {
             this.tabDesc = number;
-        },
+        }
     }
 };
 </script>
 
 <style lang="scss">
 @import "../../styles/shop/FullWidth2";
+@import "../../styles/shop/responsive-full-width-2";
 </style>

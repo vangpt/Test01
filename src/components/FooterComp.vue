@@ -67,7 +67,12 @@
                                 name=""
                                 id=""
                                 placeholder="Your email address"
-                            /><input type="button" value=">" />
+                            /><button>
+                                <i
+                                    class="fa fa-angle-right"
+                                    aria-hidden="true"
+                                ></i>
+                            </button>
                         </form>
                     </div>
                     <div class="note">
@@ -207,16 +212,23 @@ export default {
                 }
                 margin: 45px 0 10px 0;
                 input[type="text"] {
-                    width: 80%;
+                    flex-grow: 1;
                     height: 40px;
                     border: 1px solid $gray-mid;
                     background-color: #181828;
                     font-family: "Source Sans Pro", sans-serif;
                     font-size: 16px;
-                    color: $black-light;
+                    color: white;
                     padding-left: 10px;
+                    &:focus {
+                        &::placeholder {
+                            transition: 0.5s;
+                            color: white;
+                        }
+                        outline: none;
+                    }
                 }
-                input[type="button"] {
+                button {
                     width: 40px;
                     height: 40px;
                     background-color: $gray-mid;
@@ -226,7 +238,7 @@ export default {
                     font-weight: bold;
                     transition: ease 0.5s;
                 }
-                input[type="button"]:hover {
+                button:hover {
                     cursor: pointer;
                     background-color: $blue-light;
                 }

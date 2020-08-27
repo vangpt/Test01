@@ -143,7 +143,7 @@
 
 <script>
 import TopArea from "./TopArea";
-import MenuComp from "./MenuComp";
+import MenuComp from "../MenuComp";
 export default {
     name: "menu-widget",
     components: {
@@ -190,7 +190,7 @@ export default {
         }
     }
     .cart__price {
-        background: #f0f3f2;
+        background: $bg-gray;
         padding: 15px;
         div:first-child {
             font-family: $font2;
@@ -218,14 +218,14 @@ export default {
                 font-size: 14px;
                 font-weight: bold;
                 text-transform: uppercase;
-                transition: ease .5s;
+                transition: ease 0.5s;
             }
             a:first-child {
                 background-color: $blue-light;
                 border: 2px solid $blue-light;
                 color: white;
                 margin-right: 15px;
-                &:hover{
+                &:hover {
                     background-color: white;
                     color: $blue-light;
                 }
@@ -234,7 +234,7 @@ export default {
                 background-color: none;
                 border: 2px solid black;
                 color: black;
-                &:hover{
+                &:hover {
                     background-color: $black-light;
                     color: white;
                 }
@@ -252,7 +252,7 @@ export default {
             &:first-child {
                 padding-top: 25px;
             }
-             .avatar {
+            .avatar {
                 width: 60px;
                 height: 60px;
                 img {
@@ -263,25 +263,25 @@ export default {
         }
         .cart__price {
             padding: 25px 20px;
-            div:first-child{
+            div:first-child {
                 margin-top: 0px;
             }
         }
     }
 }
 
-@media (max-width: 768px){
-    .box{
+@media (max-width: 768px) {
+    .box {
         flex-direction: column;
         align-items: center;
-        article:nth-child(2){
+        article:nth-child(2) {
             margin-left: 0 !important;
             margin-top: 30px;
             border-top: 1px solid $border-gray;
         }
-        .cart__price{
-            div:last-child{
-                a{
+        .cart__price {
+            div:last-child {
+                a {
                     padding: 5px 10px !important;
                     font-size: 12px !important;
                 }
@@ -289,5 +289,4 @@ export default {
         }
     }
 }
-
 </style>

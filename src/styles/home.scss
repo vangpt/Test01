@@ -141,7 +141,7 @@
         }
     }
     #why-choosing-us {
-        background-color: #f0f3f2;
+        background-color: $bg-gray;
         padding: 125px 0;
         .content-wcu {
             h1 {
@@ -537,7 +537,7 @@
                     justify-content: center;
                     align-items: center;
                     .box {
-                        background-color: #f0f3f2;
+                        background-color: $bg-gray;
                         transition: ease 0.5s;
                         text-align: center;
                         position: relative;

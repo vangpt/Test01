@@ -1,24 +1,24 @@
 @import "../varibles";
 @import "../mixin";
-
 .box-select {
     position: relative;
     width: 262px;
 }
+
 .box-select::after {
     @include custom-icon-select("\f107", 13px);
 }
+
 select {
     @include custom-select(100%, none);
     -webkit-appearance: none;
     border: 1px solid $border-gray;
     height: 40px;
 }
-.box-bread-crumb{
-    position: static !important;
-    display: flex;
-    justify-content: center;
+
+.box-bread-crumb {
     .bread-crumb {
+        text-align: center;
         li:last-child {
             border-bottom-color: red !important;
             a {
@@ -31,7 +31,7 @@ select {
     }
 }
 
-.banner-product{
+.box-banner-product {
     background-color: #343748 !important;
 }
 
@@ -57,29 +57,30 @@ main {
                             width: 100%;
                             height: auto;
                         }
-                        .arrow-left,.arrow-right{
+                        .arrow-left,
+                        .arrow-right {
                             width: 40px;
                             height: 40px;
                             background-color: #b6c6c9;
-                            transition: ease .5s;
+                            transition: ease 0.5s;
                             position: absolute;
                             top: 50%;
                             transform: translateY(-50%);
-                            i{
+                            i {
                                 font-size: 20px;
-                                transition: ease .5s;
+                                transition: ease 0.5s;
                             }
-                            &:hover{
+                            &:hover {
                                 background-color: $blue-light;
-                                i{
+                                i {
                                     color: white;
                                 }
                             }
                         }
-                        .arrow-left{
+                        .arrow-left {
                             left: 0px;
                         }
-                        .arrow-right{
+                        .arrow-right {
                             right: 0px;
                         }
                     }
@@ -146,9 +147,10 @@ main {
                         div:nth-child(2) {
                             color: $blue-light;
                         }
-                        div:nth-child(3){
+                        div:nth-child(3) {
                             display: flex;
-                            .tag-bg{
+                            flex-wrap: wrap;
+                            .tag-bg {
                                 background-color: #e7edf0;
                                 padding: 2px 15px;
                                 font-family: $font2;
@@ -158,8 +160,9 @@ main {
                                 width: fit-content;
                                 border-radius: 0 5px 5px 0;
                                 margin-left: 25px;
-                                &::before{
-                                    content:"";
+                                margin-bottom: 10px;
+                                &::before {
+                                    content: "";
                                     position: absolute;
                                     left: -15px;
                                     top: 0;
@@ -167,8 +170,8 @@ main {
                                     border-top: 11px solid transparent;
                                     border-bottom: 11px solid transparent;
                                 }
-                                &::after{
-                                    content:"";
+                                &::after {
+                                    content: "";
                                     position: absolute;
                                     left: -8px;
                                     top: 7px;
@@ -185,29 +188,29 @@ main {
                     flex: 0 0 50%;
                     padding-left: 20px;
                     padding-right: 20px;
-                    .name-product{
+                    .name-product {
                         display: flex;
                         justify-content: space-between;
-                        div{
+                        div {
                             @include text-uppercase($font1, 36px);
                             color: $black-light;
                             font-weight: 300;
                             padding-right: 10px;
                         }
-                        button{
+                        button {
                             width: 30px;
                             height: 30px;
                             border: 2px solid $border-gray;
                             border-radius: 5px;
-                            transition: ease .5s;
+                            transition: ease 0.5s;
                             cursor: pointer;
                             @include hover-button(white, $border-gray);
-                            i{
+                            i {
                                 font-size: 20px;
                             }
                         }
                     }
-                    .review-product{
+                    .review-product {
                         display: flex;
                         font-family: $font2;
                         color: $blue-light;
@@ -216,124 +219,124 @@ main {
                         padding-top: 15px;
                         padding-bottom: 15px;
                         position: relative;
-                        &::after{
-                            content:"";
+                        &::after {
+                            content: "";
                             position: absolute;
                             bottom: -4px;
                             border-bottom: 1px solid $border-gray;
                             width: 100%;
                         }
-                        .info__star{
+                        .info__star {
                             margin-right: 15px;
-                            i{
+                            i {
                                 color: #ffc107;
                                 font-size: 20px;
                             }
                         }
                     }
-                    .price-product{
+                    .price-product {
                         font-family: $font2;
                         display: flex;
                         margin-left: -20px;
                         margin-right: -20px;
                         margin-top: 65px;
-                        .price-old{
+                        .price-old {
                             flex: 0 0 40%;
                             padding-left: 20px;
                             padding-right: 20px;
                             color: $gray-mid;
-                            .number{
+                            .number {
                                 font-size: 24px;
                                 text-decoration: line-through;
                                 font-weight: 300;
                                 margin-top: 13px;
                             }
                         }
-                        .price-new{
+                        .price-new {
                             flex: 0 0 60%;
                             padding-left: 20px;
                             padding-right: 20px;
-                            .text{
-                                color:red;
+                            .text {
+                                color: red;
                             }
-                            .number{
+                            .number {
                                 font-size: 36px;
                                 font-weight: 300;
                             }
                         }
                     }
-                    .desc-product{
+                    .desc-product {
                         margin-top: 35px;
                         font-size: $font2;
                         color: $gray-mid;
                         line-height: 24px;
                     }
-                    .list-info-product{
+                    .list-info-product {
                         margin-top: 25px;
-                        li{
+                        li {
                             color: $gray-mid;
                             margin-top: 10px;
-                            i{
+                            i {
                                 color: red;
                                 padding-right: 10px;
                             }
                         }
                     }
-                    .select-product{
+                    .select-product {
                         margin-top: 60px;
                         font-family: $font2;
-                        .item{
+                        .item {
                             display: flex;
                             align-items: center;
                             width: 70%;
                             color: $gray-mid;
                             margin-bottom: 12px;
-                            label{
+                            label {
                                 margin-right: 15px;
                             }
                         }
-                        tr{
+                        tr {
                             color: $gray-mid;
-                            td{
+                            td {
                                 padding-top: 5px;
                                 padding-bottom: 5px;
                             }
                         }
-                        tr:last-child{
+                        tr:last-child {
                             color: $blue-light;
-                            a{
+                            a {
                                 color: $blue-light;
                             }
-                            i{
+                            i {
                                 font-size: 11px;
                             }
                         }
                     }
-                    .original-price{
+                    .original-price {
                         margin-top: 40px;
                         font-family: $font2;
                         font-weight: 300;
-                        span:first-child{
+                        span:first-child {
                             font-size: 24px;
                             text-decoration: line-through;
                             color: $gray-mid;
                         }
-                        span:nth-child(2){
+                        span:nth-child(2) {
                             font-size: 50px;
                             color: $black-light;
                             padding-left: 15px;
                             padding-right: 15px;
                         }
-                        span:last-child{
+                        span:last-child {
                             font-size: 16px;
                             font-weight: 400;
                             color: $gray-mid;
                         }
                     }
-                    .buttons-option{
+                    .buttons-option {
                         display: flex;
                         margin-top: 25px;
-                        div{
+                        div {
                             font-family: $font2;
                             font-size: 24px;
                             font-weight: 300;
@@ -344,42 +347,43 @@ main {
                             border-radius: 5px;
                             border: 1px solid $border-gray;
                         }
-                        a{
+                        a {
                             @include text-uppercase($font1, 16px);
                             border-radius: 5px;
-                            i{
+                            i {
                                 padding-right: 15px;
-                                font-size:20px;
+                                font-size: 20px;
                             }
-                            &.link-cart{
+                            &.link-cart {
                                 @include hover-button($blue-light, white);
                                 border: 2px solid $blue-light;
                                 padding: 10px 16px;
                                 margin-left: 20px;
                                 margin-right: 20px;
                             }
-                            &.link-wishlist{
+                            &.link-wishlist {
                                 @include hover-button(white, $gray-mid);
                                 border: 2px solid $gray-mid;
                                 padding: 10px 14px;
                             }
                         }
                     }
-                    .size-guide{
+                    .size-guide {
                         margin-top: 20px;
                         color: $blue-light;
-                        a{
+                        a {
                             color: $blue-light;
                         }
                     }
                 }
             }
-            .description-product{
+            .description-product {
                 margin-top: 70px;
-                &__head{
+                &__head {
                     display: flex;
+                    flex-wrap: wrap;
                     height: 50px;
-                    div{
+                    div {
                         background-color: #f4f6f7;
                         @include text-uppercase($font1, 14px);
                         font-weight: 300;
@@ -387,54 +391,53 @@ main {
                         padding: 16px 20px;
                         margin-right: 16px;
                         cursor: pointer;
-                        span{
+                        span {
                             color: red;
                         }
-                        &.active{
+                        &.active {
                             background-color: white;
                             border: 1px solid #d6dde0;
                             font-weight: bold;
                         }
-                        
                     }
                 }
-                &__main{
+                &__main {
                     margin-top: 16px;
                     padding: 50px;
                     color: $gray-mid;
                     border: 1px solid #d6dde0;
-                    .wrapp-content{
+                    .wrapp-content {
                         display: flex;
                         align-items: center;
-                        .image{
+                        .image {
                             flex: 0 0 24.3%;
-                            img{
+                            img {
                                 width: 100%;
                                 height: auto;
                                 max-height: 242px;
                             }
                         }
-                        .text{
+                        .text {
                             flex-grow: 1;
                             padding-left: 40px;
                             padding-right: 40px;
                             color: $gray-mid;
                             line-height: 24px;
                         }
-                        .number{
+                        .number {
                             flex: 0 0 24.3%;
-                            .item{
+                            .item {
                                 display: flex;
                                 align-items: center;
                                 padding: 14px;
                                 border-top: 1px solid $border-gray;
                                 border-left: 1px solid $border-gray;
                                 border-right: 1px solid $border-gray;
-                                &__text{
+                                &__text {
                                     padding-left: 10px;
                                     padding-right: 10px;
                                 }
-                                &__number{
+                                &__number {
                                     min-width: 50px;
                                     height: 50px;
                                     border-width: 2px;
@@ -444,13 +447,13 @@ main {
                                     font-size: 28px;
                                     font-weight: 300;
                                 }
-                                &:nth-child(1){
+                                &:nth-child(1) {
                                     color: #9b4ce4;
                                 }
-                                &:nth-child(2){
+                                &:nth-child(2) {
                                     color: #536be2;
                                 }
-                                &:nth-child(3){
+                                &:nth-child(3) {
                                     color: $blue-light;
                                     border-bottom: 1px solid $border-gray;
                                 }
@@ -458,106 +461,107 @@ main {
                         }
                     }
                 }
-                &__button{
+                &__button {
                     display: flex;
                     justify-content: space-between;
                     margin-top: 40px;
-                    button{
+                    button {
                         @include custom-button(30px, 90px, white, 5px);
                         border: 2px solid $border-gray;
                         @include text-uppercase($font1, 14px);
                         @include hover-button(white, $border-gray);
-                        i{
+                        i {
                             font-size: 18px;
                         }
                     }
                 }
-            }           
+            }
         }
     }
-    .wrap-product-highlight{
+    .wrap-product-highlight {
         background-color: #f0f3f2;
-        .product-highlight{
+        .product-highlight {
             padding-top: 140px;
             padding-bottom: 150px;
-            &__title{
+            &__title {
                 text-align: center;
-                .title-large{
+                .title-large {
                     font-family: $font1;
                     font-size: 50px;
                     font-weight: 300;
                     text-transform: uppercase;
                     color: $black-light;
-                    b{
+                    b {
                         color: $yellow-mid;
                     }
                 }
-                .title-desc{
+                .title-desc {
                     margin-top: 30px;
                     font-size: 24px;
                     font-weight: 300;
                     color: $gray-mid;
                 }
             }
-            &__main{
+            &__main {
                 margin-top: 140px;
                 display: flex;
-                .main-left{
+                flex-wrap: wrap;
+                .main-left {
                     flex: 0 0 74%;
                     position: relative;
                     padding-left: 70px;
-                    .image{
+                    .image {
                         width: 78%;
-                        img{
+                        img {
                             width: 100%;
                             max-height: 543px;
                             max-width: 622px;
                             height: auto;
                         }
                     }
-                    .icons{
+                    .icons {
                         z-index: 2;
                         right: 20px;
                         top: 50px;
                         position: absolute;
-                        .icon{
+                        .icon {
                             width: 50px;
                             height: 50px;
                             border: 1px solid #ccd5da;
                             border-radius: 50%;
                             position: relative;
-                            &::before{
+                            &::before {
                                 content: "";
                                 position: absolute;
                                 border-top: 1px solid #ccd5da;
-                                left:0;
+                                left: 0;
                                 transform: translateX(-100%);
                                 display: block;
                                 width: 10.5vw;
                             }
-                            &:nth-child(2){
+                            &:nth-child(2) {
                                 margin-top: 130px;
                                 margin-bottom: 140px;
                             }
                         }
                     }
                 }
-                .main-right{
+                .main-right {
                     flex: 0 0 26%;
                     margin-top: 60px;
-                    .item{
+                    .item {
                         margin-bottom: 65px;
-                        &:last-child{
+                        &:last-child {
                             margin-bottom: 0;
                         }
-                        &__title{
+                        &__title {
                             font-family: $font1;
                             font-size: 24px;
                             font-weight: 300;
                             color: $black-light;
                             text-transform: uppercase;
                         }
-                        &__desc{
+                        &__desc {
                             margin-top: 30px;
                             color: $gray-mid;
                             padding-right: 20px;
@@ -567,27 +571,28 @@ main {
             }
         }
     }
-    .wrap-size-product{
+    .wrap-size-product {
         background-color: #25293c;
-        .size-product{
+        .size-product {
             display: flex;
+            flex-wrap: wrap;
             margin-left: -20px;
             margin-right: -20px;
             padding-top: 140px;
             padding-bottom: 140px;
-            .size-detail{
+            .size-detail {
                 flex: 0 0 50%;
                 padding-left: 20px;
                 padding-right: 20px;
                 color: $gray-dark;
-                &__title{
+                &__title {
                     @include text-uppercase($font1, 50px);
                     font-weight: 300;
                 }
-                &__desc{
+                &__desc {
                     margin-top: 60px;
                     line-height: 22px;
-                    .icon{
+                    .icon {
                         width: 50px;
                         height: 25px;
                         background-color: #656094;
@@ -595,8 +600,8 @@ main {
                         margin-right: 15px;
                         float: left;
                         position: relative;
-                        &::before{
-                            content:"";
+                        &::before {
+                            content: "";
                             position: absolute;
                             top: 0;
                             transform: translateY(-100%);
@@ -604,8 +609,8 @@ main {
                             border-left: 25px solid transparent;
                             border-right: 25px solid transparent;
                         }
-                        &::after{
-                            content:"";
+                        &::after {
+                            content: "";
                             position: absolute;
                             bottom: 0;
                             transform: translateY(100%);
@@ -613,47 +618,47 @@ main {
                             border-left: 25px solid transparent;
                             border-right: 25px solid transparent;
                         }
-                        i{
+                        i {
                             font-size: 20px;
                             color: white;
                         }
                     }
                 }
-                &__size{
+                &__size {
                     margin-top: 60px;
                     width: 100%;
                     border-collapse: collapse;
-                    tr{
-                        td,th{
+                    tr {
+                        td,
+                        th {
                             text-align: center;
-                            padding: 20px;
+                            padding: 20px 10px;
                         }
-                        th{
+                        th {
                             font-family: $font1;
                             color: $yellow-mid;
                             border-top: 1px solid $gray-mid;
                             border-bottom: 1px solid $gray-mid;
-                            &:first-child{
+                            &:first-child {
                                 border-left: 1px solid $gray-mid;
                             }
-                            &:last-child{
+                            &:last-child {
                                 border-right: 1px solid $gray-mid;
                             }
                         }
-                        td{
+                        td {
                             border: 1px solid white;
                             color: $gray-dark;
-                            
                         }
                     }
                 }
             }
-            .image{
+            .image {
                 flex: 0 0 50%;
                 padding-left: 20px;
                 padding-right: 20px;
-                img{
-                    height:auto;
+                img {
+                    height: auto;
                     width: 100%;
                     max-width: 460px;
                     max-height: 560px;
@@ -667,20 +672,24 @@ main {
             flex-wrap: wrap;
             padding-top: 125px;
             padding-bottom: 125px;
+            margin-left: -20px;
+            margin-right: -20px;
             justify-content: center;
             position: relative;
             .element {
+                padding-left: 20px;
+                padding-right: 20px;
                 flex: 0 0 33.33%;
                 display: flex;
                 margin-top: 40px;
-                &::before{
+                &::before {
                     content: "";
                     height: 70px;
                     border-left: 1px dashed black;
                     position: absolute;
                     top: 0;
                 }
-                &::after{
+                &::after {
                     content: "";
                     height: 30px;
                     border-left: 1px dashed black;
@@ -689,7 +698,7 @@ main {
                 }
             }
             .item {
-                flex: 0 0 60%;
+                flex: 0 0 72%;
                 .title {
                     font-family: "Montserrat", sans-serif;
                     font-weight: 300;
@@ -697,43 +706,43 @@ main {
                     color: $black-light;
                     font-size: 16px;
                     line-height: 30px;
+                    padding-right: 20px;
                 }
                 .content {
                     margin-top: 50px;
                     margin-bottom: 55px;
                     color: #5f727f;
                     line-height: 24px;
+                    padding-right: 35px;
                 }
                 .button {
                     button {
                         @include custom-button(30px, 145px, white, 5px);
                         @include hover-button(white, $blue-light);
                         @include text-uppercase($font1, 14px);
-                        border: 2px solid $blue-light
+                        border: 2px solid $blue-light;
                     }
                 }
             }
             .icon {
-                flex: 0 0 40%;
+                flex: 0 0 28%;
                 text-align: center;
             }
-            
         }
     }
-    .catalogues{
+    .catalogues {
         background-color: #525466;
-        padding-top: 105px;
-        padding-bottom: 105px;
-        &__title{
+        padding: 105px 20px;
+        &__title {
             @include text-uppercase($font1, 50px);
             font-weight: 300;
             text-align: center;
             color: white;
-            b{
+            b {
                 color: $yellow-mid;
             }
         }
-        &__desc{
+        &__desc {
             text-align: center;
             max-width: $container;
             margin-left: auto;
@@ -744,20 +753,21 @@ main {
             font-weight: 300;
         }
     }
-    .wrap-newspaper{
-        .newspaper{
+    .wrap-newspaper {
+        .newspaper {
             display: flex;
+            flex-wrap: wrap;
             margin-left: -20px;
             margin-right: -20px;
             color: $gray-mid;
             line-height: 24px;
             padding-top: 85px;
             padding-bottom: 85px;
-            .newspaper-left{
+            .newspaper-left {
                 flex: 0 0 50%;
                 padding-left: 20px;
                 padding-right: 20px;
-                &__highlight{
+                &__highlight {
                     background-color: #333144;
                     padding: 55px 34px;
                     margin-top: 40px;
@@ -766,49 +776,48 @@ main {
                     font-weight: 300;
                     color: #bcc6cd;
                     position: relative;
-                    img{
+                    img {
                         display: block;
                         position: absolute;
                         bottom: 0;
                         right: 35px;
                     }
-                    
                 }
             }
-            .newspaper-right{
+            .newspaper-right {
                 flex: 0 0 50%;
                 padding-left: 20px;
                 padding-right: 20px;
             }
         }
     }
-    .wrap-three-images{
-        .three-images{
+    .wrap-three-images {
+        .three-images {
             display: flex;
+            flex-wrap: wrap;
             margin-left: -20px;
             margin-right: -20px;
-            .three-images-left{
+            .three-images-left {
                 flex: 0 0 50%;
                 padding-left: 20px;
                 padding-right: 20px;
-                div{
+                div {
                     background-color: #dfe7e8;
-                    padding-top: calc(885 / 565 *100%);
+                    padding-top: calc(888 / 564 * 100%);
                 }
             }
-            .three-images-right{
+            .three-images-right {
                 flex: 0 0 50%;
                 padding-left: 20px;
                 padding-right: 20px;
-                div{
+                div {
                     background-color: #dfe7e8;
-                    padding-top: calc(423 / 565 *100%);
-                    &:first-child{
+                    padding-top: calc(422 / 564 * 100%);
+                    &:first-child {
                         margin-bottom: 40px;
                     }
                 }
             }
         }
     }
-
 }

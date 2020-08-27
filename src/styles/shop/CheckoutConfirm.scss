@@ -1,30 +1,29 @@
 @import "../varibles";
 @import "../mixin";
-
-main{
-    .box-full{
+main {
+    .box-full {
         margin-top: 85px;
         background-color: $green-dark;
         border-radius: 5px;
         padding: 25px 20px 25px 25px;
-        .content-box-full{
+        .content-box-full {
             display: flex;
             align-items: center;
             position: relative;
-            .tick{
+            .tick {
                 width: 53px;
                 height: 50px;
                 border-radius: 50%;
                 background-color: $green-light;
                 margin-right: 20px;
             }
-            .text{
+            .text {
                 font-family: $font2;
                 font-size: 24px;
                 font-weight: 300;
                 color: #3c3950;
             }
-            .close{
+            .close {
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -32,48 +31,48 @@ main{
             }
         }
     }
-    .order-data{
+    .order-data {
         margin-top: 45px;
-        ul{
-            li{
+        ul {
+            li {
                 color: $gray-mid;
                 font-family: $font2;
                 margin-bottom: 15px;
-                i{
+                i {
                     color: $green-dark;
                     padding-right: 5px;
                 }
-                span{
+                span {
                     font-weight: 700;
                 }
-                &:last-child{
-                    margin-top:30px;
+                &:last-child {
+                    margin-top: 30px;
                     margin-bottom: 0px;
                 }
             }
         }
     }
-    .title-article{
+    .title-article {
         font-family: $font1;
         font-weight: 300;
         text-transform: uppercase;
     }
-    .order-detail{
+    .order-detail {
         display: flex;
         flex-wrap: wrap;
         margin-left: -20px;
         margin-right: -20px;
-        article{
+        article {
             margin-top: 85px;
             flex: 0 0 50%;
             padding-left: 20px;
             padding-right: 20px;
-            .title-order{
+            .title-order {
                 font-size: 36px;
                 margin-bottom: 55px;
             }
         }
-        .details-table{
+        .details-table {
             table {
                 width: 100%;
                 border-collapse: collapse;
@@ -94,7 +93,7 @@ main{
                     }
                 }
                 tr:nth-child(odd) {
-                    background-color: #f0f3f2;
+                    background-color: $bg-gray;
                 }
                 td,
                 th {
@@ -106,7 +105,6 @@ main{
                         display: flex;
                         align-items: center;
                     }
-    
                     img {
                         display: block;
                     }
@@ -117,7 +115,7 @@ main{
                     }
                 }
                 .table-quantity {
-                    div{
+                    div {
                         text-align: center;
                         color: $gray-mid;
                     }
@@ -129,17 +127,17 @@ main{
                 }
             }
         }
-        .detail-cart{
+        .detail-cart {
             table {
                 border: 1px solid $border-gray;
                 border-collapse: collapse;
                 width: 100%;
                 tr {
-                    td{
-                        padding:14px 20px;
+                    td {
+                        padding: 14px 20px;
                     }
                     td:first-child {
-                        background-color: #f0f3f2;
+                        background-color: $bg-gray;
                         font-family: $font2;
                         color: $gray-mid;
                     }
@@ -161,90 +159,89 @@ main{
             }
         }
     }
-    .order-customer{
+    .order-customer {
         display: flex;
         flex-wrap: wrap;
         margin-left: -20px;
         margin-right: -20px;
         margin-bottom: 140px;
-        article{
+        article {
             margin-top: 85px;
             flex: 0 0 33.33%;
             padding-left: 20px;
             padding-right: 20px;
-            .title-order{
+            .title-order {
                 font-size: 29px;
                 margin-bottom: 50px;
             }
-            .content-customer{
+            .content-customer {
                 font-family: $font2;
                 color: $gray-mid;
-                div{
+                div {
                     margin-bottom: 20px;
-                    span{
+                    span {
                         font-weight: 700;
                     }
                 }
             }
         }
     }
-    
 }
 
-@media (max-width: 1024px){
-    .order-detail{
-        article{
+@media (max-width: 1024px) {
+    .order-detail {
+        article {
             flex: 0 0 100% !important;
         }
     }
 }
 
-@media (max-width: 768px){
-    .order-customer{
-        article{
+@media (max-width: 768px) {
+    .order-customer {
+        article {
             flex: 0 0 100% !important;
         }
     }
 }
 
-@media (max-width: 576px){
-    .box-full{
+@media (max-width: 576px) {
+    .box-full {
         padding: 10px !important;
-        .tick{
+        .tick {
             width: 35px !important;
             height: 35px !important;
-            margin-right: 10px !important
+            margin-right: 10px !important;
         }
-       .text{
-           font-size: 16px !important;
-           padding-right: 20px;
-       } 
+        .text {
+            font-size: 16px !important;
+            padding-right: 20px;
+        }
     }
-    .details-table{
-        table{
-            tr{
+    .details-table {
+        table {
+            tr {
                 th {
                     font-size: 10px !important;
                 }
-                td,th{
+                td,
+                th {
                     padding: 10px !important;
                 }
-                td.table-product{
-                    .box{
-                        img{
+                td.table-product {
+                    .box {
+                        img {
                             width: 50px !important;
                             height: 50px !important;
                         }
-                        .text{
+                        .text {
                             font-size: 12px !important;
                         }
                     }
                 }
-                td.table-total{
+                td.table-total {
                     font-size: 15px !important;
                 }
-                
             }
-        } 
+        }
     }
 }

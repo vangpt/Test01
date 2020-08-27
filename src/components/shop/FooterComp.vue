@@ -89,37 +89,24 @@
                 </div>
                 <div class="email item">
                     <div class="title">
-                        Newsletter
+                        Email us
                         <i class="fa fa-caret-down"></i>
                     </div>
                     <div class="input">
                         <form action="">
                             <div class="input-element">
-                                <input
-                                    type="text"
-                                    name=""
-                                    id=""
-                                    placeholder="Your name"
-                                />
+                                <input type="text" placeholder="Your name" />
                                 <div class="icon d-flex-center">
-                                    <i
-                                        class="fa fa-user"
-                                       
-                                    ></i>
+                                    <i class="fa fa-user"></i>
                                 </div>
                             </div>
                             <div class="input-element">
                                 <input
                                     type="email"
-                                    name=""
-                                    id=""
                                     placeholder="Your email address"
                                 />
                                 <div class="icon d-flex-center">
-                                    <i
-                                        class="fa fa-envelope"
-                                       
-                                    ></i>
+                                    <i class="fa fa-envelope"></i>
                                 </div>
                             </div>
                             <textarea placeholder="Your message"></textarea>
@@ -204,15 +191,13 @@
                         <i class="fa fa-headphones"></i>&nbsp;&nbsp; Phone: +1
                         916-85-2235
                         <br />
-                        <i class="fa fa-fax"></i>&nbsp;&nbsp;
-                        Fax: +1 916-85-2235
+                        <i class="fa fa-fax"></i>&nbsp;&nbsp; Fax: +1
+                        916-85-2235
                         <br />
-                        <i class="fa fa-envelope-o"></i
-                        >&nbsp;&nbsp; Email:
+                        <i class="fa fa-envelope-o"></i>&nbsp;&nbsp; Email:
                         <span>info@domain.ltd</span>
                         <br />
-                        <i class="fa fa-globe"></i
-                        >&nbsp;&nbsp; Website:
+                        <i class="fa fa-globe"></i>&nbsp;&nbsp; Website:
                         <span>www.codex-themes.com</span>
                     </div>
                 </div>
@@ -301,7 +286,7 @@
                 </div>
                 <div class="news item">
                     <div class="title">
-                        Newsletter
+                        News letter
                         <i class="fa fa-caret-down"></i>
                     </div>
                     <div class="desc">
@@ -312,8 +297,6 @@
                         <form action="">
                             <input
                                 type="text"
-                                name=""
-                                id=""
                                 placeholder="Your email address"
                             /><input type="button" value=">" />
                         </form>
@@ -342,6 +325,14 @@ export default {
     color: #798692;
     padding-bottom: 110px;
     padding-top: 80px;
+    input:focus,
+    textarea:focus {
+        &::placeholder {
+            transition: 0.5s;
+            color: white;
+        }
+        outline: none;
+    }
     .footer-head {
         display: flex;
         flex-wrap: wrap;
@@ -412,13 +403,13 @@ export default {
                 }
                 margin: 45px 0 10px 0;
                 input[type="text"] {
-                    width: 80%;
+                    flex-grow: 1;
                     height: 40px;
                     border: 1px solid $gray-mid;
                     background-color: #181828;
                     font-family: "Source Sans Pro", sans-serif;
                     font-size: 16px;
-                    color: $black-light;
+                    color: white;
                     padding-left: 10px;
                 }
                 input[type="button"] {
@@ -499,7 +490,7 @@ export default {
                     background-color: #181828;
                     font-family: "Source Sans Pro", sans-serif;
                     font-size: 16px;
-                    color: $black-light;
+                    color: white;
                     padding-left: 10px;
                     margin-bottom: 15px;
                 }
@@ -559,10 +550,13 @@ export default {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .footer-head {
         flex-wrap: wrap;
         padding: 15px;
+        .title {
+            font-size: 17px !important;
+        }
         .item {
             flex: 0 0 50% !important;
         }

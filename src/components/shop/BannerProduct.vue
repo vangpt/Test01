@@ -1,7 +1,7 @@
 <template>
-    <section class="banner-product">
+    <section class="box-banner-product">
         <div class="container">
-            <div class="box">
+            <div class="banner-product">
                 <div class="box-content">
                     <div
                         class="image-banner"
@@ -22,19 +22,15 @@
                         {{ contentBanner.desc }}
                     </div>
                 </div>
-                <slot> </slot>
+                <slot></slot>
             </div>
         </div>
     </section>
 </template>
 
 <script>
-import BreadCrumb from "./BreadCrumb";
 export default {
     name: "banner-comp",
-    components: {
-        BreadCrumb
-    },
     props: {
         contentBanner: { type: Object, defult: null }
     },
@@ -47,12 +43,12 @@ export default {
 <style lang="scss">
 @import "../../styles/mixin";
 @import "../../styles/varibles";
-.banner-product {
+.box-banner-product {
     background: #6a6f7d;
-    .box {
+    .banner-product {
         padding-top: 40px;
         // padding-bottom: 40px;
-        position: relative;
+        // position: relative;
     }
     .box-content {
         text-align: center;
@@ -85,11 +81,21 @@ export default {
 }
 
 @media (max-width: 576px) {
-    .title-banner {
-        font-size: 30px !important;
+    .box {
+        padding-top: 20px !important;
     }
-    .image {
-        width: 20%;
+    .image-banner {
+        margin: 10px auto !important;
+        width: 60px !important;
+        height: 60px !important;
+    }
+    .title-banner {
+        font-size: 28px !important;
+    }
+    .desc-banner {
+        font-size: 16px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
     }
 }
 </style>

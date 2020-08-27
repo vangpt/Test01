@@ -1,7 +1,12 @@
 @import "../varibles";
 @import "../mixin";
+.box-bread-crumb {
+    .bread-crumb {
+        text-align: left;
+    }
+}
 
-main{
+main {
     .list-product {
         margin-top: 85px;
         &__title {
@@ -19,9 +24,9 @@ main{
             font-weight: 300;
             display: flex;
             align-items: center;
-            .icon{
+            .icon {
                 display: flex;
-                a{
+                a {
                     width: 23px;
                     height: 23px;
                     border-radius: 50%;
@@ -30,7 +35,7 @@ main{
                     justify-content: center;
                     align-items: center;
                     margin-left: 25px;
-                    i{
+                    i {
                         font-size: 14px;
                         color: white;
                     }
@@ -56,9 +61,8 @@ main{
                 }
             }
             tr:nth-child(odd) {
-                background-color: #f0f3f2;
+                background-color: $bg-gray;
             }
-
             td,
             th {
                 margin: 0;
@@ -78,14 +82,17 @@ main{
                     display: flex;
                     align-items: center;
                 }
-
                 img {
                     display: block;
+                    height: 100%;
+                    width: auto;
                 }
                 .text {
                     margin-left: 15px;
                     color: $blue-light;
                     font-family: $font2;
+                    display: flex;
+                    flex-wrap: wrap;
                     span {
                         color: #99a9b5;
                         font-family: $font2;
@@ -107,14 +114,14 @@ main{
             }
             .table-button {
                 text-align: center;
-                button{
+                button {
                     @include text-uppercase($font1, 14px);
                     @include custom-button(40px, 160px, #b6c6c9, 5px);
                     cursor: pointer;
-                    &:hover{
-                        background-color:  $blue-light;
+                    &:hover {
+                        background-color: $blue-light;
                     }
-                    i{
+                    i {
                         font-size: 20px;
                         color: white;
                         padding-right: 10px;
@@ -123,19 +130,19 @@ main{
             }
         }
     }
-    .related-product{
+    .related-product {
         margin-top: 144px;
         margin-bottom: 144px;
-        .text{
+        .text {
             display: flex;
             align-items: center;
             // justify-content: space-between;
-            .title{
+            .title {
                 @include text-uppercase($font1, 36px);
                 font-weight: 300;
                 margin-right: 20px;
             }
-            .border{
+            .border {
                 border-top: 1px solid $border-gray;
                 border-bottom: 1px solid $border-gray;
                 height: 4px;
@@ -213,7 +220,7 @@ main{
                         opacity: 1;
                     }
                     .info {
-                        background-color: #f0f3f2;
+                        background-color: $bg-gray;
                         &__border {
                             width: 80px;
                         }
@@ -245,10 +252,9 @@ main{
     }
 }
 
-
-@media (max-width: 1200px){
-    td.table-product{
-        span{
+@media (max-width: 1200px) {
+    td.table-product {
+        span {
             margin-left: 0px !important;
         }
     }
@@ -259,41 +265,40 @@ main{
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .list-product {
-        .list-product__social{
+        .list-product__social {
             flex-direction: column;
-            .icon{
-                a{
+            .icon {
+                a {
                     margin-top: 20px;
                     margin-left: 10px !important;
-                    &:first-child{
+                    &:first-child {
                         margin-left: 0 !important;
                     }
                 }
             }
         }
-        table{
-            tr{
-                td.table-product{
-                    .box{
-                        flex-direction:  column !important;
+        table {
+            tr {
+                td.table-product {
+                    .box {
+                        flex-direction: column !important;
                         align-items: flex-start !important;
-                        .text{
+                        .text {
                             margin-top: 5px;
                             margin-left: 0 !important;
-                            
                         }
                     }
                 }
-                td.table-price{
+                td.table-price {
                     font-size: 18px !important;
                 }
-                td.table-button{
-                    button{
+                td.table-button {
+                    button {
                         width: 130px !important;
                         font-size: 12px !important;
-                        i{
+                        i {
                             padding-right: 5px !important;
                         }
                     }
@@ -308,59 +313,58 @@ main{
     }
 }
 
-@media (max-width: 576px){
-    .list-product{
-        .list-product__title{
+@media (max-width: 576px) {
+    .list-product {
+        .list-product__title {
             font-size: 20px !important;
         }
-        .list-product__social{
+        .list-product__social {
             font-size: 20px !important;
         }
-        table{
-            tr{
+        table {
+            tr {
                 th {
                     font-size: 10px !important;
                 }
-                td.table-product{
-                    .box{
-                        img{
+                td.table-product {
+                    .box {
+                        img {
                             width: 50px !important;
                             height: 50px !important;
                         }
-                        .text{
+                        .text {
                             font-size: 12px !important;
-                            span{
+                            span {
                                 font-size: 11px !important;
                                 margin-left: 0px !important;
                             }
                         }
                     }
                 }
-                td.table-close{
-                    i{
+                td.table-close {
+                    i {
                         font-size: 15px !important;
                     }
                 }
-                td.table-price{
+                td.table-price {
                     font-size: 13px !important;
                 }
-                td.table-stock  {
+                td.table-stock {
                     font-size: 14px !important;
                 }
-                td.table-button{
-                    button{
+                td.table-button {
+                    button {
                         width: 70px !important;
                         font-size: 10px !important;
-                        i{
+                        i {
                             font-size: 15px !important;
                         }
                     }
                 }
-                
             }
         }
     }
-    .title{
+    .title {
         font-size: 20px !important;
     }
 }

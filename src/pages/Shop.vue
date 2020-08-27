@@ -2,165 +2,110 @@
     <div>
         <top-area />
         <menu-comp />
-        <banner />
-        <main>
+        <banner>
+            <bread-crumb v-bind:breadCrumb="listBreadCrumb" />
+        </banner>
+        <main class="shop">
             <div class="container">
                 <section class="product">
                     <aside>
                         <div class="categories">
                             <div class="title">
-                                recent post
+                                categories
                                 <i class="fa fa-caret-down"></i>
                             </div>
                             <ul class="grand-categories">
-                                <!-- <li v-for="(element,index) in listCategories" :key="index">
-                                    <div class="grand-title">
-
-                                    <a :href="element.link">{{element.text}}</a><i v-if="element.categroyies1.length > 0" class="fa fa-angle-right"></i>
+                                <li
+                                    v-for="(element, index) in listCategories"
+                                    :key="index"
+                                >
+                                    <div
+                                        class="grand-title"
+                                        @click="showParentMenu(index)"
+                                        v-bind:class="{
+                                            'active-title': element.isShowMenu
+                                        }"
+                                    >
+                                        <a :href="element.link">{{
+                                            element.text
+                                        }}</a
+                                        ><i
+                                            v-if="
+                                                element.categroyies1.length > 0
+                                            "
+                                            :class="{
+                                                'angle-down': element.isShowMenu
+                                            }"
+                                            class="fa fa-angle-right"
+                                        ></i>
                                     </div>
-                                    <ul v-if="element.categroyies1.length > 0" class="parents-categories">
-                                        <li v-for="(item,index) in element.categroyies1" :key="index">
-                                            <div class="categroy-title">
-                                                <a :href="item.link" class="text">
-                                                    <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;{{item.text}}
+                                    <ul
+                                        v-bind:class="{
+                                            'active-menu': element.isShowMenu
+                                        }"
+                                        v-if="element.categroyies1.length > 0"
+                                        class="parents-categories"
+                                    >
+                                        <li
+                                            v-for="(item,
+                                            stt) in element.categroyies1"
+                                            :key="stt"
+                                        >
+                                            <div
+                                                class="categroy-title"
+                                                @click="
+                                                    showChildMenu(index, stt)
+                                                "
+                                                v-bind:class="{
+                                                    'active-title':
+                                                        item.isShowMenu
+                                                }"
+                                            >
+                                                <a
+                                                    :href="item.link"
+                                                    class="text"
+                                                >
+                                                    <i class="fa fa-square"></i
+                                                    >{{ item.text }}
                                                 </a>
-                                                <i v-if="item.categroyies2.length > 0" class="fa fa-angle-right"></i>
+                                                <i
+                                                    :class="{
+                                                        'angle-down':
+                                                            item.isShowMenu
+                                                    }"
+                                                    v-if="
+                                                        item.categroyies2
+                                                            .length > 0
+                                                    "
+                                                    class="fa fa-angle-right"
+                                                ></i>
                                             </div>
-                                            <ul v-if="item.categroyies2.length" class="child-categories">
+                                            <ul
+                                                v-bind:class="{
+                                                    'active-menu':
+                                                        item.isShowMenu
+                                                }"
+                                                v-if="item.categroyies2.length"
+                                                class="child-categories"
+                                            >
                                                 <li
-                                                    v-for="(itemChild,index) in item.categroyies2" :key="index"
+                                                    v-for="(itemChild,
+                                                    index) in item.categroyies2"
+                                                    :key="index"
                                                 >
                                                     <div class="child-title">
-                                                        <a :href="itemChild.link" class="text">
-                                                            <i class="fa fa-square"></i>&nbsp;&nbsp;&nbsp;{{itemChild.text}}
-                                                        </a>
-                                                        <i class="fa fa-angle-right"></i>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li> -->
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">version</a
-                                        ><i class="fa fa-angle-right"></i>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">lorem ipsum</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">proin</a
-                                        ><i class="fa fa-angle-right"></i>
-                                    </div>
-                                    <ul class="parents-categories">
-                                        <li>
-                                            <div class="categroy-title">
-                                                <a href="#" class="text">
-                                                    <i class="fa fa-square"></i
-                                                    >&nbsp;&nbsp;&nbsp;July 2015
-                                                </a>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="categroy-title">
-                                                <a href="#" class="text">
-                                                    <i class="fa fa-square"></i
-                                                    >&nbsp;&nbsp;&nbsp;January
-                                                    2013
-                                                </a>
-                                                <i
-                                                    class="fa fa-angle-right"
-                                                ></i>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="categroy-title">
-                                                <a href="#" class="text">
-                                                    <i class="fa fa-square"></i
-                                                    >&nbsp;&nbsp;&nbsp;March
-                                                    2012
-                                                </a>
-                                                <i
-                                                    class="fa fa-angle-right"
-                                                ></i>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="categroy-title">
-                                                <a href="#" class="text">
-                                                    <i class="fa fa-square"></i
-                                                    >&nbsp;&nbsp;&nbsp;January
-                                                    2012
-                                                </a>
-                                                <i
-                                                    class="fa fa-angle-right"
-                                                ></i>
-                                            </div>
-                                            <ul class="child-categories">
-                                                <li>
-                                                    <div class="child-title">
                                                         <a
-                                                            href="#"
+                                                            :href="
+                                                                itemChild.link
+                                                            "
                                                             class="text"
                                                         >
                                                             <i
                                                                 class="fa fa-square"
                                                             ></i
-                                                            >&nbsp;&nbsp;&nbsp;July
-                                                            2015
-                                                        </a>
-                                                        <i
-                                                            class="fa fa-angle-right"
-                                                        ></i>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="child-title">
-                                                        <a
-                                                            href="#"
-                                                            class="text"
-                                                        >
-                                                            <i
-                                                                class="fa fa-square"
-                                                            ></i
-                                                            >&nbsp;&nbsp;&nbsp;January
-                                                            2013
-                                                        </a>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="child-title">
-                                                        <a
-                                                            href="#"
-                                                            class="text"
-                                                        >
-                                                            <i
-                                                                class="fa fa-square"
-                                                            ></i
-                                                            >&nbsp;&nbsp;&nbsp;March
-                                                            2012
-                                                        </a>
-                                                        <i
-                                                            class="fa fa-angle-right"
-                                                        ></i>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="child-title">
-                                                        <a
-                                                            href="#"
-                                                            class="text"
-                                                        >
-                                                            <i
-                                                                class="fa fa-square"
-                                                            ></i
-                                                            >&nbsp;&nbsp;&nbsp;January
-                                                            2012
+                                                            >{{
+                                                                itemChild.text
+                                                            }}
                                                         </a>
                                                         <i
                                                             class="fa fa-angle-right"
@@ -170,34 +115,6 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">gravida</a
-                                        ><i class="fa fa-angle-right"></i>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">nibh vel velit</a
-                                        ><i class="fa fa-angle-right"></i>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">auctor</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">aliquet</a
-                                        ><i class="fa fa-angle-right"></i>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="grand-title">
-                                        <a href="#">Aenean</a>
-                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -460,37 +377,39 @@
                     </aside>
                     <section>
                         <article class="list-product-1">
-                            <div class="list-products">
-                                <div
-                                    class="box-item"
-                                    v-for="(item, index) in listProduct"
-                                    :key="index"
-                                >
-                                    <div class="item">
-                                        <img
-                                            :src="
-                                                require(`../assets/imgs/shop/list-product/${item.image}`)
-                                            "
-                                            alt=""
-                                        />
-                                        <div class="box">
-                                            <div class="desc">
-                                                <div class="name">
-                                                    <a href="#">{{
-                                                        item.name
-                                                    }}</a>
-                                                    <div
-                                                        class="name__border"
-                                                    ></div>
-                                                </div>
-                                                <div class="number">
-                                                    {{ item.item }} items
+                            <template v-for="(element, stt) in listProductTop">
+                                <div class="list-products" :key="stt">
+                                    <div
+                                        class="box-item"
+                                        v-for="(item, index) in element"
+                                        :key="index"
+                                    >
+                                        <div class="item">
+                                            <img
+                                                :src="
+                                                    require(`../assets/imgs/shop/list-product/${item.image}`)
+                                                "
+                                                alt=""
+                                            />
+                                            <div class="box">
+                                                <div class="desc">
+                                                    <div class="name">
+                                                        <a href="#">{{
+                                                            item.name
+                                                        }}</a>
+                                                        <div
+                                                            class="name__border"
+                                                        ></div>
+                                                    </div>
+                                                    <div class="number">
+                                                        {{ item.item }} items
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </template>
                             <div class="arrow">
                                 <div class="d-flex-center">
                                     <i class="fa fa-angle-left"></i>
@@ -504,12 +423,12 @@
                             <div class="sort d-flex-wrap">
                                 <div class="sort-left d-flex-align">
                                     <div class="box-select">
-                                        <select>
-                                            <option value=""
+                                        <select @change="onChangeSort($event)">
+                                            <option value="0"
                                                 >Defult sorting</option
                                             >
-                                            <option value=""
-                                                >Defult sorting 1</option
+                                            <option value="1"
+                                                >Defult sorting price</option
                                             >
                                         </select>
                                     </div>
@@ -530,9 +449,15 @@
                                         Showing 1-12 of 17 results
                                     </div>
                                     <div class="box-select">
-                                        <select>
-                                            <option value=""
+                                        <select @change="onChangeShow($event)">
+                                            <option value="12"
                                                 >Show 12 on page</option
+                                            >
+                                            <option value="15"
+                                                >Show 15 on page</option
+                                            >
+                                            <option value="18"
+                                                >Show full</option
                                             >
                                         </select>
                                     </div>
@@ -543,7 +468,7 @@
                             <div class="items">
                                 <div
                                     class="box"
-                                    v-for="(element, index) in listProduct2"
+                                    v-for="(element, index) in listProductsMain"
                                     :key="index"
                                 >
                                     <div class="item">
@@ -575,64 +500,80 @@
                                         </div>
                                         <div class="info">
                                             <div
-                                                v-if="element.isStar"
+                                                v-if="element.rating > 0"
                                                 class="info__star"
                                             >
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
+                                                <star-rating
+                                                    v-bind:star-size="20"
+                                                    v-bind:increment="0.5"
+                                                    v-bind:show-rating="false"
+                                                    v-bind:read-only="true"
+                                                    v-model="element.rating"
+                                                ></star-rating>
                                             </div>
                                             <div
-                                                v-if="element.isBorder"
+                                                v-if="element.rating == 0"
                                                 class="info__border"
                                             ></div>
-                                            <a :href="element.link">
+                                            <router-link
+                                                :to="{
+                                                    name: 'detail-product',
+                                                    params: { id: element.id }
+                                                }"
+                                            >
                                                 <div class="info__name">
                                                     {{ element.nameProduct }}
                                                 </div>
-                                                <div class="info__price">
-                                                    {{ element.priceProduct }}
-                                                </div>
-                                            </a>
+                                            </router-link>
+                                            <div class="info__price">
+                                                ${{ element.minPrice }} - ${{
+                                                    element.maxPrice
+                                                }}
+                                            </div>
                                             <div
-                                                v-if="element.isViewCart"
+                                                v-if="element.quantity == 0"
                                                 class="info__view"
                                             >
                                                 <i class="fa fa-list-ul"></i
-                                                >&nbsp;<a href="#">View Cart</a>
+                                                >&nbsp;<router-link
+                                                    to="/shop-cart"
+                                                    tag="a"
+                                                    >View Cart</router-link
+                                                >
                                             </div>
-                                            <div
-                                                v-if="element.isViewWishList"
+                                            <!-- <div
+                                                v-else-if="element.isHeart"
                                                 class="info__view"
                                             >
                                                 <i class="fa fa-star-o"></i
-                                                >&nbsp;<a href="#"
-                                                    >View Wishlist</a
+                                                >&nbsp;<router-link
+                                                    to="/shop-wishlist"
+                                                    tag="a"
+                                                    >View Wishlist</router-link
                                                 >
-                                            </div>
-                                            <div
-                                                v-if="element.isIcon"
-                                                class="info__icon"
-                                            >
-                                                <a href="#"
-                                                    ><i
+                                            </div> -->
+                                            <div v-else class="info__icon">
+                                                <router-link to="/shop-cart">
+                                                    <i
                                                         class="fa fa-shopping-cart"
-                                                    ></i
-                                                ></a>
-                                                <a href="#"
+                                                    ></i>
+                                                </router-link>
+                                                <router-link
+                                                    to="/shop-wishlist"
+                                                    tag="a"
                                                     ><i
                                                         class="fa fa-list-alt"
                                                     ></i
-                                                ></a>
+                                                ></router-link>
                                                 <i
+                                                    v-if="!element.isHeart"
                                                     class="fa fa-heart-o"
-                                                    :class="{
-                                                        'heart-red':
-                                                            element.isHeart
-                                                    }"
-                                                    @click="setHeart(index)"
+                                                ></i>
+                                                <i
+                                                    v-else
+                                                    class="fa fa-heart"
+                                                    aria-hidden="true"
+                                                    style="color: red"
                                                 ></i>
                                             </div>
                                         </div>
@@ -646,11 +587,17 @@
                                         aria-hidden="true"
                                     ></i>
                                 </div>
-                                <div class="d-flex-center pagi-active">1</div>
-                                <div class="d-flex-center">2</div>
-                                <div class="d-flex-center">3</div>
-                                <div class="d-flex-center">4</div>
-                                <div class="d-flex-center">5</div>
+                                <div
+                                    v-for="stt in totalPage"
+                                    :key="stt"
+                                    class="d-flex-center"
+                                    :class="{
+                                        'pagi-active': currentPage == stt
+                                    }"
+                                    @click="setCurrentPage(stt)"
+                                >
+                                    {{ stt }}
+                                </div>
                                 <div class="d-flex-center">
                                     <i
                                         class="fa fa-angle-right"
@@ -900,217 +847,7 @@
                     </div>
                 </div>
             </section>
-            <section class="more-product">
-                <div class="container">
-                    <div class="box-more-product">
-                        <div class="element">
-                            <div class="element__title">
-                                new Products <i class="fa fa-caret-down"></i>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                        <div class="info__star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <div class="avatar__percent">%</div>
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                        <div class="info__star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="element">
-                            <div class="element__title">
-                                top rated Products
-                                <i class="fa fa-caret-down"></i>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                        <div class="info__star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <div class="avatar__percent">%</div>
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                        <div class="info__star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="element">
-                            <div class="element__title">
-                                on sale <i class="fa fa-caret-down"></i>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                        <div class="info__star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <div class="avatar__percent">%</div>
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                        <div class="info__star">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="element__item">
-                                <div class="avatar">
-                                    <img
-                                        src="../assets/imgs/shop/featured-product/product1.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="info">
-                                    <div class="info__name">
-                                        <a href="#">product title here</a>
-                                    </div>
-                                    <div class="info__price">
-                                        <span>$35.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <more-product />
             <section class="advertise">
                 <div class="container">
                     <div class="box-advertise">
@@ -1136,41 +873,114 @@
 
 <script>
 import TopArea from "../components/shop/TopArea";
-import MenuComp from "../components/shop/MenuComp";
+import MenuComp from "../components/MenuComp";
 import Banner from "../components/shop/Banner";
 import FooterComp from "../components/shop/FooterComp";
+import BreadCrumb from "../components/shop/BreadCrumb";
+import MoreProduct from "../components/shop/MoreProduct";
 
+import StarRating from "vue-star-rating";
+import { mapState } from "vuex";
 export default {
     name: "shop",
     components: {
         TopArea,
         MenuComp,
         Banner,
-        FooterComp
+        FooterComp,
+        BreadCrumb,
+        MoreProduct,
+        StarRating
     },
     data() {
         return {
+            listBreadCrumb: [
+                {
+                    link: "#",
+                    text: "Home"
+                },
+                {
+                    link: "#",
+                    text: "Shop"
+                }
+            ],
             listCategories: [
                 {
                     text: "version",
                     link: "#",
+                    isShowMenu: false,
                     categroyies1: []
                 },
                 {
                     text: "lorem ipsum",
                     link: "#",
-                    categroyies1: []
+                    isShowMenu: false,
+                    categroyies1: [
+                        {
+                            text: "July 2015",
+                            link: "#",
+                            isShowMenu: false,
+                            categroyies2: []
+                        },
+                        {
+                            text: "January 2013",
+                            link: "#",
+                            isShowMenu: false,
+                            categroyies2: []
+                        }
+                    ]
                 },
                 {
                     text: "proin",
                     link: "#",
+                    isShowMenu: false,
                     categroyies1: [
                         {
-                            text: "proin",
+                            text: "July 2015",
                             link: "#",
+                            isShowMenu: false,
+                            categroyies2: []
+                        },
+                        {
+                            text: "January 2013",
+                            link: "#",
+                            isShowMenu: false,
                             categroyies2: [
                                 {
-                                    text: "proin",
+                                    text: "July 2015",
+                                    link: "#"
+                                },
+                                {
+                                    text: "January 2013",
+                                    link: "#"
+                                }
+                            ]
+                        },
+                        {
+                            text: "March 2012",
+                            link: "#",
+                            isShowMenu: false,
+                            categroyies2: []
+                        },
+                        {
+                            text: "July 2015",
+                            link: "#",
+                            isShowMenu: false,
+                            categroyies2: [
+                                {
+                                    text: "July 2015",
+                                    link: "#"
+                                },
+                                {
+                                    text: "January 2013",
+                                    link: "#"
+                                },
+                                {
+                                    text: "March 2012",
+                                    link: "#"
+                                },
+                                {
+                                    text: "July 2015",
                                     link: "#"
                                 }
                             ]
@@ -1180,26 +990,31 @@ export default {
                 {
                     text: "gravida",
                     link: "#",
+                    isShowMenu: false,
                     categroyies1: []
                 },
                 {
                     text: "nibh vel velit",
                     link: "#",
+                    isShowMenu: false,
                     categroyies1: []
                 },
                 {
                     text: "auctor",
                     link: "#",
+                    isShowMenu: false,
                     categroyies1: []
                 },
                 {
                     text: "aliquet",
                     link: "#",
+                    isShowMenu: false,
                     categroyies1: []
                 },
                 {
                     text: "Aenean",
                     link: "#",
+                    isShowMenu: false,
                     categroyies1: []
                 }
             ],
@@ -1286,251 +1101,10 @@ export default {
                 }
             ],
             isSortDesc: false,
+            typeSort: 0,
+            typeShow: 0,
+            quantityShow: 12,
             isHeart: false,
-            listProduct: [
-                {
-                    image: "gray-mid.png",
-                    name: "sales",
-                    item: 9
-                },
-                {
-                    image: "gray-light.png",
-                    name: "dresses",
-                    item: 19
-                },
-                {
-                    image: "gray-light.png",
-                    name: "lingerie",
-                    item: 5
-                },
-                {
-                    image: "gray-light.png",
-                    name: "shirts",
-                    item: 9
-                },
-                {
-                    image: "gray-mid.png",
-                    name: "accessories",
-                    item: 19
-                },
-                {
-                    image: "gray-light.png",
-                    name: "bags",
-                    item: 5
-                }
-            ],
-            listProduct2: [
-                {
-                    image: "product2.png",
-                    isSale: true,
-                    isNew: true,
-                    link: "#",
-                    isStar: true,
-                    isBorder: false,
-                    nameProduct: "Black Impression",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: true,
-                    isViewWishList: false,
-                    isIcon: false,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Denim Classy Shorts",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: true,
-                    isIcon: false,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Golden Heels",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: true,
-                    isNew: false,
-                    link: "#",
-                    isStar: true,
-                    isBorder: false,
-                    nameProduct: "Black Impression",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: true,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Denim Classy Shorts",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Golden Heels",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: true,
-                    isBorder: false,
-                    nameProduct: "Black Impression",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Denim Classy Shorts",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Golden Heels",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: true,
-                    isBorder: false,
-                    nameProduct: "Black Impression",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: true,
-                    isNew: true,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Denim Classy Shorts",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Golden Heels",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: true,
-                    isBorder: false,
-                    nameProduct: "Black Impression",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Denim Classy Shorts",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                },
-                {
-                    image: "product2.png",
-                    isSale: false,
-                    isNew: false,
-                    link: "#",
-                    isStar: false,
-                    isBorder: true,
-                    nameProduct: "Golden Heels",
-                    priceProduct: "$35.00–$89.99",
-                    isViewCart: false,
-                    isViewWishList: false,
-                    isIcon: true,
-                    isHeart: false
-                }
-            ],
             listLatest: [
                 {
                     image: "background-gray.jpg",
@@ -1572,12 +1146,66 @@ export default {
                         "Lorem Ipsum. Proin <br /> gravida nibh vel velit auctor<br />aliquet. Aenean sollicitudin, lorem",
                     link: "#"
                 }
-            ]
+            ],
+            listProductTop: [],
+            listProductsMain: [],
+            perPage: 18,
+            totalItem: 0,
+            totalPage: 0,
+            currentPage: 1,
+            startIndex: 0,
+            endIndex: 0
         };
     },
+    computed: {
+        ...mapState({
+            listTop: state => state.product.products,
+            listProducts: state => state.product.listProducts
+        })
+    },
+    created() {
+        this.totalItem = this.listProducts.length;
+        this.totalPage = Math.ceil(this.totalItem / this.perPage);
+        this.endIndex = this.perPage;
+        this.listProductsMain = this.listProducts.slice(
+            this.startIndex,
+            this.endIndex
+        );
+        console.log(this.listProductsMain, this.startIndex, this.endIndex);
+        this.chunkArray();
+    },
+    watch: {
+        typeSort(newData) {
+            this.typeSort = newData;
+            this.renderListSort();
+        },
+        isSortDesc(newData) {
+            this.isSortDesc = newData;
+            this.renderListSort();
+        },
+        quantityShow(newData) {
+            this.quantityShow = newData;
+            this.renderListShow(newData);
+            this.renderListSort();
+            console.log(this.quantityShow);
+        },
+        currentPage(newData) {
+            this.startIndex = newData * this.perPage - this.perPage;
+            this.endIndex = newData * this.perPage;
+            this.listProductsMain = this.listProducts.slice(
+                this.startIndex,
+                this.endIndex
+            );
+        }
+    },
     methods: {
-        setDesc() {
-            this.isSortDesc = !this.isSortDesc;
+        showParentMenu(index) {
+            this.listCategories[index].isShowMenu = !this.listCategories[index]
+                .isShowMenu;
+        },
+        showChildMenu(index, stt) {
+            this.listCategories[index].categroyies1[stt].isShowMenu = !this
+                .listCategories[index].categroyies1[stt].isShowMenu;
         },
         setHeart(index) {
             this.listProduct2[index].isHeart = !this.listProduct2[index]
@@ -1586,6 +1214,63 @@ export default {
         setHeartLatest(index) {
             this.listLatest[index].countHeart =
                 this.listLatest[index].countHeart == 0 ? 1 : 0;
+        },
+        chunkArray() {
+            let i = 0;
+            for (i = 0; i < this.listTop.length; i += 6) {
+                this.listProductTop.push(this.listTop.slice(i, i + 6));
+            }
+            return this.listProductTop;
+        },
+        onChangeShow(event) {
+            this.quantityShow = event.target.value;
+        },
+        setDesc() {
+            this.isSortDesc = !this.isSortDesc;
+        },
+        onChangeSort(e) {
+            this.typeSort = e.target.value;
+        },
+        renderListSort() {
+            if (this.typeSort == 0) {
+                this.listProductsMain = this.listProductsMain.sort(function(
+                    a,
+                    b
+                ) {
+                    if (
+                        a.nameProduct.toUpperCase() <
+                        b.nameProduct.toUpperCase()
+                    ) {
+                        return -1;
+                    }
+                    if (
+                        a.nameProduct.toUpperCase() >
+                        b.nameProduct.toUpperCase()
+                    ) {
+                        return 1;
+                    }
+                });
+                this.listProductsMain = this.isSortDesc
+                    ? this.listProductsMain.reverse()
+                    : this.listProductsMain;
+            }
+            if (this.typeSort == 1) {
+                this.listProductsMain = this.listProductsMain.sort(function(
+                    a,
+                    b
+                ) {
+                    return a.maxPrice - b.maxPrice;
+                });
+                this.listProductsMain = this.isSortDesc
+                    ? this.listProductsMain.reverse()
+                    : this.listProductsMain;
+            }
+        },
+        renderListShow(length) {
+            this.listProductsMain = this.listProductsMain.slice(0, length);
+        },
+        setCurrentPage(stt) {
+            this.currentPage = stt;
         }
     }
 };

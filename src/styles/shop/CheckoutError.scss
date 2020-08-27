@@ -1,6 +1,5 @@
 @import "../varibles";
 @import "../mixin";
-
 .title-customer {
     display: flex;
     @include text-uppercase($font1, 36px);
@@ -15,7 +14,7 @@
 
 .checkbox {
     padding-right: 5px;
-    label{
+    label {
         font-family: $font2;
         color: $gray-mid;
         font-size: 16px !important;
@@ -34,7 +33,7 @@
             height: 0;
             width: 0;
         }
-        input:checked ~ .checkmark:after {
+        input:checked~.checkmark:after {
             display: block;
             content: "\f107";
             font-family: "FontAwesome";
@@ -79,7 +78,7 @@
         font-family: $font2;
         font-size: 16px;
         color: black;
-        &::placeholder{
+        &::placeholder {
             font-family: $font2;
             color: $gray-mid;
             font-size: 16px;
@@ -153,7 +152,6 @@ main {
             color: $gray-mid;
             text-transform: uppercase;
             padding-left: 50px;
-            // cursor: pointer;
         }
         .step {
             height: 60px;
@@ -211,7 +209,6 @@ main {
         margin-right: -20px;
         padding-top: 80px;
         padding-bottom: 80px;
-        
         .login {
             flex: 0 0 50%;
             padding-left: 20px;
@@ -219,7 +216,6 @@ main {
             margin-top: 50px;
             .box-form {
                 margin-top: 35px;
-                
                 .form-login__button {
                     display: flex;
                     align-items: center;
@@ -247,33 +243,33 @@ main {
                 }
             }
         }
-        .register{
+        .register {
             flex: 0 0 50%;
             padding-left: 20px;
             padding-right: 20px;
             margin-top: 45px;
-            &__button{
+            &__button {
                 margin-top: 70px;
-                button{
+                button {
                     @include text-uppercase($font1, 16px);
                     @include custom-button(40px, 100%, white, none);
                     display: block;
                     color: white;
-                    transition: ease .5s;
+                    transition: ease 0.5s;
                     margin-bottom: 50px;
                     border-radius: 5px;
-                    &:first-child{
+                    &:first-child {
                         background-color: $gray-mid;
-                        &:hover{
+                        &:hover {
                             border: 3px solid $gray-mid;
                             background: white;
                             color: $gray-mid;
                         }
                     }
-                    &:last-child{
+                    &:last-child {
                         background-color: $blue-light;
                         margin-bottom: 0px;
-                        &:hover{
+                        &:hover {
                             border: 3px solid $blue-light;
                             background: white;
                             color: $blue-light;
@@ -283,14 +279,14 @@ main {
             }
         }
     }
-    .billing{
+    .billing {
         display: flex;
         flex-wrap: wrap;
         margin-left: -20px;
         margin-right: -20px;
         padding-top: 80px;
         padding-bottom: 130px;
-        article{
+        article {
             flex: 0 0 50%;
             padding-left: 20px;
             padding-right: 20px;
@@ -299,29 +295,29 @@ main {
         .box-select {
             position: relative;
             margin-bottom: 20px;
-            select{
+            select {
                 @include custom-select(100%, 1px solid $border-gray);
                 border-radius: 5px;
                 -webkit-appearance: none;
                 height: 40px;
                 padding-left: 20px;
             }
-            &::after{
+            &::after {
                 @include custom-icon-select("\f107", 13px);
             }
         }
-        .group-2-input{
+        .group-2-input {
             display: flex;
             flex-wrap: wrap;
             margin-left: -20px;
             margin-right: -20px;
-            .form-input{
+            .form-input {
                 flex: 0 0 50%;
                 padding-left: 20px;
                 padding-right: 20px;
             }
         }
-        textarea{
+        textarea {
             width: 100%;
             height: 217px;
             width: 100%;
@@ -331,33 +327,33 @@ main {
             font-family: $font2;
             font-size: 16px;
             color: black;
-            &::placeholder{
+            &::placeholder {
                 font-family: $font2;
                 color: $gray-mid;
                 font-size: 16px;
             }
         }
-        .bill-address{
-            .box-form{
+        .bill-address {
+            .box-form {
                 margin-top: 35px;
             }
         }
-        .different-address{
-            .box-form{
+        .different-address {
+            .box-form {
                 margin-top: 70px;
-                .checkbox{
+                .checkbox {
                     margin-bottom: 30px;
                 }
             }
         }
-        .btn-step{
+        .btn-step {
             display: flex;
             justify-content: space-between;
             width: 100%;
             padding-left: 20px;
             padding-right: 20px;
-            button{
-                @include custom-button(50px, fit-content ,white, 5px);
+            button {
+                @include custom-button(50px, fit-content, white, 5px);
                 @include text-uppercase($font1, 19px);
                 padding-left: 25px;
                 padding-right: 25px;
@@ -365,41 +361,39 @@ main {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                transition: .5s;
-                i{
+                transition: 0.5s;
+                i {
                     font-size: 20px;
                 }
-                &:first-child{
+                &:first-child {
                     color: $black-light;
                     border: 3px solid $black-light;
-                    i{
+                    i {
                         padding-right: 20px;
                     }
-                    &:hover{
+                    &:hover {
                         background-color: $black-light;
                         color: white;
-                        
                     }
                 }
-                &:last-child{
+                &:last-child {
                     color: $blue-light;
                     border: 3px solid $blue-light;
-                    i{
+                    i {
                         padding-left: 20px;
                     }
-                    &:hover{
+                    &:hover {
                         background-color: $blue-light;
                         color: white;
                     }
                 }
             }
         }
-
     }
-    .payment{
+    .payment {
         margin-top: 125px;
         margin-bottom: 45px;
-        .table-order{
+        .table-order {
             .table-order-detail {
                 margin-top: 40px;
                 width: 100%;
@@ -421,7 +415,7 @@ main {
                     }
                 }
                 tr:nth-child(odd) {
-                    background-color: #f0f3f2;
+                    background-color: $bg-gray;
                 }
                 td,
                 th {
@@ -433,7 +427,6 @@ main {
                         display: flex;
                         align-items: center;
                     }
-    
                     img {
                         display: block;
                     }
@@ -451,7 +444,7 @@ main {
                     }
                 }
                 .table-quantity {
-                    div{
+                    div {
                         text-align: center;
                         color: $gray-mid;
                     }
@@ -480,7 +473,7 @@ main {
                         height: 50px;
                         width: 260px;
                         border: 1px solid $border-gray;
-                        background-color: #f0f3f2;
+                        background-color: $bg-gray;
                         border-radius: 5px;
                         padding-left: 20px;
                         padding-right: 5%;
@@ -508,18 +501,18 @@ main {
                         font-family: $font2;
                         tr {
                             border-bottom: 1px solid $border-gray;
-                            &:first-child{
-                                td{
+                            &:first-child {
+                                td {
                                     padding-top: 0px;
                                 }
                             }
-                            &:last-child{
+                            &:last-child {
                                 border: none;
-                                td{
+                                td {
                                     padding-bottom: 0px;
                                 }
                             }
-                            td{
+                            td {
                                 padding-top: 20px;
                                 padding-bottom: 20px;
                             }
@@ -544,23 +537,23 @@ main {
                 }
             }
         }
-        .wrapper-radio{
+        .wrapper-radio {
             margin-top: 95px;
             margin-bottom: 30px;
         }
-        .wrapper-box-radio{
+        .wrapper-box-radio {
             padding-top: 20px;
             padding-bottom: 20px;
             border-bottom: 1px solid $border-gray;
-            &:first-child{
+            &:first-child {
                 margin-top: 30px;
                 border-top: 1px solid $border-gray;
             }
-            &:last-child{
+            &:last-child {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                fieldset{
+                fieldset {
                     padding: 0px 5px;
                     border: 1px solid $border-gray;
                 }
@@ -579,7 +572,7 @@ main {
                 position: absolute;
                 opacity: 0;
                 cursor: pointer;
-                &:checked ~ .checkmark:after{
+                &:checked~.checkmark:after {
                     display: block;
                     top: 2px;
                     left: 2px;
@@ -598,29 +591,29 @@ main {
                 background-color: white;
                 border: 2px solid $gray-light;
                 border-radius: 50%;
-                &:after{
+                &:after {
                     content: "";
                     position: absolute;
                     display: none;
                 }
             }
         }
-        .box-full{
+        .box-full {
             background-color: #a3e7f0;
             padding: 45px;
             border-radius: 5px;
-            .content-box-full{
+            .content-box-full {
                 display: flex;
                 align-items: center;
                 position: relative;
-                .tick{
+                .tick {
                     min-width: 50px;
                     height: 50px;
                     border-radius: 50%;
                     background-color: #84b2c0;
                     margin-right: 20px;
                 }
-                .text{
+                .text {
                     font-family: $font2;
                     font-size: 16px;
                     color: #3c3950;
@@ -628,11 +621,11 @@ main {
                 }
             }
         }
-        .btn-step{
+        .btn-step {
             display: flex;
             justify-content: space-between;
-            button{
-                @include custom-button(50px, fit-content ,white, 5px);
+            button {
+                @include custom-button(50px, fit-content, white, 5px);
                 @include text-uppercase($font1, 19px);
                 padding-left: 25px;
                 padding-right: 25px;
@@ -640,25 +633,24 @@ main {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                transition: .5s;
-                i{
+                transition: 0.5s;
+                i {
                     font-size: 20px;
                     padding-right: 20px;
                 }
-                &:first-child{
+                &:first-child {
                     color: $black-light;
                     border: 3px solid $black-light;
-                    &:hover{
+                    &:hover {
                         background-color: $black-light;
                         color: white;
-                        
                     }
                 }
-                &:last-child{
+                &:last-child {
                     color: white;
                     border: 3px solid $blue-light;
                     background-color: $blue-light;
-                    &:hover{
+                    &:hover {
                         background-color: white;
                         color: $blue-light;
                     }
@@ -668,15 +660,15 @@ main {
     }
 }
 
-#register{
+#register {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: rgba(52, 73, 94, .8);
-    .box-form-register{
+    background-color: rgba(52, 73, 94, 0.8);
+    .box-form-register {
         font-family: $font2;
         color: $gray-mid;
         background-color: white;
@@ -684,13 +676,23 @@ main {
         max-width: 650px;
         padding: 50px;
         margin: auto;
+        position: relative;
     }
-    .form-register{
-        &__desc{
+    .fa-times-circle {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        color: red;
+        cursor: pointer;
+    }
+    .form-register {
+        &__desc {
             margin-top: 65px;
             margin-bottom: 50px;
         }
         &__input {
+            margin-bottom: 20px;
             div {
                 margin-bottom: 10px;
                 sup {
@@ -704,8 +706,8 @@ main {
                 height: 40px;
                 border: 1px solid $border-gray;
                 border-radius: 5px;
-                color: $gray-mid;
-                font-size: 30px;
+                color: black;
+                font-size: 16px;
             }
         }
         &__button {
@@ -774,87 +776,88 @@ main {
     }
 }
 
-@media (max-width: 1200px){
-    .title-customer{
+@media (max-width: 1200px) {
+    .title-customer {
         font-size: 26px !important;
-        img{
+        img {
             width: 28px;
             height: 28px;
             margin-right: 10px !important;
         }
     }
-    .info-customer{
-        .login, .register{
+    .info-customer {
+        .login,
+        .register {
             flex: 0 0 100% !important;
         }
-        .register{
-            &__button{
+        .register {
+            &__button {
                 display: flex;
                 justify-content: space-between;
-                button{
+                button {
                     width: 45% !important;
                 }
             }
         }
     }
-    .payment{
-        .box-full{
+    .payment {
+        .box-full {
             padding: 30px !important;
-            .text{
+            .text {
                 padding-right: 0 !important;
             }
         }
     }
 }
 
-@media (max-width: 768px){
-    .steps{
-        .step{
+@media (max-width: 768px) {
+    .steps {
+        .step {
             padding-left: 32px !important;
         }
     }
-    .billing{
-        article{
+    .billing {
+        article {
             flex: 0 0 100% !important;
         }
     }
-    .table-order{
-        table{
-            tr{
+    .table-order {
+        table {
+            tr {
                 .table-product {
-                    .text{
-                        span{
+                    .text {
+                        span {
                             margin-left: 0px !important;
                         }
                     }
                 }
             }
         }
-        .infos{
-            &__right{
+        .infos {
+            &__right {
                 flex: 0 0 100% !important;
             }
-            &__left{
+            &__left {
                 flex: 0 0 100% !important;
                 margin-top: 50px !important;
                 margin-bottom: 50px !important;
-                input{
+                input {
                     flex-grow: 1;
                 }
             }
         }
     }
-    #register{
-        .box-form-register{
+    #register {
+        .box-form-register {
             width: 70% !important;
             padding: 20px !important;
-            .form-register__desc{
+            .form-register__desc {
                 margin-top: 20px !important;
                 margin-bottom: 20px !important;
             }
-            .form-register__button{
+            .form-register__button {
                 margin-top: 20px !important;
-                button{
+                button {
                     margin-top: 20px;
                     width: 100% !important;
                     height: 40px !important;
@@ -862,26 +865,25 @@ main {
             }
         }
     }
-
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
     .box-alert {
         .content-box-full {
             .icon {
                 width: 33px !important;
                 height: 30px !important;
-                i{
+                i {
                     font-size: 18px !important;
                 }
             }
-            .text{
+            .text {
                 font-size: 14px !important;
             }
         }
     }
-    .steps{
-        .step{
+    .steps {
+        .step {
             padding-left: 22px !important;
             height: 40px !important;
             font-size: 8px !important;
@@ -898,109 +900,108 @@ main {
             }
         }
     }
-    .title-customer{
+    .title-customer {
         font-size: 20px !important;
-        img{
+        img {
             width: 24px;
             height: 24px;
             margin-right: 10px !important;
         }
     }
-    .form-login__button{
+    .form-login__button {
         flex-direction: column;
         align-items: flex-start !important;
-        button{
+        button {
             margin-top: 20px;
             height: 40px !important;
             width: 100% !important;
         }
-        .checkbox{
+        .checkbox {
             padding-left: 0 !important;
             padding-right: 0 !important;
             border-right: none !important;
             margin-top: 10px;
             margin-bottom: 10px;
         }
-        a{
+        a {
             padding-left: 0 !important;
         }
     }
-    .register{
-        .register__button{
+    .register {
+        .register__button {
             flex-direction: column;
-            button{
+            button {
                 width: 100% !important;
             }
         }
     }
-    .btn-step{
-        button{
+    .btn-step {
+        button {
             padding-left: 8px !important;
             padding-right: 8px !important;
             font-size: 12px !important;
             height: 40px !important;
-            
         }
     }
-    .billing{
-        .group-2-input{
-            .form-input{
-                flex: 0 0 100% !important; 
+    .billing {
+        .group-2-input {
+            .form-input {
+                flex: 0 0 100% !important;
             }
         }
-        .btn-step{
-            button{
-                &:first-child{
-                    i{
+        .btn-step {
+            button {
+                &:first-child {
+                    i {
                         padding-right: 10px !important;
                     }
                 }
-                &:last-child{
-                    i{
+                &:last-child {
+                    i {
                         padding-left: 10px !important;
                     }
                 }
             }
         }
     }
-    .payment{
-        .table-order{
-            table{
-                tr{
+    .payment {
+        .table-order {
+            table {
+                tr {
                     th {
                         font-size: 10px !important;
                     }
-                    td,th{
+                    td,
+                    th {
                         padding: 8px !important;
                     }
-                    td.table-product{
-                        .box{
-                            img{
+                    td.table-product {
+                        .box {
+                            img {
                                 width: 50px !important;
                                 height: 50px !important;
                             }
-                            .text{
+                            .text {
                                 font-size: 12px !important;
                                 margin-left: 5px !important;
-                                span{
+                                span {
                                     font-size: 11px !important;
                                 }
                             }
                         }
                     }
-                    td.table-total{
+                    td.table-total {
                         font-size: 15px !important;
                     }
-                    
                 }
             }
-            .infos{
-                &__left{
-                    input{
+            .infos {
+                &__left {
+                    input {
                         width: 100% !important;
                         height: 40px !important;
                     }
-                    button{
+                    button {
                         width: 100% !important;
                         height: 40px !important;
                         font-size: 16px !important;
@@ -1008,35 +1009,34 @@ main {
                         margin-left: 0 !important;
                     }
                 }
-            } 
+            }
         }
-        .box-full{
+        .box-full {
             padding: 15px !important;
-            .tick{
+            .tick {
                 min-width: 30px !important;
                 height: 30px !important;
                 margin-right: 10px !important;
             }
-            .text{
+            .text {
                 font-size: 12px !important;
             }
         }
-        .wrapper-box-radio{
+        .wrapper-box-radio {
             flex-direction: column;
             align-items: flex-start !important;
         }
-        .btn-step{
-            button{
-                i{
+        .btn-step {
+            button {
+                i {
                     padding-right: 5px !important;
                 }
             }
         }
     }
-    
-    #register{
-        .box{
-            .box-form-register{
+    #register {
+        .box {
+            .box-form-register {
                 width: 280px !important;
             }
         }

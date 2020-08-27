@@ -1,10 +1,10 @@
 <template>
     <div class="banner">
-        <img
+        <!-- <img
             class="img-slide"
             src="../../assets/imgs/banner-shop-main.png"
             alt=""
-        />
+        /> -->
         <div class="arrow-left d-flex-center">
             <img src="../../assets/imgs/arrow-white-left.png" alt="" />
         </div>
@@ -22,13 +22,14 @@
                 </div>
             </div>
         </div>
-        <div class="box-bread-crumb">
+        <slot></slot>
+        <!-- <div class="box-bread-crumb">
             <ul class="bread-crumb">
                 <li><a href="#">Home</a></li>
                 <i class="fa fa-long-arrow-right"></i>
                 <li><a href="#">shop</a></li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -43,13 +44,14 @@ export default {
 @import "../../styles/varibles";
 
 .banner {
+    background-image: linear-gradient(to right, #823459, #6c798e);
     @include custom-slide;
-    max-height: fit-content;
-    img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
+    // max-height: fit-content;
+    // img {
+    //     width: 100%;
+    //     height: auto;
+    //     display: block;
+    // }
     .arrow-left,
     .arrow-right {
         height: 4vw;
@@ -68,15 +70,9 @@ export default {
         background-color: $blue-light;
     }
     .box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        z-index: 1;
-        transform: translate(-50%, -50%);
+        padding: 106px 20px 76px;
         max-width: 1210px;
-        padding-left: 20px;
-        padding-right: 20px;
-        width: 100%;
+        margin: auto;
         .content {
             text-align: right;
             h2 {
@@ -95,12 +91,13 @@ export default {
         }
     }
     .box-bread-crumb {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        z-index: 1;
-        transform: translateX(-50%);
+        position: static;
+        // bottom: 0;
+        // left: 50%;
+        // z-index: 1;
+        // transform: translateX(-50%);
         max-width: 1210px;
+        margin: auto;
         padding-left: 20px;
         padding-right: 20px;
         width: 100%;
@@ -122,6 +119,7 @@ export default {
                 }
             }
             i {
+                color: white;
                 padding-left: 10px;
                 padding-right: 10px;
             }

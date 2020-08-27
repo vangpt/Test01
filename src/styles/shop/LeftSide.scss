@@ -1,24 +1,24 @@
 @import "../varibles";
 @import "../mixin";
-
 .box-select {
     position: relative;
     width: 262px;
 }
+
 .box-select::after {
     @include custom-icon-select("\f107", 13px);
 }
+
 select {
     @include custom-select(100%, none);
     -webkit-appearance: none;
     border: 1px solid $border-gray;
     height: 40px;
 }
-.box-bread-crumb{
-    position: static !important;
-    display: flex;
-    justify-content: center;
+
+.box-bread-crumb {
     .bread-crumb {
+        text-align: center;
         li {
             a {
                 color: white !important;
@@ -35,6 +35,7 @@ select {
         }
     }
 }
+
 main {
     .product {
         padding-top: 125px;
@@ -243,7 +244,7 @@ main {
                     .bar-not-fill {
                         flex: 0 0 30%;
                         height: 6px;
-                        background-color: #f0f3f2;
+                        background-color: $bg-gray;
                     }
                 }
                 .btn {
@@ -252,7 +253,7 @@ main {
                     align-items: center;
                     a {
                         @include custom-button(30px, 85px, none, 5px);
-                        @include hover-button(white,$blue-light);
+                        @include hover-button(white, $blue-light);
                         border: 2px solid $blue-light;
                         text-transform: uppercase;
                         font-weight: bold;
@@ -276,7 +277,7 @@ main {
                         display: flex;
                         align-items: center;
                         padding: 10px 15px;
-                        background-color: #f0f3f2;
+                        background-color: $bg-gray;
                         font-family: $font2;
                         border-bottom: 1px solid $border-gray;
                         &:last-child {
@@ -347,6 +348,7 @@ main {
             }
             .text-box {
                 margin-top: 70px;
+                width: 100%;
                 .wrapper {
                     padding: 35px 35px 35px 25px;
                     background-color: #f4f6f7;
@@ -359,10 +361,10 @@ main {
                     button {
                         @include custom-button(30px, 135px, none, 5px);
                         @include text-uppercase($font1, 14px);
-                        @include hover-button(transparent,$blue-light);
+                        @include hover-button(transparent, $blue-light);
                         border: 2px solid $blue-light;
                         margin-top: 40px;
-                        &:hover{
+                        &:hover {
                             color: white;
                         }
                     }
@@ -452,9 +454,10 @@ main {
                         div:nth-child(2) {
                             color: $blue-light;
                         }
-                        div:nth-child(3){
+                        div:nth-child(3) {
                             display: flex;
-                            .tag-bg{
+                            flex-wrap: wrap;
+                            .tag-bg {
                                 background-color: #e7edf0;
                                 padding: 2px 15px;
                                 font-family: $font2;
@@ -464,8 +467,9 @@ main {
                                 width: fit-content;
                                 border-radius: 0 5px 5px 0;
                                 margin-left: 25px;
-                                &::before{
-                                    content:"";
+                                margin-bottom: 20px;
+                                &::before {
+                                    content: "";
                                     position: absolute;
                                     left: -15px;
                                     top: 0;
@@ -473,8 +477,8 @@ main {
                                     border-top: 11px solid transparent;
                                     border-bottom: 11px solid transparent;
                                 }
-                                &::after{
-                                    content:"";
+                                &::after {
+                                    content: "";
                                     position: absolute;
                                     left: -8px;
                                     top: 7px;
@@ -491,27 +495,28 @@ main {
                     flex: 0 0 55.5%;
                     padding-left: 20px;
                     padding-right: 20px;
-                    .name-product{
+                    .name-product {
                         display: flex;
-                        div{
+                        justify-content: space-between;
+                        div {
                             flex: 0 0 50%;
                             @include text-uppercase($font1, 28px);
                             color: $black-light;
                         }
-                        button{
+                        button {
                             width: 30px;
                             height: 30px;
                             border: 2px solid $border-gray;
                             border-radius: 5px;
-                            transition: ease .5s;
+                            transition: ease 0.5s;
                             cursor: pointer;
                             @include hover-button(white, $border-gray);
-                            i{
+                            i {
                                 font-size: 20px;
                             }
                         }
                     }
-                    .review-product{
+                    .review-product {
                         display: flex;
                         font-family: $font2;
                         color: $blue-light;
@@ -520,112 +525,112 @@ main {
                         padding-top: 15px;
                         padding-bottom: 15px;
                         position: relative;
-                        &::after{
-                            content:"";
+                        &::after {
+                            content: "";
                             position: absolute;
                             bottom: -4px;
                             border-bottom: 1px solid $border-gray;
                             width: 100%;
                         }
-                        .info__star{
+                        .info__star {
                             margin-right: 15px;
-                            i{
+                            i {
                                 color: #ffc107;
                                 font-size: 20px;
                             }
                         }
                     }
-                    .price-product{
+                    .price-product {
                         font-family: $font2;
                         display: flex;
                         margin-left: -20px;
                         margin-right: -20px;
                         margin-top: 65px;
-                        .price-old{
+                        .price-old {
                             flex: 0 0 40%;
                             padding-left: 20px;
                             padding-right: 20px;
                             color: $gray-mid;
-                            .number{
+                            .number {
                                 font-size: 24px;
                                 text-decoration: line-through;
                                 font-weight: 300;
                                 margin-top: 13px;
                             }
                         }
-                        .price-new{
+                        .price-new {
                             flex: 0 0 60%;
                             padding-left: 20px;
                             padding-right: 20px;
-                            .text{
-                                color:red;
+                            .text {
+                                color: red;
                             }
-                            .number{
+                            .number {
                                 font-size: 36px;
                                 font-weight: 300;
                             }
                         }
                     }
-                    .desc-product{
+                    .desc-product {
                         margin-top: 35px;
                         margin-bottom: 65px;
                         font-size: $font2;
                         color: $gray-mid;
                     }
-                    .select-product{
+                    .select-product {
                         font-family: $font2;
-                        .item{
+                        .item {
                             display: flex;
                             align-items: center;
                             width: 70%;
                             color: $gray-mid;
                             margin-bottom: 12px;
-                            label{
+                            label {
                                 margin-right: 15px;
                             }
                         }
-                        tr{
+                        tr {
                             color: $gray-mid;
-                            td{
+                            td {
                                 padding-top: 5px;
                                 padding-bottom: 5px;
                             }
                         }
-                        tr:last-child{
+                        tr:last-child {
                             color: $blue-light;
-                            a{
+                            a {
                                 color: $blue-light;
                             }
-                            i{
+                            i {
                                 font-size: 11px;
                             }
                         }
                     }
-                    .original-price{
+                    .original-price {
                         margin-top: 40px;
                         font-family: $font2;
                         font-weight: 300;
-                        span:first-child{
+                        span:first-child {
                             font-size: 24px;
                             text-decoration: line-through;
                             color: $gray-mid;
                         }
-                        span:nth-child(2){
+                        span:nth-child(2) {
                             font-size: 50px;
                             color: $black-light;
                             padding-left: 15px;
                             padding-right: 15px;
                         }
-                        span:last-child{
+                        span:last-child {
                             font-size: 16px;
                             font-weight: 400;
                             color: $gray-mid;
                         }
                     }
-                    .buttons-option{
+                    .buttons-option {
                         display: flex;
-                        margin-top: 25px;
-                        div{
+                        div {
+                            margin-top: 25px;
                             font-family: $font2;
                             font-size: 24px;
                             font-weight: 300;
@@ -636,40 +641,48 @@ main {
                             border-radius: 5px;
                             border: 1px solid $border-gray;
                         }
-                        a{
+                        a {
+                            margin-top: 25px;
                             @include text-uppercase($font1, 16px);
                             border-radius: 5px;
-                            i{
+                            i {
                                 padding-right: 15px;
-                                font-size:20px;
+                                font-size: 20px;
                             }
-                            &.link-cart{
+                            &.link-cart {
                                 @include hover-button($blue-light, white);
                                 border: 2px solid $blue-light;
                                 padding: 10px 16px;
                                 margin-left: 20px;
                                 margin-right: 20px;
                             }
-                            &.link-wishlist{
+                            &.link-wishlist {
                                 @include hover-button(white, $gray-mid);
                                 border: 2px solid $gray-mid;
                                 padding: 10px 14px;
                             }
                         }
                     }
-                    .size-guide{
+                    .size-guide {
                         margin-top: 10px;
                         color: $blue-light;
+                        i {
+                            padding-right: 10px;
+                        }
+                        a {
+                            color: $blue-light;
+                        }
                     }
                 }
             }
-            .description-product{
+            .description-product {
                 margin-top: 70px;
-                &__head{
+                &__head {
                     display: flex;
+                    flex-wrap: wrap;
                     position: relative;
                     height: 50px;
-                    div{
+                    div {
                         background-color: #f4f6f7;
                         @include text-uppercase($font1, 14px);
                         font-weight: 300;
@@ -678,10 +691,10 @@ main {
                         margin-right: 10px;
                         position: absolute;
                         cursor: pointer;
-                        span{
+                        span {
                             color: red;
                         }
-                        &.active{
+                        &.active {
                             background-color: white;
                             border-top: 1px solid #d6dde0;
                             border-left: 1px solid #d6dde0;
@@ -689,48 +702,48 @@ main {
                             font-weight: bold;
                             top: 0;
                         }
-                        &:first-child{
+                        &:first-child {
                             left: 0px;
                         }
-                        &:nth-child(3){
+                        &:nth-child(3) {
                             left: 155px;
                         }
-                        &:nth-child(2){
+                        &:nth-child(2) {
                             left: 285px;
                         }
                     }
                 }
-                &__main{
+                &__main {
                     padding: 45px 40px 15px;
                     color: $gray-mid;
                     border: 1px solid #d6dde0;
-                    .items{
+                    .items {
                         display: flex;
                         flex-wrap: wrap;
                         margin-left: -20px;
                         margin-right: -20px;
                         margin-top: 20px;
-                        .box-item{
+                        .box-item {
                             flex: 0 0 33.33%;
                             padding-left: 20px;
                             padding-right: 20px;
-                            &:nth-child(4){
-                                .item{
+                            &:nth-child(4) {
+                                .item {
                                     border: none;
                                 }
                             }
-                            &:nth-child(5){
-                                .item{
+                            &:nth-child(5) {
+                                .item {
                                     border: none;
                                 }
                             }
-                            &:nth-child(6){
-                                .item{
+                            &:nth-child(6) {
+                                .item {
                                     border: none;
                                 }
                             }
                         }
-                        .item{
+                        .item {
                             padding: 50px 0;
                             border-bottom: 1px solid #d6dde0;
                             display: flex;
@@ -742,20 +755,21 @@ main {
                             }
                             .content {
                                 padding-left: 15px;
+                                word-wrap: break-word;
                             }
                         }
-                                
                     }
                 }
-                &__button{
+                &__button {
                     display: flex;
+                    justify-content: space-between;
                     margin-top: 40px;
-                    button{
+                    button {
                         @include custom-button(30px, 90px, white, 5px);
                         border: 2px solid $border-gray;
                         @include text-uppercase($font1, 14px);
                         @include hover-button(white, $border-gray);
-                        i{
+                        i {
                             font-size: 18px;
                         }
                     }
@@ -773,8 +787,10 @@ main {
                     text-align: center;
                     padding: 10px 35px;
                     display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
                     align-items: center;
-                    .item{
+                    .item {
                         padding-left: 3px;
                         padding-right: 3px;
                     }
@@ -816,7 +832,10 @@ main {
                             width: 100%;
                         }
                         button {
-                            @include custom-button(40px, 100%, $black-light, 0);
+                            @include custom-button(40px,
+                            100%,
+                            $black-light,
+                            0);
                             font-weight: bold;
                             text-transform: uppercase;
                             font-size: 14px;
@@ -824,33 +843,33 @@ main {
                     }
                 }
             }
-            .accordion{
+            .accordion {
                 margin-top: 55px;
-                .box-item{
+                .box-item {
                     border-bottom: 1px solid #b6c6c9;
                     padding-top: 15px;
                     padding-bottom: 15px;
-                    .title{
+                    .title {
                         font-family: $font1;
                         text-transform: uppercase;
                         font-weight: 300;
                         color: $gray-mid;
-                        i{
+                        i {
                             color: #b6c6c9;
                             font-size: 20px;
                             cursor: pointer;
                             padding-right: 10px;
                         }
                     }
-                    .wrapp-content{
+                    .wrapp-content {
                         display: flex;
                         align-items: center;
                         padding-top: 50px;
                         padding-bottom: 35px;
-                        .image{
-                            margin-right: 20px
+                        .image {
+                            margin-right: 20px;
                         }
-                        .text{
+                        .text {
                             flex-grow: 1;
                             color: $gray-mid;
                             line-height: 24px;
@@ -858,44 +877,47 @@ main {
                     }
                 }
             }
-            
         }
     }
-    .blocks{
+    .blocks {
         display: flex;
         flex-wrap: wrap;
-        .block{
+        .block {
             flex: 0 0 50%;
-            // height: 625px;
+            padding-top: 100px;
+            padding-bottom: 100px;
         }
-        .block:nth-child(2), .block:nth-child(3){
+        .block:nth-child(2),
+        .block:nth-child(3) {
             background-color: #dfe5e8;
         }
-        .block:nth-child(3){
+        .block:nth-child(3) {
             display: flex;
             justify-content: flex-end;
-            .box-content{
+            .box-content {
                 padding-left: 0;
                 padding-right: 65px;
             }
         }
-        .block:nth-child(1), .block:nth-child(4){
+        .block:nth-child(1),
+        .block:nth-child(4) {
             background-color: #f4f6f7;
         }
-        .box-content{
+        .box-content {
             max-width: 585px;
             padding-left: 65px;
-            .title{
-                @include text-uppercase($font1, 50px);
+            .title {
+                @include text-uppercase($font1,
+                50px);
                 font-weight: 300;
             }
-            .long-desc{
+            .long-desc {
                 margin-top: 65px;
                 color: $gray-mid;
                 line-height: 35px;
-                font-size:24px;
+                font-size: 24px;
                 font-weight: 300;
-                &::first-letter{
+                &::first-letter {
                     font-family: $font1;
                     font-weight: 300;
                     font-size: 28px;
@@ -907,23 +929,22 @@ main {
                     margin-top: 10px;
                     float: left;
                 }
-            
             }
-            .short-desc{
+            .short-desc {
                 margin-top: 65px;
                 color: $gray-mid;
                 line-height: 35px;
-                font-size:24px;
+                font-size: 24px;
                 font-weight: 300;
             }
-            ul{
+            ul {
                 margin-top: 50px;
-                li{
+                li {
                     color: $gray-mid;
                     display: flex;
                     align-items: center;
                     margin-top: 15px;
-                    i{
+                    i {
                         color: red;
                         padding-right: 10px;
                         font-size: 10px;
@@ -932,7 +953,7 @@ main {
             }
         }
     }
-    .box-best-highlight{
+    .box-best-highlight {
         display: flex;
         flex-wrap: wrap;
         margin-left: -20px;
@@ -942,12 +963,13 @@ main {
             flex: 0 0 25%;
             padding-left: 20px;
             padding-right: 20px;
-            .title{
-                @include title-caret(black, 40px);
+            .title {
+                @include title-caret(black,
+                40px);
             }
             .news {
                 color: $gray-mid;
-                .box-content{
+                .box-content {
                     padding: 35px 25px;
                     background-color: #f4f6f7;
                 }
@@ -969,9 +991,11 @@ main {
                         height: 40px;
                         border: 2px solid $gray-mid;
                         border-radius: 5px;
-                        @include text-uppercase($font1, 14px);
-                        @include hover-button($gray-mid, white);
-                        i{
+                        @include text-uppercase($font1,
+                        14px);
+                        @include hover-button($gray-mid,
+                        white);
+                        i {
                             font-size: 20px;
                             padding-right: 10px;
                         }
@@ -1000,13 +1024,13 @@ main {
                     }
                 }
             }
-            .social-icon{
+            .social-icon {
                 margin-top: 65px;
-                .icon{
+                .icon {
                     margin-top: 40px;
                     display: flex;
                     justify-content: space-between;
-                    a{
+                    a {
                         width: 23px;
                         height: 23px;
                         border-radius: 50%;
@@ -1014,7 +1038,7 @@ main {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        i{
+                        i {
                             font-size: 14px;
                             color: white;
                         }
@@ -1022,22 +1046,22 @@ main {
                 }
             }
         }
-        .best-highlight{
+        .best-highlight {
             flex: 0 0 75%;
             padding-left: 20px;
             padding-right: 20px;
-            .hightlight{
-                &__title{
+            .hightlight {
+                &__title {
                     font-family: $font1;
                     font-size: 28px;
                     font-weight: 300;
                 }
-                &__content{
+                &__content {
                     margin-top: 50px;
                     color: $gray-mid;
-                    .text{
+                    .text {
                         line-height: 25px;
-                        .video{
+                        .video {
                             float: right;
                             margin-left: 30px;
                             margin-bottom: 30px;
@@ -1045,14 +1069,14 @@ main {
                             background-color: #dfe5e8;
                             padding-top: calc(366 / 867 * 100%);
                             position: relative;
-                            .icon-video{
+                            .icon-video {
                                 position: absolute;
                                 top: 50%;
                                 left: 50%;
                                 transform: translate(-50%, -50%);
                                 cursor: pointer;
-                                i{
-                                    color: white ;
+                                i {
+                                    color: white;
                                     font-size: 80px;
                                 }
                             }
@@ -1060,37 +1084,38 @@ main {
                     }
                 }
             }
-            .slider-person{
+            .slider-person {
                 border: 1px solid $border-gray;
                 margin-top: 60px;
                 padding: 70px 60px;
                 position: relative;
-                .arrow-left,.arrow-right{
+                .arrow-left,
+                .arrow-right {
                     width: 40px;
                     height: 40px;
                     background-color: #b6c6c9;
-                    transition: ease .5s;
+                    transition: ease 0.5s;
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
-                    i{
+                    i {
                         font-size: 20px;
-                        transition: ease .5s;
+                        transition: ease 0.5s;
                     }
-                    &:hover{
+                    &:hover {
                         background-color: $blue-light;
-                        i{
+                        i {
                             color: white;
                         }
                     }
                 }
-                .arrow-left{
+                .arrow-left {
                     left: 0;
                 }
-                .arrow-right{
+                .arrow-right {
                     right: 0;
                 }
-                .box{
+                .box {
                     display: flex;
                     justify-content: center;
                     padding-right: 40px;
@@ -1098,7 +1123,10 @@ main {
                 }
                 .avatar {
                     min-width: 130px;
-                    height: 130px;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
                 .content-test {
                     margin-left: 20px;
@@ -1122,11 +1150,51 @@ main {
                         font-weight: 300;
                     }
                     .icon {
-                        // margin-top: 45px;
+                        margin-top: 10px;
                         text-align: center;
                     }
                 }
             }
+        }
+    }
+    .bottom-buttons {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-color: #46485c;
+        display: flex;
+        align-items: center;
+        .lines {
+            border-top: 1px solid #5f727f;
+            border-bottom: 1px solid #5f727f;
+            height: 4px;
+            flex-grow: 1;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            @include text-uppercase($font1,
+            24px);
+            font-weight: 300;
+            padding: 18px 60px;
+            transition: ease 0.5s;
+            &:hover {
+                color: white !important;
+            }
+            img {
+                margin-right: 20px;
+            }
+        }
+        a.link-blue {
+            color: $blue-light;
+            border: 1px solid $blue-light;
+            margin-left: 40px;
+            margin-right: 20px;
+        }
+        a.link-orange {
+            color: #ffa749;
+            border: 1px solid #ffa749;
+            margin-left: 20px;
+            margin-right: 40px;
         }
     }
 }
